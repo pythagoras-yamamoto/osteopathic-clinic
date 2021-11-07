@@ -26,3 +26,9 @@ App.js でインポートして目視確認する。
 ## リモートリポジトリ
 
 https://github.com/pythagoras-yamamoto/Osteopathic-Clinic
+
+## codesandbox
+
+- template で main に戻れる
+- Fork して LinkSandbox 押して、メインブランチじゃない方（コミットをブランチ PR の方)にする
+- ブランチ名は意味のある名前に

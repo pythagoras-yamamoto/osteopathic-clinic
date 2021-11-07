@@ -8,6 +8,8 @@ export default function App() {
       <h1>aaaa</h1>
       <h2>Start editing to see some magic happen!</h2>
       <h3>ちんこ</h3>
+      <h1>うんこ</h1>
+      <h1>うんこ大魔神</h1>
     </div>
   );
 }

@@ -22,3 +22,7 @@ https://qiita.com/ozora/items/33e00dcaca372db04560
 ## コンポーネントの確認
 
 App.js でインポートして目視確認する。
+
+## リモートリポジトリ
+
+https://github.com/pythagoras-yamamoto/Osteopathic-Clinic

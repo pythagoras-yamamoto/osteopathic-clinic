@@ -6,17 +6,21 @@ export const HeaderMenu = () => {
     <SNavContainer>
       <ul>
         <SNavElement>
-          <li>
-            <a hlef="#">Home</a>
+          <li className="nav-element-ja">
+            <a hlef="#">ホーム</a>
+            <p className="nav-element-en">home</p>
           </li>
-          <li>
+          <li className="nav-element-ja">
             <a hlef="#">当院について</a>
+            <p className="nav-element-en">about us</p>
           </li>
-          <li>
+          <li className="nav-element-ja">
             <a hlef="#">予約状況・料金</a>
+            <p className="nav-element-en">reservation & fee</p>
           </li>
-          <li>
+          <li className="nav-element-ja">
             <a hlef="#">お問い合わせ</a>
+            <p className="nav-element-en">inquery</p>
           </li>
         </SNavElement>
       </ul>
@@ -24,15 +28,23 @@ export const HeaderMenu = () => {
   );
 };
 
-const SNavElement = styled.li`
+const SNavElement = styled.div`
   list-style: none;
-  font-size: 20px;
-  padding: 10px 30px;
+  padding: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+
+  .nav-element-ja {
+    margin: 0 40px;
+    font-size: 15px;
+  }
+
+  .nav-element-en {
+    font-size: 12px;
+  }
 `;
 
 const SNavContainer = styled.nav`
   background: whitesmoke;
-  height: 100px;
+  height: 110px;
 `;

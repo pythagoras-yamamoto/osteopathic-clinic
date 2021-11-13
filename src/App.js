@@ -1,4 +1,5 @@
 import "./styles.css";
+import { FooterMenuButton } from "./components/FooterMenuButton";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <h1>うんこここ</h1>
       <h1>うんこここ</h1>
       <h1>うんこ大魔神</h1>
+      <FooterMenuButton />
     </div>
   );
 }

@@ -44,6 +44,7 @@ const SNavElement = styled.div`
   }
 
   /*********** Responsive ***********/
+
   @media screen and (max-width: 780px) {
     display: none;
   }
@@ -53,3 +54,4 @@ const SNavContainer = styled.div`
   background: whitesmoke;
   height: 110px;
 `;
+

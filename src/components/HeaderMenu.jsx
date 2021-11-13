@@ -28,6 +28,13 @@ export const HeaderMenu = () => {
   );
 };
 
+const SNavContainer = styled.div`
+  background: whitesmoke;
+  height: 110px;
+  z-index: 100;
+  position: relative;
+`;
+
 const SNavElement = styled.div`
   list-style: none;
   padding: 30px;
@@ -49,9 +56,3 @@ const SNavElement = styled.div`
     display: none;
   }
 `;
-
-const SNavContainer = styled.div`
-  background: whitesmoke;
-  height: 110px;
-`;
-

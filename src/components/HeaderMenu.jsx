@@ -3,32 +3,24 @@ import { HeaderMenuButton } from "./HeaderMenuButton";
 
 export const HeaderMenu = () => {
   return (
-    <SNav>
-      <div className="nav">
-        <ul>
-          <SNavElement>
-            <li>
-              <a hlef="#">Home</a>
-            </li>
-          </SNavElement>
-          <SNavElement>
-            <li>
-              <a hlef="#">当院について</a>
-            </li>
-          </SNavElement>
-          <SNavElement>
-            <li>
-              <a hlef="#">予約状況・料金</a>
-            </li>
-          </SNavElement>
-          <SNavElement>
-            <li>
-              <a hlef="#">お問い合わせ</a>
-            </li>
-          </SNavElement>
-        </ul>
-      </div>
-    </SNav>
+    <SNavContainer>
+      <ul>
+        <SNavElement>
+          <li>
+            <a hlef="#">Home</a>
+          </li>
+          <li>
+            <a hlef="#">当院について</a>
+          </li>
+          <li>
+            <a hlef="#">予約状況・料金</a>
+          </li>
+          <li>
+            <a hlef="#">お問い合わせ</a>
+          </li>
+        </SNavElement>
+      </ul>
+    </SNavContainer>
   );
 };
 
@@ -36,7 +28,11 @@ const SNavElement = styled.li`
   list-style: none;
   font-size: 20px;
   padding: 10px 30px;
-  float: left;
+  display: flex;
+  justify-content: space-around;
 `;
 
-const SNav = styled.nav``;
+const SNavContainer = styled.nav`
+  background: whitesmoke;
+  height: 100px;
+`;

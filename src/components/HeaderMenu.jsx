@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeaderMenuButton } from "./HeaderMenuButton";
+// import { HeaderMenuButton } from "./HeaderMenuButton";
 
 export const HeaderMenu = () => {
   return (
@@ -43,6 +43,8 @@ const SNavElement = styled.div`
     font-size: 12px;
   }
 
+  /*********** Responsive ***********/
+
   @media screen and (max-width: 780px) {
     display: none;
   }
@@ -53,4 +55,3 @@ const SNavContainer = styled.div`
   height: 110px;
 `;
 
-/*********** Responsive ***********/

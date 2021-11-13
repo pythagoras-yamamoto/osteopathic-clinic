@@ -42,9 +42,15 @@ const SNavElement = styled.div`
   .nav-element-en {
     font-size: 12px;
   }
+
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 `;
 
-const SNavContainer = styled.nav`
+const SNavContainer = styled.div`
   background: whitesmoke;
   height: 110px;
 `;
+
+/*********** Responsive ***********/

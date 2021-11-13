@@ -3,9 +3,6 @@ import React from "react";
 
 //フッター部分のメニューボタンのコンポーネント
 
-export const HeaderMenuButton = () => {
-  return <></>;
-
 export const FooterMenuButton = () => {
   return (
     <div className="LinkButton">

@@ -2,13 +2,13 @@
 import { HeaderMenu } from "./components/HeaderMenu";
 
 import "./styles.css";
-import { FooterMenuButton } from "./components/FooterMenuButton";
+import { FooterMenu } from "./components/FooterMenu";
 
 export default function App() {
   return (
     <div className="App">
       <HeaderMenu></HeaderMenu>
-      <FooterMenuButton />
+      <FooterMenu />
     </div>
   );
 }

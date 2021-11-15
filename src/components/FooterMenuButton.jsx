@@ -6,43 +6,27 @@ import React from "react";
 export const FooterMenuButton = () => {
   return (
     <div>
-      <SMenuPosition>
+      <ul>
         <SFooterMenuButton>
-          <a className="LinkName" href="./pages/HomePage.jsx">
-            ホーム
-          </a>
+          <a href="./pages/HomePage.jsx">ホーム</a>
         </SFooterMenuButton>
         <SFooterMenuButton>
-          <a className="LinkName" href="./pages/AboutUsPage.jsx">
-            当院について
-          </a>
+          <a href="./pages/AboutUsPage.jsx">当院について</a>
         </SFooterMenuButton>
         <SFooterMenuButton>
-          <a className="LinkName" href="./pages/ReservationPage.jsx">
-            料金・予約
-          </a>
+          <a href="./pages/ReservationPage.jsx">料金・予約</a>
         </SFooterMenuButton>
         <SFooterMenuButton>
-          <a className="LinkName" href="./pages/InqueryPage.jsx">
-            お問い合せ
-          </a>
+          <a href="./pages/InqueryPage.jsx">お問合せ</a>
         </SFooterMenuButton>
-      </SMenuPosition>
+      </ul>
     </div>
   );
 };
 
 const SFooterMenuButton = styled.li`
-  margin: 10px 20px;
-  position: relative;
+  margin-top: 10px;
   display: block;
   padding: 10px;
   float: left;
-  .LinkName {
-    color: #000000;
-  }
-`;
-const SMenuPosition = styled.ul`
-  width: 50%;
-  margin-left: 30%;
 `;

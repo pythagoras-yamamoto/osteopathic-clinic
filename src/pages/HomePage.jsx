@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { FooterMenu } from "../components/FooterMenu.jsx";
-import Image from "../clinic-image.jpeg";
+import Image from "../../public/clinic-image.jpeg";
 
 export const HomePage = () => {
   return (

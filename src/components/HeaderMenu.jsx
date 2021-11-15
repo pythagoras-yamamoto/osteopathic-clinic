@@ -56,6 +56,11 @@ const SNavElement = styled.div`
 
   .nav-element-ja {
     text-decoration: none;
+    color: black;
+
+    :hover {
+      opacity: 0.5;
+    }
   }
 
   .nav-element-en {

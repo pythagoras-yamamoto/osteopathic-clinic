@@ -37,10 +37,12 @@ export const HeaderMenu = () => {
 };
 
 const SNavContainer = styled.div`
-  background: whitesmoke;
+  background: white;
   height: 110px;
   z-index: 100;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  opacity: 0.9;
 `;
 
 const SNavElement = styled.div`

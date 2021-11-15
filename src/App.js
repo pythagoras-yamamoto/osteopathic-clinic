@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="App">
       <HeaderMenu />
-      <img src={Image} alt="" />
+      <img src={Image} alt="" height={500} />
       <FooterMenu />
     </div>
   );

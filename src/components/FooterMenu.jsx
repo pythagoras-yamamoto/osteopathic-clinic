@@ -23,10 +23,12 @@ export const FooterMenu = () => {
 };
 
 const SFooterMenu = styled.div`
+  width: 100%;
   height: 120px;
-  background-color: #c0c0c0;
-  border-top: solid 5px #da70d6;
-  border-bottom: solid 5px #da70d6;
+  background-color: #d3d3d3;
+  /* border-top: solid 5px #ffb6c1; */
+  /* border-bottom: solid 5px #ffb6c1; */
+  opacity: 0.8;
 `;
 const SFormList = styled.div`
   display: flex;
@@ -39,5 +41,5 @@ const SFormList = styled.div`
 `;
 const SHosName = styled.p`
   text-align: center;
-  margin-top: 5px;
+  position: center;
 `;

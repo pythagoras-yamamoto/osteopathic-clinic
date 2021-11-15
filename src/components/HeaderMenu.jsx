@@ -59,6 +59,7 @@ const SNavElement = styled.div`
   .nav-element-ja {
     text-decoration: none;
     color: black;
+    transition: 0.2s;
 
     :hover {
       opacity: 0.5;

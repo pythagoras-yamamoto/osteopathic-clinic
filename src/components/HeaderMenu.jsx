@@ -6,20 +6,28 @@ export const HeaderMenu = () => {
     <SNavContainer>
       <ul>
         <SNavElement>
-          <li className="nav-element-ja">
-            <a hlef="#">ホーム</a>
+          <li className="nav-element">
+            <a href="#" className="nav-element-ja">
+              ホーム
+            </a>
             <p className="nav-element-en">home</p>
           </li>
-          <li className="nav-element-ja">
-            <a hlef="#">当院について</a>
+          <li className="nav-element">
+            <a href="#" className="nav-element-ja">
+              当院について
+            </a>
             <p className="nav-element-en">about us</p>
           </li>
-          <li className="nav-element-ja">
-            <a hlef="#">予約状況・料金</a>
+          <li className="nav-element">
+            <a href="#" className="nav-element-ja">
+              予約状況・料金
+            </a>
             <p className="nav-element-en">reservation & fee</p>
           </li>
-          <li className="nav-element-ja">
-            <a hlef="#">お問い合わせ</a>
+          <li className="nav-element">
+            <a href="#" className="nav-element-ja">
+              お問い合わせ
+            </a>
             <p className="nav-element-en">inquery</p>
           </li>
         </SNavElement>
@@ -41,9 +49,18 @@ const SNavElement = styled.div`
   display: flex;
   justify-content: center;
 
-  .nav-element-ja {
+  .nav-element {
     margin: 0 40px;
     font-size: 15px;
+  }
+
+  .nav-element-ja {
+    text-decoration: none;
+    color: black;
+
+    :hover {
+      opacity: 0.5;
+    }
   }
 
   .nav-element-en {

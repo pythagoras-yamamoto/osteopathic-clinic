@@ -8,29 +8,35 @@ export const HomePage = () => {
   return (
     <>
       <HeaderMenu />
-      <SClinicImage>
+      <SContainer>
         <STitleOnClinicImage>根津整体院</STitleOnClinicImage>
-        <img src={Image} alt="" height={900} width={1440} />
-      </SClinicImage>
+        <SImage src={Image} alt="" />
+      </SContainer>
       <FooterMenu />
     </>
   );
 };
 
-const SClinicImage = styled.div`
+const SContainer = styled.div`
   position: relative;
 `;
 
 const STitleOnClinicImage = styled.p`
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  font-size: 50px;
+  font-size: 80px;
   color: white;
   font-weight: bold;
   margin: 0;
   padding: 0;
 `;
+
+const SImage = styled.img`
+  width: 100vw;
+  height: auto;
+`;
+
 /*
 const STextOnClinicImage = styled.p`
   position: absolute;

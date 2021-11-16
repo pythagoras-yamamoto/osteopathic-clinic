@@ -8,22 +8,22 @@ export const FooterMenuButton = () => {
     <div>
       <SMenuPosition>
         <SFooterMenuButton>
-          <a lassName="LinkName" href="./pages/HomePage.jsx">
+          <a className="LinkName" href="./pages/HomePage.jsx">
             ホーム
           </a>
         </SFooterMenuButton>
         <SFooterMenuButton>
-          <a lassName="LinkName" href="./pages/AboutUsPage.jsx">
+          <a className="LinkName" href="./pages/AboutUsPage.jsx">
             当院について
           </a>
         </SFooterMenuButton>
         <SFooterMenuButton>
-          <a lassName="LinkName" href="./pages/ReservationPage.jsx">
+          <a className="LinkName" href="./pages/ReservationPage.jsx">
             料金・予約
           </a>
         </SFooterMenuButton>
         <SFooterMenuButton>
-          <a lassName="LinkName" href="./pages/InqueryPage.jsx">
+          <a className="LinkName" href="./pages/InqueryPage.jsx">
             お問合せ
           </a>
         </SFooterMenuButton>

@@ -5,8 +5,8 @@ import React from "react";
 
 export const FooterMenuButton = () => {
   return (
-    <div>
-      <SMenuPosition>
+    <SMenuPosition>
+      <ul>
         <SFooterMenuButton>
           <a className="LinkName" href="./pages/HomePage.jsx">
             ホーム
@@ -27,23 +27,29 @@ export const FooterMenuButton = () => {
             お問合せ
           </a>
         </SFooterMenuButton>
-      </SMenuPosition>
-    </div>
+      </ul>
+    </SMenuPosition>
   );
 };
 
 const SFooterMenuButton = styled.li`
   margin: 10px 20px;
-  position: relative;
+  /* position: relative; */
   display: block;
-  padding: 10px;
+  /* padding: 10px; */
   float: left;
   .LinkName {
     color: #ffffff;
   }
 `;
 
-const SMenuPosition = styled.ul`
-  width: 100%;
-  margin-left: 35%;
+const SMenuPosition = styled.div`
+  position: relative;
+  top: 20px;
+  left: 40%;
 `;
+
+// const SMenuPosition = styled.ul`
+//   width: 100%;
+//   margin-left: 35%;
+// `;

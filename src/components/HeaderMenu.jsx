@@ -38,18 +38,18 @@ export const HeaderMenu = () => {
 
 const SNavContainer = styled.div`
   background: white;
-  height: 110px;
+  height: 80px;
   z-index: 100;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   opacity: 0.9;
 `;
 
 const SNavElement = styled.div`
   list-style: none;
-  padding: 30px;
+  padding: 18px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 
   .nav-element {
     margin: 0 40px;

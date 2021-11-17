@@ -19,9 +19,6 @@ https://zenn.dev/syu/articles/0f92abf7f0b5c5
 
 https://qiita.com/ozora/items/33e00dcaca372db04560
 
-## コンポーネントの確認
-
-App.js でインポートして目視確認する。
 
 ## リモートリポジトリ
 

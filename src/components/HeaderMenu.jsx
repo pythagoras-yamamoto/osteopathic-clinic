@@ -43,6 +43,7 @@ const SNavContainer = styled.div`
   width: 100vw;
   position: fixed;
   opacity: 0.9;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 `;
 
 const SNavElement = styled.div`

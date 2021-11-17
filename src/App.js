@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles.scss";
 //import { HeaderMenu } from "./components/HeaderMenu";
 //import { FooterMenu } from "./components/FooterMenu";
 import { HomePage } from "./pages/HomePage";

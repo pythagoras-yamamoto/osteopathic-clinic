@@ -31,7 +31,7 @@ const STitleOnImage = styled.p`
   font-size: 80px;
   font-weight: bold;
   color: white;
-  margin-left: 50px;
+  margin-left: 15%;
 `;
 
 const STextOnImage = styled(STitleOnImage)`

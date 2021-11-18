@@ -92,9 +92,9 @@ const SFooterMenu = styled.div`
     position: relative;
     top: -30px;
   }
-  @media screen and (max-width: 780px) {
+  /* @media screen and (max-width: 780px) {
     display: none;
-  }
+  } */
   /* position: relative; */
   /* top: 20px; */
   /* left: 40%; */

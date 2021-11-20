@@ -56,7 +56,7 @@ export const FooterMenu = () => {
         <p className="access-child">住所</p>
       </SAccessinfo>
       <SClinicName>
-        <p className="clinic-name">根津整体院</p>
+        <p className="clinic-name">© 2021 Netsu Osteopathic Clinic</p>
       </SClinicName>
     </SFooterMenu>
   );
@@ -139,5 +139,6 @@ const SClinicName = styled.div`
   justify-content: center;
   position: relative;
   color: white;
-  padding-bottom: 10px;
+  font-size: 0.5em;
+  padding-bottom: 15px;
 `;

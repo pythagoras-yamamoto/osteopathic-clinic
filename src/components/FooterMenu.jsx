@@ -73,8 +73,9 @@ const STelinfo = styled.p`
   display: flex;
   justify-content: center;
   background-color: white;
-  margin: 5px;
-  padding: 10px 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 10px 100px;
   border-radius: 10px;
 `;
 

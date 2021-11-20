@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
 // import { HeaderMenuButton } from "./HeaderMenuButton";
 // TODO Refactoring
 export const HeaderMenu = () => {
@@ -9,27 +7,27 @@ export const HeaderMenu = () => {
       <ul>
         <SNavElement>
           <li className="nav-element">
-            <Link to="/" className="nav-element-ja">
+            <a href="#" className="nav-element-ja">
               ホーム
-            </Link>
+            </a>
             <p className="nav-element-en">home</p>
           </li>
           <li className="nav-element">
-            <Link to="/AboutUsPage" className="nav-element-ja">
+            <a href="#" className="nav-element-ja">
               当院について
-            </Link>
+            </a>
             <p className="nav-element-en">about us</p>
           </li>
           <li className="nav-element">
-            <Link to="ResearvationPage" className="nav-element-ja">
+            <a href="#" className="nav-element-ja">
               予約状況・料金
-            </Link>
+            </a>
             <p className="nav-element-en">reservation & fee</p>
           </li>
           <li className="nav-element">
-            <Link to="InqueryPage" className="nav-element-ja">
+            <a href="#" className="nav-element-ja">
               お問い合わせ
-            </Link>
+            </a>
             <p className="nav-element-en">inquery</p>
           </li>
         </SNavElement>

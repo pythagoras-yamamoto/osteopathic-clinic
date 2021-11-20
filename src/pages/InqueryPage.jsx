@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import { HeaderMenu } from "../components/HeaderMenu";
-import { FooterMenu } from "../components/FooterMenu";
+import { HeaderMenu } from "./HeaderMenu";
+import { FooterMenu } from "./FooterMenu";
 
-export const InqueryPage = () => {
+export const BaseLayout = () => {
   return (
     <>
       <HeaderMenu />

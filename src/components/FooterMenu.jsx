@@ -74,17 +74,17 @@ const STelinfo = styled.p`
   justify-content: center;
   background-color: white;
   margin: 5px;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 10px 30px;
+  border-radius: 10px;
 `;
 
 const SAdressinfo = styled(STelinfo)``;
 
 const SCopyright = styled.div`
-  background-color: #d3d3d3;
   display: flex;
   justify-content: center;
   color: white;
+  background-color: #d3d3d3;
   font-size: 0.5em;
   padding-bottom: 10px;
 `;

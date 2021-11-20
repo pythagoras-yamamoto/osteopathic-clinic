@@ -41,7 +41,7 @@ export const HeaderMenu = () => {
 const SNavContainer = styled.div`
   background: white;
   height: 80px;
-  z-index: 200;
+  z-index: 100;
   width: 100vw;
   position: fixed;
   opacity: 0.9;

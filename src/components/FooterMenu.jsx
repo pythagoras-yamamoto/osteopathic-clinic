@@ -2,31 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import { FooterMenuButton } from "./FooterMenuButton";
 
-// export const FooterMenu = () => {
-//   return (
-//     <SFooterMenu>
-//       <FooterMenuButton />
-//       <SFormList>
-//         <ul>
-//           <li className="form-list">
-//             <p>電話番号</p>
-//           </li>
-//           <li className="form-list">
-//             <p>住所</p>
-//           </li>
-//         </ul>
-//       </SFormList>
-//       <br></br>
-//       <SHosName>根津整体院</SHosName>
-//     </SFooterMenu>
-//   );
-// };
-
 export const FooterMenu = () => {
   return (
-    <SFooterMenu>
+    <SFooter>
       <div>
-        <SFooterMenuButton>
+        <SFooterMenu>
           <li className="LinkName">
             <Link to="/" className="LinkChild">
               ホーム
@@ -47,18 +27,16 @@ export const FooterMenu = () => {
               お問い合わせ
             </Link>
           </li>
-        </SFooterMenuButton>
+        </SFooterMenu>
+        <STelinfo>
+          <p className="info-child">電話番号</p>
+        </STelinfo>
+        <STelinfo>
+          <p className="info-child">住所</p>
+        </STelinfo>
+        <SCopyright>© 2021 Netsu Osteopathic Clinic</SCopyright>
       </div>
-      <STelinfo>
-        <p className="info-child">電話番号</p>
-      </STelinfo>
-      <STelinfo>
-        <p className="info-child">住所</p>
-      </STelinfo>
-      <SClinicName>
-        <p className="clinic-name">© 2021 Netsu Osteopathic Clinic</p>
-      </SClinicName>
-    </SFooterMenu>
+    </SFooter>
   );
 };
 
@@ -76,7 +54,7 @@ export const FooterMenu = () => {
 //   position: center;
 // `;
 
-const SFooterMenu = styled.div`
+const SFooter = styled.div`
   width: 100%;
   background-color: #d3d3d3;
 
@@ -99,7 +77,7 @@ const SFooterMenu = styled.div`
   /* left: 40%; */
 `;
 
-const SFooterMenuButton = styled.ul`
+const SFooterMenu = styled.ul`
   display: flex;
   justify-content: center;
   .LinkName {
@@ -129,7 +107,7 @@ const STelinfo = styled.div`
   }
 `;
 
-const SClinicName = styled.div`
+const SCopyright = styled.div`
   display: flex;
   justify-content: center;
   color: white;

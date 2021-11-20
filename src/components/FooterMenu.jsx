@@ -117,10 +117,11 @@ const STelinfo = styled.div`
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: -20px;
+  top: 0px;
   margin: 5px 10px 5px 0;
 
   .info-child {
+    display: inline-block;
     border-radius: 8px;
     background-color: white;
     width: 100px;
@@ -131,7 +132,6 @@ const STelinfo = styled.div`
 const SClinicName = styled.div`
   display: flex;
   justify-content: center;
-  position: relative;
   color: white;
   font-size: 0.5em;
   padding-bottom: 15px;

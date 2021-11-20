@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import { Link } from "react-router-dom";
 // import { FooterMenuButton } from "./FooterMenuButton";
 
 // export const FooterMenu = () => {
@@ -28,24 +28,24 @@ export const FooterMenu = () => {
       <div>
         <SFooterMenuButton>
           <li className="LinkName">
-            <a href="./pages/HomePage.jsx" className="LinkChild">
+            <Link to="/" className="LinkChild">
               ホーム
-            </a>
+            </Link>
           </li>
           <li className="LinkName">
-            <a href="./pages/AboutUsPage.jsx" className="LinkChild">
+            <Link to="/AboutUsPage" className="LinkChild">
               当院について
-            </a>
+            </Link>
           </li>
           <li className="LinkName">
-            <a href="./pages/ReservationPage.jsx" className="LinkChild">
-              料金・予約
-            </a>
+            <Link to="/ResearvationPage" className="LinkChild">
+              予約・料金
+            </Link>
           </li>
           <li className="LinkName">
-            <a href="./pages/InqueryPage.jsx" className="LinkChild">
-              お問合せ
-            </a>
+            <Link to="/InqueryPage" className="LinkChild">
+              お問い合わせ
+            </Link>
           </li>
         </SFooterMenuButton>
       </div>
@@ -138,4 +138,6 @@ const SClinicName = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  color: white;
+  padding-bottom: 10px;
 `;

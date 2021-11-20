@@ -50,11 +50,11 @@ export const FooterMenu = () => {
         </SFooterMenuButton>
       </div>
       <STelinfo>
-        <p className="tel-child">電話番号</p>
+        <p className="info-child">電話番号</p>
       </STelinfo>
-      <SAccessinfo>
-        <p className="access-child">住所</p>
-      </SAccessinfo>
+      <STelinfo>
+        <p className="info-child">住所</p>
+      </STelinfo>
       <SClinicName>
         <p className="clinic-name">© 2021 Netsu Osteopathic Clinic</p>
       </SClinicName>
@@ -118,19 +118,13 @@ const STelinfo = styled.div`
   justify-content: flex-end;
   position: relative;
   top: -20px;
-  .tel-child {
-    border: solid 3px #000000;
-  }
-`;
+  margin: 5px 10px 5px 0;
 
-const SAccessinfo = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: -10px;
-  /* top: -30px; */
-  .access-child {
-    border: solid 3px #000000;
+  .info-child {
+    border-radius: 8px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
   }
 `;
 

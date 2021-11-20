@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export const FooterMenu = () => {
   return (
-    <SFooter>
-      <div>
+    <>
+      <SFooter>
         <SFooterMenu>
           <li className="LinkName">
             <Link to="/" className="LinkChild">
@@ -32,24 +32,25 @@ export const FooterMenu = () => {
           <STelinfo>電話番号</STelinfo>
           <SAdressinfo>住所</SAdressinfo>
         </SInfoWrapper>
-        <SCopyright>© 2021 Netsu Osteopathic Clinic</SCopyright>
-      </div>
-    </SFooter>
+      </SFooter>
+      <SCopyright>© 2021 Netsu Osteopathic Clinic</SCopyright>
+    </>
   );
 };
 
 const SFooter = styled.div`
-  width: 100%;
-  background-color: #d3d3d3;
   position: relative;
-
+  background-color: #d3d3d3;
+  height: 150px;
+  width: 100%;
   @media screen and (max-width: 780px) {
   }
 `;
 
-const SFooterMenu = styled.ul`
+const SFooterMenu = styled.div`
   display: flex;
   justify-content: center;
+
   .LinkName {
     list-style: none;
     float: left;
@@ -64,28 +65,26 @@ const SFooterMenu = styled.ul`
 const SInfoWrapper = styled.div`
   position: absolute;
   z-index: 100;
-  top: 0;
-  right: 50px;
-  /* display: inline-block; */
-  /* background-color: white; */
+  top: 35px;
+  right: 30px;
 `;
 
 const STelinfo = styled.p`
   display: flex;
   justify-content: center;
-  position: relative;
   background-color: white;
   margin: 5px;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
 `;
 
 const SAdressinfo = styled(STelinfo)``;
 
 const SCopyright = styled.div`
+  background-color: #d3d3d3;
   display: flex;
   justify-content: center;
   color: white;
   font-size: 0.5em;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 `;

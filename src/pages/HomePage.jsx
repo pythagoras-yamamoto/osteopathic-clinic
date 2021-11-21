@@ -8,7 +8,9 @@ import Img from "../../public/medical_harikyu_woman.png";
 
 export const HomePage = () => {
   const title = ["タイトル"];
-  const contents = ["こんにちは。根津です。"];
+  const contentsChild = "おっぱい";
+  const contents = `${contentsChild}
+ぺろぺろ`;
   const image = [Img];
   return (
     <>

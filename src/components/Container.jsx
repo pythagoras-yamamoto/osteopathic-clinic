@@ -35,7 +35,6 @@ const SContent = styled.p`
   margin: 20px;
   overflow-wrap: break-word;
   font-size: 24px;
-  white-space: pre-wrap;
 `;
 
 const SImage = styled.img`

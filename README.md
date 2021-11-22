@@ -19,7 +19,6 @@ https://zenn.dev/syu/articles/0f92abf7f0b5c5
 
 https://qiita.com/ozora/items/33e00dcaca372db04560
 
-
 ## リモートリポジトリ
 
 https://github.com/pythagoras-yamamoto/Osteopathic-Clinic
@@ -28,4 +27,4 @@ https://github.com/pythagoras-yamamoto/Osteopathic-Clinic
 
 - template で main に戻れる
 - Fork して LinkSandbox 押して、メインブランチじゃない方（コミットをブランチ PR の方)にする
-- ブランチ名は意味のある名前に
+- ブランチ名は意味のある名前にする

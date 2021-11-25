@@ -5,7 +5,7 @@ import IMG from "../../public/clinic-image.jpeg";
 export const ContainerA = (props) => {
   const {
     title, //title　: Item name
-    contents, //contents : Text part of the item
+    text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
     shadowColor
@@ -18,7 +18,7 @@ export const ContainerA = (props) => {
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
-          <SText>{contents}</SText>
+          <SText width={widthRatio}>{text}</SText>
           <SImage
             shadowColor={shadowColor}
             src={image}
@@ -62,10 +62,14 @@ const SContentsWrapeer = styled.div`
 
 const SText = styled.div`
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+
+  width: ${(props) => (props.width ? 90 - props.width : 50)}%;
 `;
 
 const SImage = styled.img`
-  width: ${(props) => (props.width ? props.width : 30)}%;
+  width: ${(props) => (props.width ? props.width : 40)}%;
   box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
 `;

@@ -20,16 +20,17 @@ export const HomePage = () => {
       </SImageWraper>
       <ContainerA
         title={"タイトル"}
-        contents={"こんにちは\n根津です。"}
+        text={
+          "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
+        }
         image={Image}
-        widthRatio={50}
         shadowColor={"#de8787"}
       />
       <ContainerA
         title={"ご案内"}
-        contents={"こんにちは\n根津です。"}
+        text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
         image={Image}
-        widthRatio={40}
+        widthRatio={50}
       />
       <FooterMenu />
     </>

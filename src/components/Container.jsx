@@ -62,5 +62,5 @@ const SText = styled.p`
 `;
 
 const SImage = styled.img`
-  width: 40%; /* サンプルBOXの幅     */
+  width: 40%;
 `;

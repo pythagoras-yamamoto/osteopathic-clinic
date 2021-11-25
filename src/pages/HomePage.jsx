@@ -27,7 +27,12 @@ export const HomePage = () => {
         contents={"こんにちは\n根津です。"}
         image={Img}
       />
-      <Container title={"ご案内"} contents={""} image={Img} />
+      <Container
+        title={"ご案内"}
+        contents={"こんにちは\n根津です。"}
+        image={Image}
+        ImageWidth={30}
+      />
 
       <FooterMenu />
     </>

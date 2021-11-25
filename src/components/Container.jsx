@@ -3,17 +3,33 @@ import React from "react";
 import IMG from "../../public/clinic-image2.jpeg";
 
 export const Container = (props) => {
-  const { title, contents, image } = props;
+  const {
+    title, //title　: Item name
+    contents, //contents : Text part of the item
+    image, //image : Img part of the item
+    ImageWidth, //ImageWidth : Change the width of the image as you like, but Using %.
+    ImageHeight //ImageWidth : Change the height of the image as you like, but Using %.
+  } = props;
+
   return (
     <>
-      <STitle>{title}</STitle>
-      <div>
+      <SContainerWrapper>
+        <STitle>{title}</STitle>
         <SContent>{contents}</SContent>
-        <SImage src={image} alt=""></SImage>
-      </div>
+        <SImage
+          src={image}
+          width={`${ImageWidth}%`}
+          height={`${ImageHeight}%`}
+          alt="No Image"
+        ></SImage>
+      </SContainerWrapper>
     </>
   );
 };
+
+const SContainerWrapper = styled.div`
+  margin: 100px;
+`;
 
 const STitle = styled.div`
   width: 120px;
@@ -39,6 +55,5 @@ const SContent = styled.p`
 `;
 
 const SImage = styled.img`
-  width: 20vw;
   margin-left: 70%;
 `;

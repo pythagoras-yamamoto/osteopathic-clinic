@@ -15,13 +15,15 @@ export const Container = (props) => {
     <>
       <SContainerWrapper>
         <STitle>{title}</STitle>
-        <SContent>{contents}</SContent>
-        <SImage
-          src={image}
-          width={`${ImageWidth}%`}
-          height={`${ImageHeight}%`}
-          alt="No Image"
-        ></SImage>
+        <SText>{contents}</SText>
+        <SImageWrapeer>
+          <SImage
+            src={image}
+            width={`${ImageWidth}%`}
+            height={`${ImageHeight}%`}
+            alt="No Image"
+          />
+        </SImageWrapeer>
       </SContainerWrapper>
     </>
   );
@@ -45,7 +47,7 @@ const STitle = styled.div`
   font-size: 28px;
 `;
 
-const SContent = styled.p`
+const SText = styled.p`
   width: 60%;
   text-align: left;
   margin: 20px;
@@ -53,6 +55,8 @@ const SContent = styled.p`
   font-size: 24px;
   white-space: pre-wrap;
 `;
+
+const SImageWrapeer = styled.div``;
 
 const SImage = styled.img`
   margin-left: 70%;

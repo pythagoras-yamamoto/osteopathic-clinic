@@ -22,8 +22,8 @@ export const ContainerA = (props) => {
           <SImage
             shadowColor={shadowColor}
             src={image}
-            alt="No Image"
             width={widthRatio}
+            alt="No Image"
           ></SImage>
         </SContentsWrapeer>
       </SContainerWrapper>
@@ -47,7 +47,7 @@ const STitleWrapper = styled.div`
 `;
 
 const STitle = styled.p`
-  /* margin-top: 20px; */
+  color: #ffff;
   font-size: 30px;
 `;
 
@@ -67,5 +67,5 @@ const SText = styled.div`
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 30)}%;
-  box-shadow: 10px -10px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
+  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
 `;

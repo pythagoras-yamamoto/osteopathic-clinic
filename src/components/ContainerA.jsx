@@ -26,7 +26,7 @@ export const ContainerA = (props) => {
 };
 
 const SContainerWrapper = styled.div`
-  margin: 50px;
+  margin: 150px 50px;
 `;
 
 const STitleWrapper = styled.div`
@@ -50,7 +50,7 @@ const SContentsWrapeer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 80vw;
 `;
 

@@ -6,7 +6,8 @@ export const Container = (props) => {
   const {
     title, //title　: Item name
     contents, //contents : Text part of the item
-    image //, image : Img part of the item
+    image, //, image : Img part of the item
+    widthRatio
     //ImageWidth,  ImageWidth : Change the width of the image as you like, but Using %.
     //ImageHeight ImageWidth : Change the height of the image as you like, but Using %.
   } = props;
@@ -16,12 +17,13 @@ export const Container = (props) => {
       <SContainerWrapper>
         <STitle>{title}</STitle>
         <SContentsWrapeer>
-          <SText>{contents}</SText>
+          <SText width={widthRatio}>{contents}</SText>
           <SImage
             src={image}
             //width={`${ImageWidth}%`}
             //height={`${ImageHeight}%`}
             alt="No Image"
+            width={CalWidthRatio(widthRatio)}
           />
         </SContentsWrapeer>
       </SContainerWrapper>
@@ -54,13 +56,21 @@ const SContentsWrapeer = styled.div`
   flex-wrap: wrap;
 `;
 
-const SText = styled.p`
+const SText = styled.div`
   box-sizing: border-box;
-  width: 60%;
+  width: ${(props) => (props.width ? props.width : 70)}%;
   text-align: left;
   font-size: 25px;
 `;
 
 const SImage = styled.img`
-  width: 40%;
+  width: ${(props) => (props.width ? props.width : 30)}%;
 `;
+
+const CalWidthRatio = (widthRatio) => {
+  if (widthRatio === null) {
+    return 70;
+  } else {
+    return 100 - widthRatio;
+  }
+};

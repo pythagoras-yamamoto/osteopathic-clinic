@@ -45,32 +45,22 @@ const STitle = styled.p`
 `;
 
 const SContentsWrapeer = styled.div`
-  margin: auto; /* サンプル用 中央寄せ */
-  box-sizing: border-box; /* 罫線も含む長さ      */
-  /* background: #fff; BOXの背景色         */
-  width: 80vw; /* BOXの幅             */
-  max-height: 500px; /* BOXの高さ           */
-
-  /* ▼ FlexBoxの定義 */
-  display: flex; /* FlexBox定義         */
-  justify-content: space-around; /* 揃えの定義          */
-  flex-wrap: wrap; /* 折り返し定義        */
+  margin: auto;
+  box-sizing: border-box;
+  width: 80vw;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 const SText = styled.p`
-  box-sizing: border-box; /* 罫線も含む長さ      */
-  /* background: #b0c4de; BOXの背景色         */
-  width: 60%; /* サンプルBOXの幅     */ /* サンプルBOXの幅     */ /* サンプルBOXの間     */
-  text-align: left; 
-  /* margin: 20px; */
-  /* overflow-wrap: break-word; */
-  font-size: 25px; */
-  /* white-space: pre-wrap; */
+  box-sizing: border-box;
+  width: 60%;
+  text-align: left;
+  font-size: 25px;
 `;
 
 const SImage = styled.img`
-  /* margin-left: 70%; */
-  box-sizing: border-box; /* 罫線も含む長さ      */
-  /* background: #b0c4de; BOXの背景色         */
   width: 40%; /* サンプルBOXの幅     */
 `;

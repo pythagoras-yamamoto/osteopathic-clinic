@@ -7,7 +7,8 @@ export const ContainerA = (props) => {
     title, //title　: Item name
     contents, //contents : Text part of the item
     image, //, image : Img part of the item
-    widthRatio //ImageWidth : Change the width of the image as you like, but Using %.
+    widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
+    shadowColor
   } = props;
 
   return (
@@ -18,7 +19,12 @@ export const ContainerA = (props) => {
         </STitleWrapper>
         <SContentsWrapeer>
           <SText>{contents}</SText>
-          <SImage src={image} alt="No Image" width={widthRatio} />
+          <SImage
+            shadowColor={shadowColor}
+            src={image}
+            alt="No Image"
+            width={widthRatio}
+          ></SImage>
         </SContentsWrapeer>
       </SContainerWrapper>
     </>
@@ -61,4 +67,5 @@ const SText = styled.div`
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 30)}%;
+  box-shadow: 10px -10px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
 `;

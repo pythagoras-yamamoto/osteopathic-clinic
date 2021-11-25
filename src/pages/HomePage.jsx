@@ -23,6 +23,7 @@ export const HomePage = () => {
         contents={"こんにちは\n根津です。"}
         image={Image}
         widthRatio={50}
+        shadowColor={"#de8787"}
       />
       <ContainerA
         title={"ご案内"}

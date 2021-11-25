@@ -22,6 +22,7 @@ export const HomePage = () => {
         title={"タイトル"}
         contents={"こんにちは\n根津です。"}
         image={Image}
+        widthRatio={50}
       />
       <Container
         title={"ご案内"}

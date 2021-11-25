@@ -4,12 +4,9 @@ import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { Container } from "../components/Container";
 import { FooterMenu } from "../components/FooterMenu.jsx";
 import Image from "../../public/clinic-image.jpeg";
-import Img from "../../public/medical_harikyu_woman.png";
+//import Img from "../../public/medical_harikyu_woman.png";
 
 export const HomePage = () => {
-  const title = ["タイトル"];
-  const contents = "こんにちは\n根津です。";
-  const image = [Img];
   return (
     <>
       <HeaderMenu />
@@ -21,7 +18,17 @@ export const HomePage = () => {
         </STextOnImage>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <Container title={title} contents={contents} image={image} />
+      <Container
+        title={"タイトル"}
+        contents={"こんにちは\n根津です。"}
+        image={Image}
+      />
+      <Container
+        title={"ご案内"}
+        contents={"こんにちは\n根津です。"}
+        image={Image}
+      />
+
       <FooterMenu />
     </>
   );

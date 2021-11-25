@@ -15,22 +15,22 @@ export const Container = (props) => {
     <>
       <SContainerWrapper>
         <STitle>{title}</STitle>
-        <SText>{contents}</SText>
-        <SImageWrapeer>
+        <SContentsWrapeer>
+          <SText>{contents}</SText>
           <SImage
             src={image}
             width={`${ImageWidth}%`}
             height={`${ImageHeight}%`}
             alt="No Image"
           />
-        </SImageWrapeer>
+        </SContentsWrapeer>
       </SContainerWrapper>
     </>
   );
 };
 
 const SContainerWrapper = styled.div`
-  margin: 100px;
+  margin: 50px;
 `;
 
 const STitle = styled.div`
@@ -47,17 +47,33 @@ const STitle = styled.div`
   font-size: 28px;
 `;
 
-const SText = styled.p`
-  width: 60%;
-  text-align: left;
-  margin: 20px;
-  overflow-wrap: break-word;
-  font-size: 24px;
-  white-space: pre-wrap;
+const SContentsWrapeer = styled.div`
+  margin: auto; /* サンプル用 中央寄せ */
+  box-sizing: border-box; /* 罫線も含む長さ      */
+  /* background: #fff; BOXの背景色         */
+  width: 80vw; /* BOXの幅             */
+  max-height: 500px; /* BOXの高さ           */
+
+  /* ▼ FlexBoxの定義 */
+  display: flex; /* FlexBox定義         */
+  justify-content: space-around; /* 揃えの定義          */
+  flex-wrap: wrap; /* 折り返し定義        */
 `;
 
-const SImageWrapeer = styled.div``;
+const SText = styled.p`
+  box-sizing: border-box; /* 罫線も含む長さ      */
+  /* background: #b0c4de; BOXの背景色         */
+  width: 60%; /* サンプルBOXの幅     */ /* サンプルBOXの幅     */ /* サンプルBOXの間     */
+  /* text-align: left; */
+  /* margin: 20px; */
+  /* overflow-wrap: break-word; */
+  /* font-size: 24px; */
+  /* white-space: pre-wrap; */
+`;
 
 const SImage = styled.img`
-  margin-left: 70%;
+  /* margin-left: 70%; */
+  box-sizing: border-box; /* 罫線も含む長さ      */
+  /* background: #b0c4de; BOXの背景色         */
+  width: 40%; /* サンプルBOXの幅     */
 `;

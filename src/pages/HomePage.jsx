@@ -7,9 +7,10 @@ import Image from "../../public/clinic-image.jpeg";
 import Img from "../../public/medical_harikyu_woman.png";
 
 export const HomePage = () => {
-  const title = ["タイトル"];
-  const contents = "こんにちは\n根津です。";
-  const image = [Img];
+  // const title = ["タイトル"];
+  // const contents = "こんにちは\n根津です。";
+  // const image = [Img];
+
   return (
     <>
       <HeaderMenu />
@@ -21,7 +22,13 @@ export const HomePage = () => {
         </STextOnImage>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <Container title={title} contents={contents} image={image} />
+      <Container
+        title={"タイトル"}
+        contents={"こんにちは\n根津です。"}
+        image={Img}
+      />
+      <Container title={"ご案内"} contents={""} image={Img} />
+
       <FooterMenu />
     </>
   );

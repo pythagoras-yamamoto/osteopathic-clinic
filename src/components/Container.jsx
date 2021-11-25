@@ -6,9 +6,9 @@ export const Container = (props) => {
   const {
     title, //title　: Item name
     contents, //contents : Text part of the item
-    image, //image : Img part of the item
-    ImageWidth, //ImageWidth : Change the width of the image as you like, but Using %.
-    ImageHeight //ImageWidth : Change the height of the image as you like, but Using %.
+    image //, image : Img part of the item
+    //ImageWidth,  ImageWidth : Change the width of the image as you like, but Using %.
+    //ImageHeight ImageWidth : Change the height of the image as you like, but Using %.
   } = props;
 
   return (
@@ -19,8 +19,8 @@ export const Container = (props) => {
           <SText>{contents}</SText>
           <SImage
             src={image}
-            width={`${ImageWidth}%`}
-            height={`${ImageHeight}%`}
+            //width={`${ImageWidth}%`}
+            //height={`${ImageHeight}%`}
             alt="No Image"
           />
         </SContentsWrapeer>
@@ -33,18 +33,15 @@ const SContainerWrapper = styled.div`
   margin: 50px;
 `;
 
-const STitle = styled.div`
-  width: 120px;
-  height: 80px;
+const STitle = styled.p`
+  height: 100px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   background-image: url(${IMG});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 20px;
-  font-size: 28px;
+  font-size: 30px;
 `;
 
 const SContentsWrapeer = styled.div`
@@ -64,10 +61,10 @@ const SText = styled.p`
   box-sizing: border-box; /* 罫線も含む長さ      */
   /* background: #b0c4de; BOXの背景色         */
   width: 60%; /* サンプルBOXの幅     */ /* サンプルBOXの幅     */ /* サンプルBOXの間     */
-  /* text-align: left; */
+  text-align: left; 
   /* margin: 20px; */
   /* overflow-wrap: break-word; */
-  /* font-size: 24px; */
+  font-size: 25px; */
   /* white-space: pre-wrap; */
 `;
 

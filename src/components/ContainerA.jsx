@@ -48,6 +48,7 @@ const STitleWrapper = styled.div`
   background-repeat: no-repeat;
   height: 150px;
   opacity: 0.4;
+  font-weight: bold;
   /* background-image: url(${(props) =>
     props.titleImage ? props.titleImage : IMG}) */
 

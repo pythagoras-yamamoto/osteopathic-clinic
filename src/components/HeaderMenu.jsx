@@ -22,9 +22,9 @@ export const HeaderMenu = () => {
           </li>
           <li className="nav-element">
             <Link to="ResearvationPage" className="nav-element-ja">
-              予約状況・料金
+              サービス・メニュー
             </Link>
-            <p className="nav-element-en">reservation & fee</p>
+            <p className="nav-element-en">service & menu</p>
           </li>
           <li className="nav-element">
             <Link to="InqueryPage" className="nav-element-ja">

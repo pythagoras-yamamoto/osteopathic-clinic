@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import React from "react";
-import IMG from "../../public/clinic-image.jpeg";
+import IMG from "../../public/noun_Calendar_2567614-removebg-preview.png";
 
 export const ContainerA = (props) => {
   const {
     title, //title　: Item name
+    titleImage,
     text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
@@ -14,7 +15,7 @@ export const ContainerA = (props) => {
   return (
     <>
       <SContainerWrapper>
-        <STitleWrapper>
+        <STitleWrapper titleImage={titleImage}>
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
@@ -33,8 +34,8 @@ export const ContainerA = (props) => {
 
 const SContainerWrapper = styled.div`
   margin: 100px 50px;
-  box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
   padding: 100px 0;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 `;
 
 const STitleWrapper = styled.div`
@@ -46,10 +47,14 @@ const STitleWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   height: 150px;
+  opacity: 0.4;
+  /* background-image: url(${(props) =>
+    props.titleImage ? props.titleImage : IMG}) */
+
 `;
 
 const STitle = styled.p`
-  color: #ffff;
+  color: black;
   font-size: 30px;
 `;
 

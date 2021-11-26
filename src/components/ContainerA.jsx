@@ -33,6 +33,9 @@ export const ContainerA = (props) => {
 
 const SContainerWrapper = styled.div`
   margin: 150px 50px;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+  padding-top: 30px;
+  padding-bottom: 50px;
 `;
 
 const STitleWrapper = styled.div`

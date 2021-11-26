@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// import { HeaderMenuButton } from "./HeaderMenuButton";
-// TODO Refactoring
 export const HeaderMenu = () => {
   return (
     <SNavContainer>
@@ -57,6 +55,7 @@ const SNavElement = styled.div`
   .nav-element {
     margin: 0 40px;
     font-size: 15px;
+    font-weight: bold;
   }
 
   .nav-element-ja {

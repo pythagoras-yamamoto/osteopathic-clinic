@@ -17,9 +17,9 @@ export const HomePage = () => {
           女性施術者による女性専用サロンです。それぞれのお身体,
           体調に合わせたオーダーメイドの鍼灸施術を行います
         </STextOnImage>
-        <SImage src={Image} alt="" />
+        <ImageSlider></ImageSlider>
+        {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
-      <ImageSlider></ImageSlider>
       <ContainerA
         title={"タイトル"}
         text={
@@ -52,6 +52,7 @@ const STitleOnImage = styled.p`
   font-weight: bold;
   color: white;
   margin-left: 15%;
+  z-index: 100;
 `;
 
 const STextOnImage = styled(STitleOnImage)`
@@ -60,9 +61,4 @@ const STextOnImage = styled(STitleOnImage)`
   font-size: 20px;
   width: 530px;
   margin-top: 180px;
-`;
-
-const SImage = styled.img`
-  width: 100vw;
-  height: auto;
 `;

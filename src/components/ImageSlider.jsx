@@ -4,6 +4,8 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Img from "../../public/clinic-image.jpeg";
+
 export const ImageSlider = () => {
   const settings = {
     dots: true,
@@ -16,25 +18,13 @@ export const ImageSlider = () => {
   return (
     <Slider {...settings}>
       <div>
-        <img src="../../public/clinic-image.jpeg" width="300" alt="" />
-        <h3>2</h3>
-        <h3>2</h3>
-        <h3>2</h3>
+        <img src={Img} width="100%" alt="" />
       </div>
       <div>
-        <h3>2</h3>
+        <img src={Img} width="100%" alt="" />
       </div>
       <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
+        <img src={Img} width="100%" alt="" />
       </div>
     </Slider>
   );

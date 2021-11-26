@@ -17,18 +17,17 @@ export const ImageSlider = () => {
 
   return (
     <Slider {...settings}>
-      <div>
-        <img src={Img} width="100%" alt="" />
-      </div>
-      <div>
-        <img src={Img} width="100%" alt="" />
-      </div>
-      <div>
-        <img src={Img} width="100%" alt="" />
-      </div>
+      <SImage src={Img} alt="" />
+      <SImage src={Img} alt="" />
+      <SImage src={Img} alt="" />
     </Slider>
   );
 };
+
+const SImage = styled.img`
+  width: 100vw;
+  height: auto;
+`;
 
 // import "swiper/swiper.min.css";
 // import { Swiper, SwiperSlide } from "swiper/react";

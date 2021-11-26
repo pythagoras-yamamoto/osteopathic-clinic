@@ -11,6 +11,7 @@ export const ImageSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
+    // className: "img-wrapper",
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -30,14 +31,14 @@ export const ImageSlider = () => {
 };
 
 const SImage = styled.img`
-  width: 100vh;
+  width: 100vw;
   height: auto;
   box-shadow: 0px 5px 0 rgb(0 0 0 / 15%);
 `;
 
 // slickの仕様で右側に余白ができる。それを解消するために使用したスタイリング。
 const ImgWrapper = styled.div`
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 // import "swiper/swiper.min.css";

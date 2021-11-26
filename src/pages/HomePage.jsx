@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
 import { FooterMenu } from "../components/FooterMenu.jsx";
+import { ImageSlider } from "../components/ImageSlider";
 import Image from "../../public/clinic-image.jpeg";
 //import Img from "../../public/medical_harikyu_woman.png";
 
@@ -18,6 +19,7 @@ export const HomePage = () => {
         </STextOnImage>
         <SImage src={Image} alt="" />
       </SImageWraper>
+      <ImageSlider></ImageSlider>
       <ContainerA
         title={"タイトル"}
         text={

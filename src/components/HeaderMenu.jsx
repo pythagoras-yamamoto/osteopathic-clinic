@@ -56,20 +56,22 @@ const SNavElement = styled.div`
     margin: 0 40px;
     font-size: 15px;
     font-weight: bold;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   .nav-element-ja {
     text-decoration: none;
     color: black;
     transition: 0.2s;
-
-    :hover {
-      opacity: 0.5;
-    }
   }
 
   .nav-element-en {
     font-size: 12px;
+    color: black;
   }
 
   /*********** Responsive ***********/

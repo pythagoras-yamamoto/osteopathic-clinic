@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
+import { ContainerB } from "../components/ContainerB";
 import { FooterMenu } from "../components/FooterMenu.jsx";
 import { ImageSlider } from "../components/ImageSlider";
-import Map from "../components/Map";
+// import Map from "../components/Map";
 
 import Image from "../../public/clinic-image.jpeg";
 
@@ -24,7 +25,8 @@ export const HomePage = () => {
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
       <ContainerA
-        title={"タイトル"}
+        // いらんかも
+        title={"コンセプト"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
         }
@@ -32,14 +34,14 @@ export const HomePage = () => {
         shadowColor={"#de8787"}
       />
       <ContainerA
-        title={"ご案内"}
+        title={"料金メニュー"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
         }
         image={Image}
-        widthRatio={50}
+        widthRatio={60}
       />
-      <Map />
+      <ContainerB title={"ご案内"} image={Image} widthRatio={47} />
       <FooterMenu />
     </>
   );

@@ -38,7 +38,7 @@ export const SContainerWrapper = styled.div`
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 `;
 
-const STitleWrapper = styled.div`
+export const STitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

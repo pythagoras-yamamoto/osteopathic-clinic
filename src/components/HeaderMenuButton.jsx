@@ -17,8 +17,12 @@ const SButton = styled.button`
   padding: 6px 12px;
   border: none;
   border-radius: 5px;
-  &:hover {
+  &:hover + .button {
     background: blue;
     color: white;
   }
 `;
+
+// .button:hover + .result{
+//   background: #E72458;
+// }

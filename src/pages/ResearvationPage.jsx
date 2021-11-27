@@ -13,7 +13,7 @@ export const ResearvationPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ContainerA
-        title={"タイトル"}
+        title={"料金メニュー"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
         }
@@ -21,7 +21,7 @@ export const ResearvationPage = () => {
         shadowColor={"#de8787"}
       />
       <ContainerA
-        title={"ご案内"}
+        title={"予約状況"}
         text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
         image={Image}
         widthRatio={50}

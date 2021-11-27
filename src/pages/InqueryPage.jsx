@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-import { HeaderMenu } from "../components/HeaderMenu.jsx";
+import { HeaderMenu } from "../components/HeaderMenu";
 import { ContainerA } from "../components/ContainerA";
-import { FooterMenu } from "../components/FooterMenu.jsx";
+import { FooterMenu } from "../components/FooterMenu";
+import { EmbedTwitter } from "../components/EmbedTwiter";
 import Image from "../../public/clinic-image.jpeg";
 
 export const InqueryPage = () => {
@@ -13,19 +14,14 @@ export const InqueryPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ContainerA
-        title={"タイトル"}
+        title={"お問い合わせ"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
         }
         image={Image}
         shadowColor={"#de8787"}
       />
-      <ContainerA
-        title={"ご案内"}
-        text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
-        image={Image}
-        widthRatio={50}
-      />
+      <EmbedTwitter />
       <FooterMenu />
     </>
   );

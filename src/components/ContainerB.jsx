@@ -72,10 +72,11 @@ const SContentsWrapeer = styled.div`
 `;
 
 const SMap = styled.div`
-  width: ${(props) => (props.width ? 90 - props.width : 50)}%;
+  width: ${(props) => (props.width ? 95 - props.width : 50)}%;
 `;
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
-  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
+  /* box-shadow: 15px -15px ${(props) =>
+    props.shadowColor ? props.shadowColor : "#deb887"}; */
 `;

@@ -39,9 +39,9 @@ export const HomePage = () => {
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
         }
         image={Image}
-        widthRatio={50}
+        widthRatio={60}
       />
-      <ContainerB title={"料金メニュー"} image={Image} widthRatio={50} />
+      <ContainerB title={"ご案内"} image={Image} widthRatio={47} />
       <FooterMenu />
     </>
   );

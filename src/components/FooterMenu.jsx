@@ -33,7 +33,9 @@ export const FooterMenu = () => {
           <SAdressinfo>住所</SAdressinfo>
         </SInfoWrapper>
       </SFooter>
-      <SCopyright>© 2021 Netsu Osteopathic Clinic</SCopyright>
+      <SCopyright>
+        &copy; {new Date().getFullYear()} Netsu Osteopathic Clinic
+      </SCopyright>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import IMG from "../../public/noun_Calendar_2567614-removebg-preview.png";
+import IMG from "../../public/title-back-image.png";
 
 export const ContainerA = (props) => {
   const {

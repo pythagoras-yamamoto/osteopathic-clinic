@@ -88,4 +88,5 @@ const SCopyright = styled.div`
   background-color: #d3d3d3;
   font-size: 0.5em;
   padding-bottom: 10px;
+  font-family: "Times New Roman";
 `;

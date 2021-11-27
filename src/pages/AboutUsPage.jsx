@@ -13,7 +13,7 @@ export const AboutUsPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ContainerA
-        title={"タイトル"}
+        title={"ご挨拶"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちは"
         }
@@ -21,7 +21,7 @@ export const AboutUsPage = () => {
         shadowColor={"#de8787"}
       />
       <ContainerA
-        title={"ご案内"}
+        title={"施術実績"}
         text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
         image={Image}
         widthRatio={50}

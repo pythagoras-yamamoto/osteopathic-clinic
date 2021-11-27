@@ -50,8 +50,9 @@ class Map extends Component {
       display: "block"
     };
     const containerStyle = {
-      width: "100%",
-      height: "60vh"
+      width: "90%",
+      height: "60vh",
+      margin: "auto"
     };
 
     return (

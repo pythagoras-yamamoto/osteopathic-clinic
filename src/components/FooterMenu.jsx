@@ -57,6 +57,7 @@ const SFooterMenu = styled.div`
   .LinkChild {
     text-decoration: none;
     color: #ffffff;
+    font-size: 14px;
   }
 `;
 

@@ -43,8 +43,6 @@ const SFooter = styled.div`
   background-color: #d3d3d3;
   height: 150px;
   width: 100%;
-  @media screen and (max-width: 780px) {
-  }
 `;
 
 const SFooterMenu = styled.div`
@@ -53,8 +51,8 @@ const SFooterMenu = styled.div`
 
   .LinkName {
     list-style: none;
-    float: left;
     margin: 20px;
+    padding-top: 50px;
   }
   .LinkChild {
     text-decoration: none;

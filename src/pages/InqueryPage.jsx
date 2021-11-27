@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Iframe from "react-iframe";
 
-import { HeaderMenu } from "../components/HeaderMenu.jsx";
+import { HeaderMenu } from "../components/HeaderMenu";
 import { ContainerA } from "../components/ContainerA";
-import { FooterMenu } from "../components/FooterMenu.jsx";
+import { FooterMenu } from "../components/FooterMenu";
+import { EmbedTwitter } from "../components/EmbedTwiter";
 import Image from "../../public/clinic-image.jpeg";
 
 export const InqueryPage = () => {
@@ -21,13 +21,7 @@ export const InqueryPage = () => {
         image={Image}
         shadowColor={"#de8787"}
       />
-      <Iframe
-        id="page1"
-        url="https://www.youtube.com/watch?v=RdoMq8SY8RM"
-        position="absolute"
-        width="80%"
-        height="90%"
-      />
+      <EmbedTwitter />
       <FooterMenu />
     </>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Iframe from "react-iframe";
 
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
@@ -13,18 +14,19 @@ export const InqueryPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ContainerA
-        title={"タイトル"}
+        title={"お問い合わせ"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
         }
         image={Image}
         shadowColor={"#de8787"}
       />
-      <ContainerA
-        title={"ご案内"}
-        text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
-        image={Image}
-        widthRatio={50}
+      <Iframe
+        id="page1"
+        url="https://www.youtube.com/watch?v=RdoMq8SY8RM"
+        position="absolute"
+        width="80%"
+        height="90%"
       />
       <FooterMenu />
     </>

@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
+import { ContainerB } from "../components/ContainerB";
 import { FooterMenu } from "../components/FooterMenu.jsx";
 import { ImageSlider } from "../components/ImageSlider";
-import Map from "../components/Map";
+// import Map from "../components/Map";
 
 import Image from "../../public/clinic-image.jpeg";
 
@@ -40,7 +41,7 @@ export const HomePage = () => {
         image={Image}
         widthRatio={50}
       />
-      <Map />
+      <ContainerB title={"料金メニュー"} image={Image} widthRatio={50} />
       <FooterMenu />
     </>
   );

@@ -46,27 +46,27 @@ class Map extends Component {
   }
   render() {
     const labelStyle = {
-      margin: "20px",
+      margin: "0",
       display: "block"
     };
     const containerStyle = {
-      width: "90%",
-      height: "60vh",
+      width: "100%",
+      height: "50vh",
       margin: "auto"
     };
 
     return (
-      <SMapWrapper>
-        <LoadScript googleMapsApiKey="AIzaSyAoeC-jhvkXaUUCYG8S4KiSzGCxCoiFAO0">
-          <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={this.state.center}
-            zoom={18}
-          >
-            {this.state.isShowMarker && <Marker position={this.state.center} />}
-          </GoogleMap>
-        </LoadScript>
-      </SMapWrapper>
+      // <SMapWrapper>
+      <LoadScript googleMapsApiKey="AIzaSyAoeC-jhvkXaUUCYG8S4KiSzGCxCoiFAO0">
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={this.state.center}
+          zoom={18}
+        >
+          {this.state.isShowMarker && <Marker position={this.state.center} />}
+        </GoogleMap>
+      </LoadScript>
+      //</SMapWrapper>
     );
   }
 }

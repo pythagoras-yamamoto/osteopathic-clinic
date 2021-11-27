@@ -32,7 +32,7 @@ export const ContainerA = (props) => {
   );
 };
 
-const SContainerWrapper = styled.div`
+export const SContainerWrapper = styled.div`
   margin: 100px 50px;
   padding: 100px 0;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);

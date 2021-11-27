@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { SContainerWrapper } from "./ContainerA";
 
 class Map extends Component {
   googleGeocoder = null;
@@ -53,7 +55,7 @@ class Map extends Component {
     };
 
     return (
-      <div>
+      <SMapWrapper>
         <LoadScript googleMapsApiKey="AIzaSyAoeC-jhvkXaUUCYG8S4KiSzGCxCoiFAO0">
           <GoogleMap
             mapContainerStyle={containerStyle}
@@ -63,10 +65,12 @@ class Map extends Component {
             {this.state.isShowMarker && <Marker position={this.state.center} />}
           </GoogleMap>
         </LoadScript>
-      </div>
+      </SMapWrapper>
     );
   }
 }
+
+const SMapWrapper = styled(SContainerWrapper)``;
 
 export default Map;
 

@@ -20,7 +20,7 @@ export const ContainerB = (props) => {
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
-          <SMap>
+          <SMap width={widthRatio}>
             <Map />
           </SMap>
           <SImage

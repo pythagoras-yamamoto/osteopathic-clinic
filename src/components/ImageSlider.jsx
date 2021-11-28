@@ -40,32 +40,3 @@ const SImage = styled.img`
 const ImgWrapper = styled.div`
   /* overflow: hidden; */
 `;
-
-// import "swiper/swiper.min.css";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import SwiperCore, { Navigation } from "swiper";
-// //import "swiper/components/navigation/navigation.min.css";
-
-// SwiperCore.use([Navigation]);
-
-// export const ImageSwiper = () => {
-//   return (
-//     <>
-//       <Swiper
-//         spaceBetween={50}
-//         slidesPerView={1}
-//         // initialSlide={publi}
-//         loop={true}
-//         navigation={{
-//           pevEl: ".button_prev",
-//           nextEl: ".button_next"
-//         }}
-//       >
-//         <SwiperSlide>Slide 1</SwiperSlide>
-//         <SwiperSlide>Slide 2</SwiperSlide>
-//         <SwiperSlide>Slide 3</SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//       </Swiper>
-//     </>
-//   );
-// };

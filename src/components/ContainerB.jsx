@@ -41,7 +41,7 @@ const SContainerWrapper = styled.div`
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 `;
 
-const STitleWrapper = styled.div`
+export const STitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,16 +50,18 @@ const STitleWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   height: 150px;
-  opacity: 0.4;
-  font-weight: bold;
-  /* background-image: url(${(props) =>
-    props.titleImage ? props.titleImage : IMG}) */
-
 `;
 
 const STitle = styled.p`
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
   font-size: 30px;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  height: 150px;
+  width: 300px;
 `;
 
 const SContentsWrapeer = styled.div`

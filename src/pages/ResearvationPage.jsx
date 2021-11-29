@@ -4,6 +4,7 @@ import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
 import { FooterMenu } from "../components/FooterMenu.jsx";
 import { Calendar } from "../components/Calendar";
+import { Image } from "../../public/clinic-image.jpeg";
 
 export const ResearvationPage = () => {
   return (

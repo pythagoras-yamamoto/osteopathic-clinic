@@ -5,6 +5,7 @@ import { HomePage } from "../pages/HomePage";
 import { AboutUsPage } from "..//pages/AboutUsPage";
 import { InqueryPage } from "..//pages/InqueryPage";
 import { ResearvationPage } from "../pages/ResearvationPage";
+import { Page404 } from "../pages/Page404";
 
 export const Router = () => {
   return (
@@ -20,6 +21,9 @@ export const Router = () => {
       </Route>
       <Route path="/ResearvationPage">
         <ResearvationPage />
+      </Route>
+      <Route path="*">
+        <Page404 />
       </Route>
     </Switch>
   );

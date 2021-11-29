@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
 import { FooterMenu } from "../components/FooterMenu.jsx";
-import Image from "../../public/clinic-image.jpeg";
+import { Calendar } from "../components/Calendar";
 
 export const ResearvationPage = () => {
   return (
@@ -26,6 +26,7 @@ export const ResearvationPage = () => {
         image={Image}
         widthRatio={50}
       />
+      <Calendar />
       <FooterMenu />
     </>
   );

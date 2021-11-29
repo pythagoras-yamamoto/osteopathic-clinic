@@ -32,10 +32,10 @@ export const FooterMenu = () => {
           <STelinfo>電話番号</STelinfo>
           <SAdressinfo>住所</SAdressinfo>
         </SInfoWrapper>
+        <SCopyright>
+          &copy; {new Date().getFullYear()} Netsu Osteopathic Clinic
+        </SCopyright>
       </SFooter>
-      <SCopyright>
-        &copy; {new Date().getFullYear()} Netsu Osteopathic Clinic
-      </SCopyright>
     </>
   );
 };
@@ -43,8 +43,9 @@ export const FooterMenu = () => {
 const SFooter = styled.div`
   position: relative;
   background-color: #d3d3d3;
-  height: 150px;
+  height: 140px;
   width: 100%;
+  box-shadow: 2px -2px 4px rgb(0 0 0 / 10%);
 `;
 
 const SFooterMenu = styled.div`
@@ -54,7 +55,8 @@ const SFooterMenu = styled.div`
   .LinkName {
     list-style: none;
     margin: 20px;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
   .LinkChild {
     text-decoration: none;
@@ -66,7 +68,7 @@ const SFooterMenu = styled.div`
 const SInfoWrapper = styled.div`
   position: absolute;
   z-index: 100;
-  top: 35px;
+  top: 25px;
   right: 30px;
 `;
 

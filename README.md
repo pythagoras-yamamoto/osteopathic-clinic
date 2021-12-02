@@ -1,3 +1,5 @@
+## ⚠︎codesandboxのリンクから入ると画像が読み込まれません。
+
 ## 共通事項
 
 - CSS のあて方は Styled Components。

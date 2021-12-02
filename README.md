@@ -1,4 +1,6 @@
-## ⚠︎codesandboxのリンクから入ると画像が読み込まれません。
+## 資産の全容↓。⚠︎codesandboxのリンクから入ると画像が読み込まれません。
+
+https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 
 ## 共通事項
 

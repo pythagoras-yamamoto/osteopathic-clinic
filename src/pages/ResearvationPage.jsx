@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 import { HeaderMenu } from "../components/HeaderMenu.jsx";
 import { ContainerA } from "../components/ContainerA";
+import { ContainerC } from "../components/ContainerC";
 import { FooterMenu } from "../components/FooterMenu.jsx";
-import { Calendar } from "../components/Calendar";
+// import { Calendar } from "../components/Calendar";
 import { Image } from "../../public/clinic-image.jpeg";
 
 export const ResearvationPage = () => {
@@ -21,13 +22,12 @@ export const ResearvationPage = () => {
         image={Image}
         shadowColor={"#de8787"}
       />
-      <ContainerA
+      <ContainerC
         title={"予約状況"}
         text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
         image={Image}
-        widthRatio={50}
+        widthRatio={100}
       />
-      <Calendar />
       <FooterMenu />
     </>
   );

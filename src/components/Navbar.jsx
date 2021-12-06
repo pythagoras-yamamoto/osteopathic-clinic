@@ -1,38 +1,30 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false);
+
   return (
-    <SNavItems>
-      <SNavbarLogo>LOGO</SNavbarLogo>
-      <div className="munu-icon"></div>
-      <SNavMenu>
-        <SNavLink>
-          <Link to="/" className="nav-link-element">
-            Home
-          </Link>
-        </SNavLink>
-        <SNavLink>
-          <Link to="/AboutUsPage" className="nav-link-element">
-            About Me
-          </Link>
-        </SNavLink>
-        <SNavLink>
-          <Link to="/ResearvationPage" className="nav-link-element">
-            Service & Menu
-          </Link>
-        </SNavLink>
-        <SNavLink>
-          <Link to="/ContactPage" className="nav-link-element">
-            Contact
-          </Link>
-        </SNavLink>
+    <SNavWrapper>
+      <SNavLogo>
+        <Link to="/" className="nav-link-element">
+          {/* TODO : INSERT LOGO IAMGE */}
+          LOGO
+        </Link>
+      </SNavLogo>
+      <SNavMenu id={showLinks ? "hidden" : ""}>
+        <SNavLink to="/">Home</SNavLink>
+        <SNavLink to="/AboutUsPage">About Me</SNavLink>
+        <SNavLink to="/ResearvationPage">Service & Menu</SNavLink>
+        <SNavLink to="/ContactPage">Contact</SNavLink>
+        <OpenLinksButton>&#8801;</OpenLinksButton>
       </SNavMenu>
-    </SNavItems>
+    </SNavWrapper>
   );
 };
 
-const SNavItems = styled.nav`
+const SNavWrapper = styled.nav`
   background-color: white;
   height: 80px;
   display: flex;
@@ -45,7 +37,7 @@ const SNavItems = styled.nav`
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 `;
 
-const SNavbarLogo = styled.h1`
+const SNavLogo = styled.h1`
   color: black;
   justify-self: start;
   cursor: pointer;
@@ -61,23 +53,33 @@ const SNavMenu = styled.ul`
   list-style: none;
 `;
 
-const SNavLink = styled.li`
+const SNavLink = styled(Link)`
   transition: 0.2s;
   padding-left: 2em;
-
   font-weight: bold;
   font-size: 16px;
-
-  .nav-link-element {
-    color: black;
-    text-decoration: none;
-  }
+  color: black;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 780px) {
+  /* @media screen and (max-width: 780px) {
+    display: none;
+  } */
+`;
+
+const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 45px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
     display: none;
   }
 `;

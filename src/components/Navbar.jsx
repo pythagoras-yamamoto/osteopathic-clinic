@@ -14,10 +14,10 @@ export const Navbar = () => {
         </Link>
       </SNavLogo>
       <SNavMenu>
-        <SNavLink to="/">Home</SNavLink>
-        <SNavLink to="/AboutUsPage">About Me</SNavLink>
-        <SNavLink to="/ResearvationPage">Service & Menu</SNavLink>
-        <SNavLink to="/ContactPage">Contact</SNavLink>
+        <SNavLink to="/">ホーム</SNavLink>
+        <SNavLink to="/AboutUsPage">当院について</SNavLink>
+        <SNavLink to="/ResearvationPage">サービス・料金</SNavLink>
+        <SNavLink to="/ContactPage">お問い合わせ</SNavLink>
         <OpenLinksButton
           onClick={() => {
             setExtendNavbar((curr) => !curr);

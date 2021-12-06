@@ -71,7 +71,7 @@ class Map extends Component {
   }
 }
 
-const SMapWrapper = styled(SContainerWrapper)``;
+// const SMapWrapper = styled(SContainerWrapper)``;
 
 export default Map;
 

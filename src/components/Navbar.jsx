@@ -48,7 +48,6 @@ const SNavItems = styled.nav`
 const SNavbarLogo = styled.h1`
   color: black;
   justify-self: start;
-  padding: 20px;
   cursor: pointer;
 `;
 
@@ -64,8 +63,10 @@ const SNavMenu = styled.ul`
 
 const SNavLink = styled.li`
   transition: 0.2s;
-  padding: 0 1.2em;
+  padding-left: 2em;
+
   font-weight: bold;
+  font-size: 16px;
 
   .nav-link-element {
     color: black;

@@ -2,8 +2,10 @@
 
 https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 
-<img width="982" alt="スクリーンショット 2021-12-06 23 50 25" src="https://user-images.githubusercontent.com/60994397/144867593-7becf1ae-a609-4bc0-b131-8726d54bac51.png"
 
+<img width="982" alt="スクリーンショット 2021-12-06 23 50 25" src="https://user-images.githubusercontent.com/60994397/144868398-bb4e0132-9837-4557-b142-2cca69243585.png">
+
+     
 ## 共通事項
 
 - CSS のあて方は Styled Components。

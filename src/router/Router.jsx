@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import { HomePage } from "../pages/HomePage";
 import { AboutUsPage } from "..//pages/AboutUsPage";
-import { InqueryPage } from "..//pages/InqueryPage";
+import { ContactPage } from "..//pages/ContactPage";
 import { ResearvationPage } from "../pages/ResearvationPage";
 import { Page404 } from "../pages/Page404";
 
@@ -17,7 +17,7 @@ export const Router = () => {
         <AboutUsPage />
       </Route>
       <Route path="/InqueryPage">
-        <InqueryPage />
+        <ContactPage />
       </Route>
       <Route path="/ResearvationPage">
         <ResearvationPage />

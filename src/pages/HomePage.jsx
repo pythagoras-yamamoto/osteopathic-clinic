@@ -1,20 +1,17 @@
 import styled from "styled-components";
 
-import { HeaderMenu } from "../components/HeaderMenu.jsx";
+import { Navbar } from "../components/Navbar";
 import { ContainerA } from "../components/ContainerA";
 import { ContainerB } from "../components/ContainerB";
-import { FooterMenu } from "../components/FooterMenu.jsx";
+import { Footer } from "../components/Footer";
 import { ImageSlider } from "../components/ImageSlider";
-// import Map from "../components/Map";
 
 import Image from "../../public/clinic-image.jpeg";
-
-//import Img from "../../public/medical_harikyu_woman.png";
 
 export const HomePage = () => {
   return (
     <>
-      <HeaderMenu />
+      <Navbar />
       <SImageWraper>
         <STitleOnImage>根津整体院</STitleOnImage>
         <STextOnImage>
@@ -42,7 +39,7 @@ export const HomePage = () => {
         widthRatio={60}
       />
       <ContainerB title={"ご案内"} image={Image} widthRatio={47} />
-      <FooterMenu />
+      <Footer />
     </>
   );
 };

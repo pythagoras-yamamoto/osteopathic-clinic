@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import { FooterMenuButton } from "./FooterMenuButton";
 
-export const FooterMenu = () => {
+export const Footer = () => {
   return (
     <>
       <SFooter>

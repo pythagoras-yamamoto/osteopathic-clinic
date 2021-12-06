@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-import { HeaderMenu } from "../components/HeaderMenu";
+import { Navbar } from "../components/Navbar";
 import { ContainerA } from "../components/ContainerA";
-import { FooterMenu } from "../components/FooterMenu";
+import { Footer } from "../components/Footer";
 import { EmbedTwitter } from "../components/EmbedTwiter";
 import Image from "../../public/clinic-image.jpeg";
 
-export const InqueryPage = () => {
+export const ContactPage = () => {
   return (
     <>
-      <HeaderMenu />
+      <Navbar />
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
@@ -22,7 +22,7 @@ export const InqueryPage = () => {
         shadowColor={"#de8787"}
       />
       <EmbedTwitter />
-      <FooterMenu />
+      <Footer />
     </>
   );
 };

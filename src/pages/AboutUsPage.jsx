@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-import { HeaderMenu } from "../components/HeaderMenu.jsx";
+import { Navbar } from "../components/Navbar";
 import { ContainerA } from "../components/ContainerA";
-import { FooterMenu } from "../components/FooterMenu.jsx";
+import { Footer } from "../components/Footer";
 import Image from "../../public/clinic-image.jpeg";
 
 export const AboutUsPage = () => {
   return (
     <>
-      <HeaderMenu />
+      <Navbar />
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
@@ -26,7 +26,7 @@ export const AboutUsPage = () => {
         image={Image}
         widthRatio={50}
       />
-      <FooterMenu />
+      <Footer />
     </>
   );
 };

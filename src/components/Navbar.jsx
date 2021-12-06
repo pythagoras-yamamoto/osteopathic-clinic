@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const HeaderMenu = () => {
+export const Navbar = () => {
   return (
     <SNavContainer>
       <ul>
@@ -25,10 +25,10 @@ export const HeaderMenu = () => {
             <p className="nav-element-en">service & menu</p>
           </li>
           <li className="nav-element">
-            <Link to="InqueryPage" className="nav-element-ja">
+            <Link to="ContactPage" className="nav-element-ja">
               お問い合わせ
             </Link>
-            <p className="nav-element-en">inquery</p>
+            <p className="nav-element-en">contact</p>
           </li>
         </SNavElement>
       </ul>

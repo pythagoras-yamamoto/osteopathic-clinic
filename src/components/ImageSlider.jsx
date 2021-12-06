@@ -5,13 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Img from "../../public/clinic-image.jpeg";
-//import { Autoplay } from "swiper";
 
 export const ImageSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    // className: "img-wrapper",
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,

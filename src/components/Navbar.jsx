@@ -8,64 +8,29 @@ export const Navbar = () => {
       <div className="munu-icon"></div>
       <SNavMenu>
         <SNavLink>
-          <Link to="/">Home</Link>
+          <Link to="/" className="nav-link-element">
+            Home
+          </Link>
         </SNavLink>
         <SNavLink>
-          <Link to="/AboutUsPage">About US</Link>
+          <Link to="/AboutUsPage" className="nav-link-element">
+            About Me
+          </Link>
         </SNavLink>
         <SNavLink>
-          <Link to="/ResearvationPage">Service & Menu</Link>
+          <Link to="/ResearvationPage" className="nav-link-element">
+            Service & Menu
+          </Link>
         </SNavLink>
         <SNavLink>
-          <Link to="/ContactPage">Contact</Link>
+          <Link to="/ContactPage" className="nav-link-element">
+            Contact
+          </Link>
         </SNavLink>
       </SNavMenu>
     </SNavItems>
   );
 };
-//  <SNavContainer>
-//    <ul>
-//   //     <SNavElement>
-//   //       <li className="nav-element">
-//   //         <Link to="/" className="nav-element-ja">
-//   //           ホーム
-//   //         </Link>
-//   //         <p className="nav-element-en">home</p>
-//   //       </li>
-//   //       <li className="nav-element">
-//   //         <Link to="/AboutUsPage" className="nav-element-ja">
-//   //           当院について
-//   //         </Link>
-//   //         <p className="nav-element-en">about us</p>
-//   //       </li>
-//   //       <li className="nav-element">
-//   //         <Link to="ResearvationPage" className="nav-element-ja">
-//   //           サービス・メニュー
-//   //         </Link>
-//   //         <p className="nav-element-en">service & menu</p>
-//   //       </li>
-//   //       <li className="nav-element">
-//   //         <Link to="ContactPage" className="nav-element-ja">
-//   //           お問い合わせ
-//   //         </Link>
-//   //         <p className="nav-element-en">contact</p>
-//   //       </li>
-//   //     </SNavElement>
-//   //   </ul>
-//   //   <ul>
-//   //     {NavbarItems.map((item, index) => {
-//       return (
-//         <li key={index}>
-//           <a href="{item.url}" className="{item.cName}">
-//             {item.title}
-//           </a>
-//         </li>
-//       );
-//     })}
-//   </ul>
-// </SNavContainer>
-// );
-// };
 
 const SNavItems = styled.nav`
   background-color: white;
@@ -95,51 +60,21 @@ const SNavMenu = styled.ul`
   justify-content: end;
   width: 70vw;
   list-style: none;
-  padding-right: 2rem;
 `;
 
 const SNavLink = styled.li`
-  text-decoration: none;
-`;
+  transition: 0.2s;
+  padding: 0 1.2em;
+  font-weight: bold;
 
-const SNavContainer = styled.div`
-  background: white;
-  z-index: 200;
-  width: 100vw;
-  position: fixed;
-  opacity: 0.9;
-  box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
-`;
-
-const SNavElement = styled.div`
-  list-style: none;
-  padding: 18px;
-  display: flex;
-  justify-content: right;
-
-  .nav-element {
-    margin: 0 40px;
-    font-size: 15px;
-    font-weight: bold;
-    transition: 0.2s;
-
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-
-  .nav-element-ja {
+  .nav-link-element {
+    color: black;
     text-decoration: none;
-    color: black;
-    transition: 0.2s;
   }
 
-  .nav-element-en {
-    font-size: 12px;
-    color: black;
+  &:hover {
+    opacity: 0.5;
   }
-
-  /*********** Responsive ***********/
 
   @media screen and (max-width: 780px) {
     display: none;

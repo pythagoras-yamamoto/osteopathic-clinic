@@ -1,38 +1,49 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  const [extendNavbar, setExtendNavbar] = useState(false);
+
   return (
-    <SNavItems>
-      <SNavbarLogo>LOGO</SNavbarLogo>
-      <div className="munu-icon"></div>
+    <SNavWrapper>
+      <SNavLogo>
+        <Link to="/">
+          {/* TODO : INSERT LOGO IAMGE */}
+          LOGO
+        </Link>
+      </SNavLogo>
       <SNavMenu>
-        <SNavLink>
-          <Link to="/" className="nav-link-element">
-            Home
-          </Link>
-        </SNavLink>
-        <SNavLink>
-          <Link to="/AboutUsPage" className="nav-link-element">
-            About Me
-          </Link>
-        </SNavLink>
-        <SNavLink>
-          <Link to="/ResearvationPage" className="nav-link-element">
-            Service & Menu
-          </Link>
-        </SNavLink>
-        <SNavLink>
-          <Link to="/ContactPage" className="nav-link-element">
-            Contact
-          </Link>
-        </SNavLink>
+        <SNavLink to="/">ホーム</SNavLink>
+        <SNavLink to="/AboutUsPage">当院について</SNavLink>
+        <SNavLink to="/ResearvationPage">サービス・料金</SNavLink>
+        <SNavLink to="/ContactPage">お問い合わせ</SNavLink>
+        <OpenLinksButton
+          onClick={() => {
+            setExtendNavbar((curr) => !curr);
+          }}
+        >
+          {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+
+          {extendNavbar && (
+            <NavbarExtendedContainer>
+              <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
+              <NavbarLinkExtended to="/AboutUsPage">
+                About Me
+              </NavbarLinkExtended>
+              <NavbarLinkExtended to="/ResearvationPage">
+                Service & Menu
+              </NavbarLinkExtended>
+              <NavbarLinkExtended to="/ContactPage">Contact</NavbarLinkExtended>
+            </NavbarExtendedContainer>
+          )}
+        </OpenLinksButton>
       </SNavMenu>
-    </SNavItems>
+    </SNavWrapper>
   );
 };
 
-const SNavItems = styled.nav`
+const SNavWrapper = styled.nav`
   background-color: white;
   height: 80px;
   display: flex;
@@ -45,7 +56,7 @@ const SNavItems = styled.nav`
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 `;
 
-const SNavbarLogo = styled.h1`
+const SNavLogo = styled.h1`
   color: black;
   justify-self: start;
   cursor: pointer;
@@ -54,30 +65,62 @@ const SNavbarLogo = styled.h1`
 const SNavMenu = styled.ul`
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
   text-align: center;
   justify-content: end;
   width: 70vw;
   list-style: none;
 `;
 
-const SNavLink = styled.li`
+const SNavLink = styled(Link)`
   transition: 0.2s;
   padding-left: 2em;
-
   font-weight: bold;
-  font-size: 16px;
-
-  .nav-link-element {
-    color: black;
-    text-decoration: none;
-  }
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 700px) {
     display: none;
   }
+`;
+
+const OpenLinksButton = styled.button`
+  height: 50px;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+//🍔作り中
+
+const NavbarExtendedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 200px;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+const NavbarLinkExtended = styled(Link)`
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
 `;

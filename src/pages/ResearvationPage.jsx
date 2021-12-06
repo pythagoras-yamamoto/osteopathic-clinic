@@ -5,7 +5,7 @@ import { ContainerA } from "../components/ContainerA";
 import { ContainerC } from "../components/ContainerC";
 import { Footer } from "../components/Footer";
 // import { Calendar } from "../components/Calendar";
-import { Image } from "../../public/clinic-image.jpeg";
+import Image from "../../public/clinic-image.jpeg";
 
 export const ResearvationPage = () => {
   return (

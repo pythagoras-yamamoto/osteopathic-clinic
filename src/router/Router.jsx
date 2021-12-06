@@ -16,7 +16,7 @@ export const Router = () => {
       <Route path="/AboutUsPage">
         <AboutUsPage />
       </Route>
-      <Route path="/InqueryPage">
+      <Route path="/ContactPage">
         <ContactPage />
       </Route>
       <Route path="/ResearvationPage">

@@ -1,6 +1,10 @@
-## 資産の全容↓。⚠︎codesandboxのリンクから入ると画像が読み込まれません。
+## 資産の全容↓。⚠︎codesandboxのリンクから入ると画像が読み込まれません。下の画像を参照してください。
 
 https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
+
+#### サンプル画像
+
+<img width="989" alt="スクリーンショット 2021-12-06 23 49 52" src="https://user-images.githubusercontent.com/60994397/144868852-e58cbda3-7879-4538-b5c9-0784410c8b05.png">
 
 
 <img width="982" alt="スクリーンショット 2021-12-06 23 50 25" src="https://user-images.githubusercontent.com/60994397/144868398-bb4e0132-9837-4557-b142-2cca69243585.png">

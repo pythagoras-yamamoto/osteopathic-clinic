@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-import { HeaderMenu } from "../components/HeaderMenu.jsx";
+import { Navbar } from "../components/Navbar";
 import { ContainerA } from "../components/ContainerA";
 import { ContainerC } from "../components/ContainerC";
-import { FooterMenu } from "../components/FooterMenu.jsx";
+import { Footer } from "../components/Footer";
 // import { Calendar } from "../components/Calendar";
 import { Image } from "../../public/clinic-image.jpeg";
 
 export const ResearvationPage = () => {
   return (
     <>
-      <HeaderMenu />
+      <Navbar />
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
@@ -28,7 +28,7 @@ export const ResearvationPage = () => {
         image={Image}
         widthRatio={100}
       />
-      <FooterMenu />
+      <Footer />
     </>
   );
 };

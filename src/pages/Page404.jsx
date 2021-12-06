@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-import { HeaderMenu } from "../components/HeaderMenu";
-import { FooterMenu } from "../components/FooterMenu";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export const Page404 = () => {
   return (
     <>
-      <HeaderMenu />
+      <Navbar />
       <SWrapper>
         <h1>404 : ページが見つかりません</h1>
       </SWrapper>
-      <FooterMenu />
+      <Footer />
     </>
   );
 };

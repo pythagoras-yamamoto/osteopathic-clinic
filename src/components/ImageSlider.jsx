@@ -36,5 +36,5 @@ const SImage = styled.img`
 
 // slickの仕様で右側に余白ができる。それを解消するために使用したスタイリング。
 const ImgWrapper = styled.div`
-  /* overflow: hidden; */
+  overflow: hidden;
 `;

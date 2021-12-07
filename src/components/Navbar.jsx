@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 import {
-  SNavWrapper,
+  SNavContainer,
   SNavLogo,
   SNavMenu,
   SNavbarExtendedContainer,
@@ -16,7 +16,7 @@ export const Navbar = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
-    <SNavWrapper>
+    <SNavContainer>
       <SNavLogo>
         <Link to="/">
           {/* TODO : INSERT LOGO IAMGE */}
@@ -53,6 +53,6 @@ export const Navbar = () => {
           )}
         </SOpenLinksButton>
       </SNavMenu>
-    </SNavWrapper>
+    </SNavContainer>
   );
 };

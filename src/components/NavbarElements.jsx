@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const SNavWrapper = styled.nav`
+export const SNavContainer = styled.nav`
   background-color: white;
   height: 80px;
   display: flex;
@@ -41,7 +41,11 @@ export const SNavLink = styled(Link)`
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 700px) {
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -79,4 +83,17 @@ export const SNavbarLinkExtended = styled(Link)`
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 `;

@@ -22,16 +22,16 @@ export const Navbar = () => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">ホーム</NavLinks>
+              <NavLinks to="/">ホーム</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">当院について</NavLinks>
+              <NavLinks to="/AboutUsPage">当院について</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/ResearvationPage">料金・メニュー</NavLinks>
             </NavItem>{" "}
             <NavItem>
-              <NavLinks to="about">料金・メニュー</NavLinks>
-            </NavItem>{" "}
-            <NavItem>
-              <NavLinks to="about">お問い合わせ</NavLinks>
+              <NavLinks to="/ContactPage">お問い合わせ</NavLinks>
             </NavItem>
           </NavMenu>
         </NavContainer>

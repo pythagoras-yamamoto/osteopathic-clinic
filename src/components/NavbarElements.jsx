@@ -74,7 +74,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
   color: black;
   display: flex;
   align-items: center;
@@ -82,9 +82,11 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition-duration: 0.3s;
 
   &:hover {
     border-bottom: 3px solid #01bf71;
+    opacity: 0.6;
   }
 `;
 

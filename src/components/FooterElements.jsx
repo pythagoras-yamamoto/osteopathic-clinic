@@ -23,17 +23,16 @@ export const Wrapper = styled.div`
 
   /* background: red; */
 `;
-
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 60px;
+  margin-bottom: 30px;
 `;
 
 export const Row = styled.div`
   display: grid;
-  margin-bottom: 50px;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
   @media (max-width: 1000px) {
@@ -43,12 +42,12 @@ export const Row = styled.div`
 
 export const Link = styled(LinkR)`
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
   color: white;
 
   &:hover {
-    color: white;
+    opacity: 0.8;
     transition: 200ms ease-in;
   }
 `;
@@ -66,5 +65,14 @@ export const Copyright = styled.div`
   color: white;
   font-size: 0.8rem;
   margin: 40px 0 20px 0;
-  font-family: "Times New Roman";
+  font-family: "游ゴシック体";
+`;
+
+export const FooterItem = styled.p`
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
 `;

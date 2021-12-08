@@ -65,7 +65,7 @@ export const Copyright = styled.div`
   color: white;
   font-size: 0.8rem;
   margin: 40px 0 20px 0;
-  font-family: "游ゴシック体";
+  /* font-family: "游ゴシック体"; */
 `;
 
 export const FooterItem = styled.p`

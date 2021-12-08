@@ -4,17 +4,16 @@ import { Link } from "react-router-dom";
 
 export const NavSidebarContainer = styled.aside`
   position: fixed;
-  z-index: 1000;
+  /* z-index: -1; */
   width: 100%;
-  height: 100%;
-  background: white;
+  height: 80px;
+  background-color: white;
   display: grid;
   align-items: center;
   transition: 0.5s ease-in-out;
-  /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${(isOpen) => (isOpen ? "0" : "-100%")}; */
-  top: 0;
-  left: 0;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-100")};
+  top: ${(isOpen) => (isOpen ? "0" : "-100%")};
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -60,7 +59,6 @@ export const SidebarLinks = styled(Link)`
 
   &:hover {
     transition: all 0.1s ease-in-out;
-    opacity: 0.7;
     font-size: 20px;
   }
 `;

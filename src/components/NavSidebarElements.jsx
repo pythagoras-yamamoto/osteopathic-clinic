@@ -7,11 +7,12 @@ export const NavSidebarContainer = styled.aside`
   /* z-index: -1; */
   width: 100%;
   height: 80px;
-  background: white;
+  background-color: white;
   display: grid;
   align-items: center;
   transition: 0.5s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-100")};
   top: ${(isOpen) => (isOpen ? "0" : "-100%")};
 `;
 
@@ -58,7 +59,6 @@ export const SidebarLinks = styled(Link)`
 
   &:hover {
     transition: all 0.1s ease-in-out;
-    opacity: 0.7;
     font-size: 20px;
   }
 `;

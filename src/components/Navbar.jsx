@@ -28,7 +28,7 @@ export const Navbar = () => {
               <NavLinks to="/AboutUsPage">当院について</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/ResearvationPage">料金・メニュー</NavLinks>
+              <NavLinks to="/ResearvationPage">料金メニュー・予約状況</NavLinks>
             </NavItem>{" "}
             <NavItem>
               <NavLinks to="/ContactPage">お問い合わせ</NavLinks>

@@ -17,7 +17,7 @@ export const NavSidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinks to="#">ホーム</SidebarLinks>
+          <SidebarLinks to="/">ホーム</SidebarLinks>
           <SidebarLinks to="/AboutUsPage">当院について</SidebarLinks>
           <SidebarLinks to="/ResearvationPage">料金・メニュー</SidebarLinks>
           <SidebarLinks to="/ResearvationPage">予約状況</SidebarLinks>

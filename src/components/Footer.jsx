@@ -11,8 +11,6 @@ import {
   FooterItem
 } from "./FooterElements";
 
-import { NavSlidebar } from "./NavSidebar";
-
 export const Footer = () => {
   return (
     <Container>

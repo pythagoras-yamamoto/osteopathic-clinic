@@ -24,9 +24,8 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  /* z-index: 1; */
   width: 100%;
-  padding: 0, 24px;
+  padding: 0 24px;
   max-width: 1100px;
 `;
 
@@ -72,21 +71,21 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  display: flex;
+  align-items: center;
 `;
 
 export const NavLinks = styled(LinkR)`
   color: black;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 
   &:hover {
-    border-bottom: 3px solid #01bf71;
-    opacity: 0.6;
+    border-bottom: 2px solid #01bf71;
   }
 `;
 

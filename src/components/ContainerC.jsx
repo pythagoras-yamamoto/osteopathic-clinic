@@ -52,16 +52,20 @@ export const STitleWrapper = styled.div`
   height: 150px;
 `;
 
-const STitle = styled.p`
+const STitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 30px;
-  color: black;
+  color: rgb(0, 116, 127);
   background: rgba(255, 255, 255, 0.5);
   height: 150px;
   width: 300px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const SContentsWrapeer = styled.div`

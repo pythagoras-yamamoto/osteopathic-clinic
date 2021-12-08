@@ -11,7 +11,6 @@ export const ImageSlider = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 6000,
     autoplay: true
@@ -20,6 +19,10 @@ export const ImageSlider = () => {
   return (
     <ImgWrapper>
       <Slider {...settings}>
+        <SImage src={Img} alt="" />
+        <SImage src={Img} alt="" />
+        <SImage src={Img} alt="" />
+        <SImage src={Img} alt="" />
         <SImage src={Img} alt="" />
         <SImage src={Img} alt="" />
         <SImage src={Img} alt="" />

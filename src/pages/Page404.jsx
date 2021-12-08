@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-import { Navbar } from "../components/Navbar";
+import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
 export const Page404 = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <SWrapper>
         <h1>404 : ページが見つかりません</h1>
       </SWrapper>

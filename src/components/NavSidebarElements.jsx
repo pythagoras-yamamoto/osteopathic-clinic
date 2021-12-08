@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export const NavSidebarContainer = styled.aside`
   position: fixed;
-  /* z-index: -1; */
   width: 100%;
   height: 80px;
   background-color: white;
@@ -13,7 +12,8 @@ export const NavSidebarContainer = styled.aside`
   transition: 0.5s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-100")};
-  top: ${(isOpen) => (isOpen ? "0" : "-100%")};
+  /* top: ${(isOpen) => (isOpen ? "0" : "-100%")}; */
+  top: 0;
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -46,10 +46,9 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarLinks = styled(Link)`
-  border: 50px;
   background: white;
   white-space: nowrap;
-  padding: 16px 60px;
+  padding: 30px 60px;
   color: black;
   font-size: 18px;
   font-weight: bold;

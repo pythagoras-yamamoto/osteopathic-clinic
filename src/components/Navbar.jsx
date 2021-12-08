@@ -28,7 +28,7 @@ export const Navbar = ({ toggle }) => {
               <NavLinks to="/AboutUsPage">ABOUT ME</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/ResearvationPage">PRICE</NavLinks>
+              <NavLinks to="/ResearvationPage">PRICE & MENU</NavLinks>
             </NavItem>{" "}
             <NavItem>
               <NavLinks to="/ContactPage">CONTACT</NavLinks>

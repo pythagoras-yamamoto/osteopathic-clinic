@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import { ContainerA } from "../components/ContainerA";
 import { ContainerB } from "../components/ContainerB";
 import { Footer } from "../components/Footer";
-import { ImageSlider } from "../components/ImageSlider";
+import { ImageSlider, SwiperImageSlider } from "../components/ImageSlider";
 
 import Image from "../../public/clinic-image.jpeg";
 
@@ -18,7 +18,8 @@ export const HomePage = () => {
           女性施術者による女性専用サロンです。それぞれのお身体,
           体調に合わせたオーダーメイドの鍼灸施術を行います
         </STextOnImage>
-        <ImageSlider></ImageSlider>
+        {/* <ImageSlider></ImageSlider> */}
+        <SwiperImageSlider />
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
       <ContainerA

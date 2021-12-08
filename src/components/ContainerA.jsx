@@ -83,14 +83,14 @@ const SContentsWrapeer = styled.div`
 
 const SText = styled.div`
   text-align: left;
-  font-size: 20px;
+  font-size: 1rem;
   overflow-wrap: break-word;
   white-space: pre-wrap;
 
   width: ${(props) => (props.width ? 90 - props.width : 50)}%;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    /* font-size: 18px; */
     width: 100%;
     margin-bottom: 100px;
   }
@@ -102,6 +102,6 @@ const SImage = styled.img`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    width: 100%;
+    width: 95%;
   }
 `;

@@ -1,4 +1,15 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import SwiperCore, {
+  Autoplay,
+  EffectCoverflow,
+  Pagination,
+  Mousewheel
+} from "swiper";
+
 import Slider from "react-slick";
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
@@ -12,8 +23,8 @@ export const ImageSlider = () => {
     infinite: true,
     speed: 1000,
     slidesToScroll: 1,
-    autoplaySpeed: 6000,
-    autoplay: true
+    autoplay: true,
+    autoplaySpeed: 3000
   };
 
   return (
@@ -32,7 +43,7 @@ export const ImageSlider = () => {
 };
 
 const SImage = styled.img`
-  width: 100vw;
+  width: 90vw;
   height: auto;
   box-shadow: 0px 5px 0 rgb(0 0 0 / 15%);
 `;
@@ -41,3 +52,39 @@ const SImage = styled.img`
 const ImgWrapper = styled.div`
   overflow: hidden;
 `;
+
+// install Swiper modules
+SwiperCore.use([EffectCoverflow, Pagination, Autoplay, Mousewheel]);
+
+export const SwiperImageSlider = () => {
+  return (
+    <ImgWrapper>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false
+        }}
+        pagination={{
+          clickable: true
+        }}
+        navigation={true}
+        cssMode={true}
+        mousewheel={true}
+        keyboard={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <SImage src={Img} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SImage src={Img} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SImage src={Img} alt="" />
+        </SwiperSlide>
+      </Swiper>
+    </ImgWrapper>
+  );
+};

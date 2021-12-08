@@ -71,21 +71,21 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  display: flex;
+  align-items: center;
 `;
 
 export const NavLinks = styled(LinkR)`
   color: black;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 
   &:hover {
-    border-bottom: 4px solid #01bf71;
-    opacity: 0.7;
+    border-bottom: 2px solid #01bf71;
   }
 `;
 

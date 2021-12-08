@@ -11,13 +11,13 @@ import {
   NavLinks
 } from "./NavbarElements";
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavContainer>
           <NavLogo to="/">Meme</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

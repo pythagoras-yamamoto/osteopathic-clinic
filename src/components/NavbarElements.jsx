@@ -24,9 +24,8 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  /* z-index: 1; */
   width: 100%;
-  padding: 0, 24px;
+  padding: 0 24px;
   max-width: 1100px;
 `;
 
@@ -85,8 +84,8 @@ export const NavLinks = styled(LinkR)`
   transition-duration: 0.3s;
 
   &:hover {
-    border-bottom: 3px solid #01bf71;
-    opacity: 0.6;
+    border-bottom: 4px solid #01bf71;
+    opacity: 0.7;
   }
 `;
 

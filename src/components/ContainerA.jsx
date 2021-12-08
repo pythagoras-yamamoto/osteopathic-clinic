@@ -33,9 +33,14 @@ export const ContainerA = (props) => {
 };
 
 export const SContainerWrapper = styled.div`
-  margin: 100px 50px;
-  padding: 100px 0;
+  margin: 50px;
+  padding: 50px 0;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+
+  @media screen and (max-width: 768px) {
+    margin: 50px;
+    padding: 50px 0;
+  }
 `;
 
 export const STitleWrapper = styled.div`
@@ -46,19 +51,21 @@ export const STitleWrapper = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
 `;
 
-const STitle = styled.p`
+const STitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 30px;
-  color: black;
+  color: rgb(0, 116, 127);
   background: rgba(255, 255, 255, 0.5);
-  height: 150px;
+  height: 100px;
   width: 300px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const SContentsWrapeer = styled.div`
@@ -66,8 +73,12 @@ const SContentsWrapeer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 80vw;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
 `;
 
 const SText = styled.div`
@@ -77,9 +88,20 @@ const SText = styled.div`
   white-space: pre-wrap;
 
   width: ${(props) => (props.width ? 90 - props.width : 50)}%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
 `;
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
   box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    width: 100%;
+  }
 `;

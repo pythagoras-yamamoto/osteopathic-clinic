@@ -22,8 +22,7 @@ export const HomePage = () => {
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
       <ContainerA
-        // いらんかも
-        title={"コンセプト"}
+        title={"CONCEPT"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
         }
@@ -31,14 +30,14 @@ export const HomePage = () => {
         shadowColor={"#de8787"}
       />
       <ContainerA
-        title={"料金メニュー"}
+        title={"PRICE & MENU"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
         }
         image={Image}
         widthRatio={60}
       />
-      <ContainerB title={"ご案内"} image={Image} widthRatio={47} />
+      <ContainerB title={"ACCESS"} image={Image} widthRatio={47} />
       <Footer />
     </>
   );
@@ -51,7 +50,7 @@ const SImageWraper = styled.div`
 const STitleOnImage = styled.p`
   position: absolute;
   top: 30%;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   margin-left: 15%;
@@ -64,4 +63,8 @@ const STextOnImage = styled(STitleOnImage)`
   font-size: 20px;
   width: 530px;
   margin-top: 180px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;

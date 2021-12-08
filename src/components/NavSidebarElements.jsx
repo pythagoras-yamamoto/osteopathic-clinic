@@ -12,7 +12,6 @@ export const NavSidebarContainer = styled.aside`
   transition: 0.5s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-100")};
-  /* top: ${(isOpen) => (isOpen ? "0" : "-100%")}; */
   top: 0;
 `;
 
@@ -24,8 +23,8 @@ export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
-  background: transparent;
   font-size: 2rem;
+  background: transparent;
   outline: none;
   cursor: pointer;
 `;
@@ -59,5 +58,6 @@ export const SidebarLinks = styled(Link)`
   &:hover {
     transition: all 0.1s ease-in-out;
     font-size: 20px;
+    border-bottom: 1px solid #01bf71;
   }
 `;

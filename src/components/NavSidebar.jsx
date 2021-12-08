@@ -17,11 +17,11 @@ export const NavSidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLinks to="/">ホーム</SidebarLinks>
-          <SidebarLinks to="/AboutUsPage">当院について</SidebarLinks>
-          <SidebarLinks to="/ResearvationPage">料金・メニュー</SidebarLinks>
-          <SidebarLinks to="/ResearvationPage">予約状況</SidebarLinks>
-          <SidebarLinks to="/ContactPage">お問い合わせ</SidebarLinks>
+          <SidebarLinks to="/">Home</SidebarLinks>
+          <SidebarLinks to="/AboutUsPage">About Us</SidebarLinks>
+          <SidebarLinks to="/ResearvationPage">Price & Menu</SidebarLinks>
+          <SidebarLinks to="/ResearvationPage">Researvation</SidebarLinks>
+          <SidebarLinks to="/ContactPage">Contact</SidebarLinks>
         </SidebarMenu>
       </SidebarWrapper>
     </NavSidebarContainer>

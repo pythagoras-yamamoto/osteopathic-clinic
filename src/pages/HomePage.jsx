@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Navbar } from "../components/Navbar";
+import { Header } from "../components/Header";
 import { ContainerA } from "../components/ContainerA";
 import { ContainerB } from "../components/ContainerB";
 import { Footer } from "../components/Footer";
@@ -11,7 +11,7 @@ import Image from "../../public/clinic-image.jpeg";
 export const HomePage = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <SImageWraper>
         <STitleOnImage>根津整体院</STitleOnImage>
         <STextOnImage>

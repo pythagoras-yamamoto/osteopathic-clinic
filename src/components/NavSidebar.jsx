@@ -9,9 +9,9 @@ import {
   SidebarMenu
 } from "./NavSidebarElements";
 
-export const NavSidebar = () => {
+export const NavSidebar = ({ isOpen, toggle }) => {
   return (
-    <NavSidebarContainer>
+    <NavSidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon>
         <CloseIcon />
       </Icon>

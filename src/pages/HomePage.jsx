@@ -46,26 +46,36 @@ export const HomePage = () => {
 
 const SImageWraper = styled.div`
   position: relative;
+  width: 100vw;
+  height: auto;
 `;
 
-const STitleOnImage = styled.p`
+const STitleOnImage = styled.h1`
   position: absolute;
   top: 30%;
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
   margin-left: 15%;
   z-index: 100;
-`;
-
-const STextOnImage = styled(STitleOnImage)`
-  text-align: left;
-  font-weight: normal;
-  font-size: 20px;
-  width: 530px;
-  margin-top: 180px;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 3rem;
+  }
+`;
+
+const STextOnImage = styled.p`
+  position: absolute;
+  top: 60%;
+  color: white;
+  z-index: 100;
+  margin-left: 15%;
+  text-align: left;
+  font-size: 20px;
+  width: 70%;
+  overflow-wrap: keep-all;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
   }
 `;

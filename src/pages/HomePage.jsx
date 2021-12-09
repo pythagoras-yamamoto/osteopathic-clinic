@@ -15,8 +15,10 @@ export const HomePage = () => {
       <SImageWraper>
         <STitleOnImage>根津整体院</STitleOnImage>
         <STextOnImage>
-          女性施術者による女性専用サロンです。それぞれのお身体,
-          体調に合わせたオーダーメイドの鍼灸施術を行います
+          <p>女性施術者による女性専用サロンです。</p>
+          <p>
+            それぞれのお身体,体調に合わせたオーダーメイドの鍼灸施術を行います
+          </p>
         </STextOnImage>
         {/* <ImageSlider></ImageSlider> */}
         <SwiperImageSlider />

@@ -67,7 +67,7 @@ const STitleOnImage = styled.h1`
   }
 `;
 
-const STextOnImage = styled.p`
+const STextOnImage = styled.div`
   position: absolute;
   top: 60%;
   color: white;

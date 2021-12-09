@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import styled from "styled-components";
 
 export const EmbedTwitter = () => {
   useEffect(() => {
@@ -14,7 +15,7 @@ export const EmbedTwitter = () => {
   }, []);
 
   return (
-    <div>
+    <Wrapper>
       <blockquote className="twitter-tweet">
         <p lang="ja" dir="ltr">
           すごくわかりやすいし、体系的なので、ワイのような弱弱にはありがたい
@@ -25,6 +26,11 @@ export const EmbedTwitter = () => {
           November 24, 2021
         </a>
       </blockquote>
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;

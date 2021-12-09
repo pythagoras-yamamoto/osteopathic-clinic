@@ -18,8 +18,8 @@ export const NavSidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLinks to="/">Home</SidebarLinks>
-          <SidebarLinks to="/AboutUsPage">About Us</SidebarLinks>
-          <SidebarLinks to="/ResearvationPage">Price & Menu</SidebarLinks>
+          <SidebarLinks to="/AboutUsPage">About</SidebarLinks>
+          <SidebarLinks to="/MenuPricePage">Menu & Price</SidebarLinks>
           <SidebarLinks to="/ResearvationPage">Researvation</SidebarLinks>
           <SidebarLinks to="/ContactPage">Contact</SidebarLinks>
         </SidebarMenu>

@@ -5,6 +5,7 @@ import { HomePage } from "../pages/HomePage";
 import { AboutUsPage } from "..//pages/AboutUsPage";
 import { ContactPage } from "..//pages/ContactPage";
 import { ResearvationPage } from "../pages/ResearvationPage";
+import { MenuPricePage } from "../pages/MenuPricePage";
 import { Page404 } from "../pages/Page404";
 
 export const Router = () => {
@@ -21,6 +22,9 @@ export const Router = () => {
       </Route>
       <Route path="/ResearvationPage">
         <ResearvationPage />
+      </Route>
+      <Route path="/MenuPricePage">
+        <MenuPricePage />
       </Route>
       <Route path="*">
         <Page404 />

@@ -4,10 +4,10 @@ import styled from "styled-components";
 import { Header } from "../components/Header";
 import { ContainerA } from "../components/ContainerA";
 import { Footer } from "../components/Footer";
-// import { EmbedTwitter } from "../components/EmbedTwiter";
+// import { Calendar } from "../components/Calendar";
 import Image from "../public/clinic-image.jpeg";
 
-export const ContactPage = () => {
+export const MenuPricePage = () => {
   return (
     <>
       <Header />
@@ -15,14 +15,13 @@ export const ContactPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ContainerA
-        title={"お問い合わせ"}
+        title={"料金メニュー"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
         }
         image={Image}
         shadowColor={"#de8787"}
       />
-      {/* <EmbedTwitter /> */}
       <Footer />
     </>
   );

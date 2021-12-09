@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import React from "react";
-import IMG from "../../public/title-back-image.png";
+import styled from "styled-components";
+import IMG from "../public/title-back-image.png";
 
 export const ContainerA = (props) => {
   const {

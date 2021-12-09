@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import { SContainerWrapper } from "./ContainerA";
 
 class Map extends Component {
   googleGeocoder = null;
@@ -45,10 +43,10 @@ class Map extends Component {
     );
   }
   render() {
-    const labelStyle = {
-      margin: "0",
-      display: "block"
-    };
+    // const labelStyle = {
+    //   margin: "0",
+    //   display: "block"
+    // };
     const containerStyle = {
       width: "100%",
       height: "50vh",

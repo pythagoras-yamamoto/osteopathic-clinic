@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/Header";
-import { ContainerA } from "../components/ContainerA";
 import { ContainerC } from "../components/ContainerC";
 import { Footer } from "../components/Footer";
 // import { Calendar } from "../components/Calendar";
@@ -15,14 +14,6 @@ export const ResearvationPage = () => {
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <ContainerA
-        title={"料金メニュー"}
-        text={
-          "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
-        }
-        image={Image}
-        shadowColor={"#de8787"}
-      />
       <ContainerC
         title={"予約状況"}
         text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}

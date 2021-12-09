@@ -35,10 +35,18 @@ export const ContainerC = (props) => {
   );
 };
 
-const SContainerWrapper = styled.div`
-  margin: 100px 50px;
-  padding: 100px 0;
+export const SContainerWrapper = styled.div`
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90vw;
+  padding: 50px 0;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+    padding: 50px 0;
+  }
 `;
 
 export const STitleWrapper = styled.div`
@@ -50,6 +58,7 @@ export const STitleWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   height: 150px;
+  margin-right: 5%;
 `;
 
 const STitle = styled.h2`
@@ -78,7 +87,7 @@ const SContentsWrapeer = styled.div`
 `;
 
 const SCalendar = styled.div`
-  width: ${(props) => (props.width ? 95 - props.width : 50)}%;
+  width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 `;
 
 const SImage = styled.img`

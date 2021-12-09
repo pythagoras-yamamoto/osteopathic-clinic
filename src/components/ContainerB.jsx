@@ -35,10 +35,18 @@ export const ContainerB = (props) => {
   );
 };
 
-const SContainerWrapper = styled.div`
-  margin: 100px 50px;
-  padding: 100px 0;
+export const SContainerWrapper = styled.div`
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90vw;
+  padding: 50px 0;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+    padding: 50px 0;
+  }
 `;
 
 export const STitleWrapper = styled.div`
@@ -49,7 +57,6 @@ export const STitleWrapper = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
 `;
 
 const STitle = styled.h2`
@@ -74,10 +81,11 @@ const SContentsWrapeer = styled.div`
   margin: auto;
   margin-top: 100px;
   width: 80vw;
+  margin-right: 5%;
 `;
 
 const SMap = styled.div`
-  width: ${(props) => (props.width ? 95 - props.width : 50)}%;
+  width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {
     width: 100%;

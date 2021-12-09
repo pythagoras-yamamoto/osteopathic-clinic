@@ -1,7 +1,7 @@
-import styled from "styled-components";
 import React from "react";
+import styled from "styled-components";
 
-import IMG from "../../public/title-back-image.png";
+import IMG from "../public/title-back-image.png";
 import { Calendar } from "./Calendar";
 
 export const ContainerC = (props) => {

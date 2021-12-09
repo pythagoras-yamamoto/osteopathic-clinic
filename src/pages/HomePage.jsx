@@ -1,12 +1,13 @@
+import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/Header";
 import { ContainerA } from "../components/ContainerA";
 import { ContainerB } from "../components/ContainerB";
 import { Footer } from "../components/Footer";
-import { ImageSlider, SwiperImageSlider } from "../components/ImageSlider";
+// import { ImageSlider, SwiperImageSlider } from "../components/ImageSlider";
 
-import Image from "../../public/clinic-image.jpeg";
+import Image from "../public/clinic-image.jpeg";
 
 export const HomePage = () => {
   return (
@@ -21,7 +22,7 @@ export const HomePage = () => {
           </p>
         </STextOnImage>
         {/* <ImageSlider></ImageSlider> */}
-        <SwiperImageSlider />
+        {/* <SwiperImageSlider /> */}
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
       <ContainerA

@@ -6,7 +6,6 @@ import {
   Column,
   Title,
   Link,
-  Icon,
   Copyright,
   FooterItem
 } from "./FooterElements";

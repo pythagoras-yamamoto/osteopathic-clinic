@@ -1,9 +1,10 @@
+import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/Header";
 import { ContainerA } from "../components/ContainerA";
 import { Footer } from "../components/Footer";
-import Image from "../../public/clinic-image.jpeg";
+import Image from "../public/clinic-image.jpeg";
 
 export const AboutUsPage = () => {
   return (

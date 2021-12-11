@@ -12,8 +12,9 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
      
 ## 共通事項
 
-- CSS のあて方は Styled Components。
+- CSS のあて方は基本的にStyled Components(例外は認める)。
 - Styled Components での命名時は関数名に大文字の S をつける。
+- Container vs Wrapperの命名議論は二つの間に意味的な区分は設けず、Wrapperに統一。
 
 ## Figma：
 

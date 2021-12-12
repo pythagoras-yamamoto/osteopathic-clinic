@@ -28,7 +28,7 @@ export const Footer = () => {
           <SFooterItem>住所 : 新潟県十日町市 </SFooterItem>
         </SColumn>
         <SColumn>
-          <STitle>Infomation</STitle>
+          <STitle>Contact</STitle>
           <SFooterItem>LINE : </SFooterItem>
           <SFooterItem>電話番号 : </SFooterItem>
           <SFooterItem> メール : </SFooterItem>

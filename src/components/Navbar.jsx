@@ -31,7 +31,7 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/MenuPricePage">MENU & PRICE</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/ReasearvationPage">RESEARVATION</SNavLinks>
+              <SNavLinks to="/ResearvationPage">RESEARVATION</SNavLinks>
             </SNavItem>
             <SNavItem>
               <SNavLinks to="/ContactPage">CONTACT</SNavLinks>

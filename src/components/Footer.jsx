@@ -16,9 +16,11 @@ export const Footer = () => {
       <SRow>
         <SColumn>
           <STitle>About Clinic</STitle>
-          <SLink to="#">当院について</SLink>
-          <SLink to="#">予約状況</SLink>
-          <SLink to="#">お問い合わせ</SLink>
+          <SLink to="/">ホーム</SLink>
+          <SLink to="/AboutUsPage">当院について</SLink>
+          <SLink to="/MenuPricePage">メニュー・料金</SLink>
+          <SLink to="ResearvationPage">予約状況</SLink>
+          <SLink to="ContactPage">お問い合わせ</SLink>
         </SColumn>
         <SColumn>
           <STitle>Infomation</STitle>
@@ -33,10 +35,8 @@ export const Footer = () => {
         </SColumn>
         <SColumn>
           <STitle>Social</STitle>
-          <SLink to="#">
-            {/* <Icon className="fab fa-instagram" /> */}
-            Instagram :
-          </SLink>
+          <SLink to="#">instagram</SLink>
+          <SLink to="#">note</SLink>
         </SColumn>
       </SRow>
       <SCopyright>

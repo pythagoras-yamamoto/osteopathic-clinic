@@ -14,7 +14,7 @@ export const HomePage = () => {
     <>
       <Header />
       <SImageWraper>
-        <STitleOnImage>根津整体院</STitleOnImage>
+        <STitleOnImage>Meme</STitleOnImage>
         <STextOnImage>
           <p>女性施術者による女性専用サロンです。</p>
           <p>
@@ -60,7 +60,7 @@ const STitleOnImage = styled.h1`
   font-weight: bold;
   color: white;
   margin-left: 15%;
-  z-index: 100;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     font-size: 3rem;
@@ -69,9 +69,9 @@ const STitleOnImage = styled.h1`
 
 const STextOnImage = styled.div`
   position: absolute;
-  top: 60%;
+  top: 50%;
   color: white;
-  z-index: 100;
+  z-index: 10;
   margin-left: 15%;
   text-align: left;
   font-size: 20px;

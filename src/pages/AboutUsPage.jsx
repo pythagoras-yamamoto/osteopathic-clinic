@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Header } from "../components/Header";
-import { ContainerA } from "../components/ContainerA";
-import { Footer } from "../components/Footer";
+import { Header } from "../components/header/Header";
+import { ContainerA } from "../components/container/ContainerA";
+import { Footer } from "../components/footer/Footer";
 import Image from "../public/clinic-image.jpeg";
 
 export const AboutUsPage = () => {

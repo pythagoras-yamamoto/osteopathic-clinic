@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Header } from "../components/Header";
-import { ContainerA } from "../components/ContainerA";
-import { ContainerB } from "../components/ContainerB";
-import { Footer } from "../components/Footer";
-import { SwiperImageSlider } from "../components/ImageSlider";
+import { Header } from "../components/header/Header";
+import { ContainerA } from "../components/container/ContainerA";
+import { ContainerB } from "../components/container/ContainerB";
+import { SwiperImageSlider } from "../components/container/ImageSlider";
+import { Footer } from "../components/footer/Footer";
 
 import Image from "../public/clinic-image.jpeg";
 
@@ -26,7 +26,7 @@ export const HomePage = () => {
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
       <ContainerA
-        title={"CONCEPT"}
+        title={"コンセプト"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
         }
@@ -34,14 +34,14 @@ export const HomePage = () => {
         shadowColor={"#de8787"}
       />
       <ContainerA
-        title={"PRICE & MENU"}
+        title={"料金・メニュー"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
         }
         image={Image}
         widthRatio={60}
       />
-      <ContainerB title={"ACCESS"} image={Image} widthRatio={47} />
+      <ContainerB title={"アクセス"} image={Image} widthRatio={47} />
       <Footer />
     </>
   );

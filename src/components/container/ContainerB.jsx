@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import IMG from "../public/title-back-image.png";
 
-export const ContainerA = (props) => {
+import IMG from "../../public/title-back-image.png";
+import Map from "./Map";
+
+export const ContainerB = (props) => {
   const {
     title, //title　: Item name
     titleImage,
-    text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
     shadowColor
@@ -19,7 +20,9 @@ export const ContainerA = (props) => {
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
-          <SText width={widthRatio}>{text}</SText>
+          <SMap width={widthRatio}>
+            <Map />
+          </SMap>
           <SImage
             shadowColor={shadowColor}
             src={image}
@@ -76,36 +79,24 @@ const SContentsWrapeer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 100px;
   width: 80vw;
   margin-right: 5%;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 50px;
-  }
 `;
 
-const SText = styled.div`
-  text-align: left;
-  font-size: 1rem;
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-
+const SMap = styled.div`
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {
-    /* font-size: 18px; */
     width: 100%;
-    margin-bottom: 100px;
   }
 `;
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
-  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
-
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-    width: 95%;
+  /* box-shadow: 15px -15px ${(props) =>
+    props.shadowColor ? props.shadowColor : "#deb887"}; */
+    @media screen and (max-width: 768px) {
+    width: 100%;
   }
 `;

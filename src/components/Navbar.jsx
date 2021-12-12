@@ -2,43 +2,43 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 
 import {
-  Nav,
-  NavContainer,
-  NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLinks
-} from "./NavbarElements";
+  SNav,
+  SNavContainer,
+  SNavLogo,
+  SMobileIcon,
+  SNavMenu,
+  SNavItem,
+  SNavLinks
+} from "./NavbarStyle";
 
 export const Navbar = ({ toggle }) => {
   return (
     <>
-      <Nav>
-        <NavContainer>
-          <NavLogo to="/">Meme</NavLogo>
-          <MobileIcon onClick={toggle}>
+      <SNav>
+        <SNavContainer>
+          <SNavLogo to="/">Meme</SNavLogo>
+          <SMobileIcon onClick={toggle}>
             <FaBars />
-          </MobileIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks to="/">HOME</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/AboutUsPage">ABOUT</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/MenuPricePage">MENU & PRICE</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/ResearvationPage">RESEARVATION</NavLinks>
-            </NavItem>{" "}
-            <NavItem>
-              <NavLinks to="/ContactPage">CONTACT</NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavContainer>
-      </Nav>
+          </SMobileIcon>
+          <SNavMenu>
+            <SNavItem>
+              <SNavLinks to="/">HOME</SNavLinks>
+            </SNavItem>
+            <SNavItem>
+              <SNavLinks to="/AboutUsPage">ABOUT</SNavLinks>
+            </SNavItem>
+            <SNavItem>
+              <SNavLinks to="/MenuPricePage">MENU & PRICE</SNavLinks>
+            </SNavItem>
+            <SNavItem>
+              <SNavLinks to="/ReasearvationPage">RESEARVATION</SNavLinks>
+            </SNavItem>
+            <SNavItem>
+              <SNavLinks to="/ContactPage">CONTACT</SNavLinks>
+            </SNavItem>
+          </SNavMenu>
+        </SNavContainer>
+      </SNav>
     </>
   );
 };

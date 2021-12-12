@@ -1,29 +1,29 @@
 import React from "react";
 
 import {
-  NavSidebarContainer,
-  Icon,
-  CloseIcon,
-  SidebarLinks,
-  SidebarWrapper,
-  SidebarMenu
-} from "./NavSidebarElements";
+  SNavSidebarContainer,
+  SIcon,
+  SCloseIcon,
+  SSidebarLinks,
+  SSidebarWrapper,
+  SSidebarMenu
+} from "./NavSidebarStyle";
 
 export const NavSidebar = ({ isOpen, toggle }) => {
   return (
-    <NavSidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon>
-        <CloseIcon />
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLinks to="/">Home</SidebarLinks>
-          <SidebarLinks to="/AboutUsPage">About</SidebarLinks>
-          <SidebarLinks to="/MenuPricePage">Menu & Price</SidebarLinks>
-          <SidebarLinks to="/ResearvationPage">Researvation</SidebarLinks>
-          <SidebarLinks to="/ContactPage">Contact</SidebarLinks>
-        </SidebarMenu>
-      </SidebarWrapper>
-    </NavSidebarContainer>
+    <SNavSidebarContainer isOpen={isOpen} onClick={toggle}>
+      <SIcon>
+        <SCloseIcon />
+      </SIcon>
+      <SSidebarWrapper>
+        <SSidebarMenu>
+          <SSidebarLinks to="/">Home</SSidebarLinks>
+          <SSidebarLinks to="/AboutUsPage">About</SSidebarLinks>
+          <SSidebarLinks to="/MenuPricePage">Menu & Price</SSidebarLinks>
+          <SSidebarLinks to="/ResearvationPage">Researvation</SSidebarLinks>
+          <SSidebarLinks to="/ContactPage">Contact</SSidebarLinks>
+        </SSidebarMenu>
+      </SSidebarWrapper>
+    </SNavSidebarContainer>
   );
 };

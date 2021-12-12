@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import IMG from "../../public/title-back-image.png";
 
-import IMG from "../public/title-back-image.png";
-import Map from "./Map";
-
-export const ContainerB = (props) => {
+export const ContainerA = (props) => {
   const {
     title, //title　: Item name
     titleImage,
+    text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
     shadowColor
@@ -20,9 +19,7 @@ export const ContainerB = (props) => {
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
-          <SMap width={widthRatio}>
-            <Map />
-          </SMap>
+          <SText width={widthRatio}>{text}</SText>
           <SImage
             shadowColor={shadowColor}
             src={image}
@@ -66,11 +63,11 @@ const STitle = styled.h2`
   font-weight: bold;
   color: rgb(0, 116, 127);
   background: rgba(255, 255, 255, 0.5);
-  height: 150px;
+  height: 100px;
   width: 300px;
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
@@ -79,24 +76,36 @@ const SContentsWrapeer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 80vw;
   margin-right: 5%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
 `;
 
-const SMap = styled.div`
+const SText = styled.div`
+  text-align: left;
+  font-size: 1rem;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {
+    /* font-size: 18px; */
     width: 100%;
+    margin-bottom: 100px;
   }
 `;
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
-  /* box-shadow: 15px -15px ${(props) =>
-    props.shadowColor ? props.shadowColor : "#deb887"}; */
-    @media screen and (max-width: 768px) {
-    width: 100%;
+  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    width: 95%;
   }
 `;

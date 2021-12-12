@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Header } from "../components/Header";
-import { ContainerC } from "../components/ContainerC";
-import { Footer } from "../components/Footer";
+import { Header } from "../components/header/Header";
+import { ContainerC } from "../components/container/ContainerC";
+import { Footer } from "../components/footer/Footer";
 // import { Calendar } from "../components/Calendar";
 import Image from "../public/clinic-image.jpeg";
 

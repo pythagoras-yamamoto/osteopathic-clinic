@@ -5,7 +5,12 @@
 
 .App {
   /* font-family: sans-serif; */
-  font-family: "メイリオ";
+  /* font-family: "メイリオ"; */
   font-weight: 500;
   text-align: center;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
 }

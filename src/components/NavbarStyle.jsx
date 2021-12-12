@@ -87,7 +87,6 @@ export const SNavLinks = styled(LinkR)`
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
-  transition-duration: 0.2s;
 
   &:hover {
     border-bottom: 2px solid #01bf71;

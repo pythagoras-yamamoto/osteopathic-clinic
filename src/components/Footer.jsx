@@ -1,48 +1,47 @@
 import React from "react";
 
 import {
-  Container,
-  Row,
-  Column,
-  Title,
-  Link,
-  Copyright,
-  FooterItem
-} from "./FooterElements";
+  SContainer,
+  SRow,
+  SColumn,
+  STitle,
+  SLink,
+  SCopyright,
+  SFooterItem
+} from "./FooterStyle";
 
 export const Footer = () => {
   return (
-    <Container>
-      <Row>
-        <Column>
-          <Title>About Clinic</Title>
-          <Link to="#">当院について</Link>
-          <Link to="#">料金・メニュー </Link>
-          <Link to="#">予約状況</Link>
-          <Link to="#">お問い合わせ</Link>
-        </Column>
-        <Column>
-          <Title>Infomation</Title>
-          <FooterItem>営業時間 : 10:00 - 21:00 </FooterItem>
-          <FooterItem>住所 : 新潟県十日町市 </FooterItem>
-        </Column>
-        <Column>
-          <Title>Infomation</Title>
-          <FooterItem>LINE : </FooterItem>
-          <FooterItem>電話番号 : </FooterItem>
-          <FooterItem> メール : </FooterItem>
-        </Column>
-        <Column>
-          <Title>Social</Title>
-          <Link to="#">
+    <SContainer>
+      <SRow>
+        <SColumn>
+          <STitle>About Clinic</STitle>
+          <SLink to="#">当院について</SLink>
+          <SLink to="#">予約状況</SLink>
+          <SLink to="#">お問い合わせ</SLink>
+        </SColumn>
+        <SColumn>
+          <STitle>Infomation</STitle>
+          <SFooterItem>営業時間 : 10:00 - 21:00 </SFooterItem>
+          <SFooterItem>住所 : 新潟県十日町市 </SFooterItem>
+        </SColumn>
+        <SColumn>
+          <STitle>Infomation</STitle>
+          <SFooterItem>LINE : </SFooterItem>
+          <SFooterItem>電話番号 : </SFooterItem>
+          <SFooterItem> メール : </SFooterItem>
+        </SColumn>
+        <SColumn>
+          <STitle>Social</STitle>
+          <SLink to="#">
             {/* <Icon className="fab fa-instagram" /> */}
             Instagram :
-          </Link>
-        </Column>
-      </Row>
-      <Copyright>
+          </SLink>
+        </SColumn>
+      </SRow>
+      <SCopyright>
         &copy; {new Date().getFullYear()} Netsu Osteopathic Clinic
-      </Copyright>
-    </Container>
+      </SCopyright>
+    </SContainer>
   );
 };

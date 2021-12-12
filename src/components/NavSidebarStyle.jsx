@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-export const NavSidebarContainer = styled.aside`
+export const SNavSidebarContainer = styled.aside`
   position: fixed;
   width: 100%;
   height: 80px;
@@ -15,11 +15,11 @@ export const NavSidebarContainer = styled.aside`
   top: 0;
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const SCloseIcon = styled(FaTimes)`
   color: black;
 `;
 
-export const Icon = styled.div`
+export const SIcon = styled.div`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -29,11 +29,11 @@ export const Icon = styled.div`
   cursor: pointer;
 `;
 
-export const SidebarWrapper = styled.div`
+export const SSidebarWrapper = styled.div`
   color: white;
 `;
 
-export const SidebarMenu = styled.ul`
+export const SSidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
@@ -44,7 +44,7 @@ export const SidebarMenu = styled.ul`
   }
 `;
 
-export const SidebarLinks = styled(Link)`
+export const SSidebarLinks = styled(Link)`
   background: white;
   white-space: nowrap;
   padding: 30px 60px;

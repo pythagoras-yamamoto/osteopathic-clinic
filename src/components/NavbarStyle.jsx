@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
-export const Nav = styled.nav`
+export const SNav = styled.nav`
   background: white;
   height: 80px;
   display: flex;
@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavContainer = styled.div`
+export const SNavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -28,7 +28,7 @@ export const NavContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const SNavLogo = styled(LinkR)`
   color: black;
   justify-self: flex-start;
   cursor: pointer;
@@ -46,7 +46,7 @@ export const NavLogo = styled(LinkR)`
   }
 `;
 
-export const MobileIcon = styled.div`
+export const SMobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -60,7 +60,7 @@ export const MobileIcon = styled.div`
   }
 `;
 
-export const NavMenu = styled.ul`
+export const SNavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
@@ -74,13 +74,13 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
+export const SNavItem = styled.li`
   height: 80px;
   display: flex;
   align-items: center;
 `;
 
-export const NavLinks = styled(LinkR)`
+export const SNavLinks = styled(LinkR)`
   color: black;
   /* display: flex;
   align-items: center; */

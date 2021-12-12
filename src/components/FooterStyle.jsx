@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
-export const Container = styled.div`
+export const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
   background: #00747f;
 
@@ -10,7 +10,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Wrapper = styled.div`
+export const SWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const Column = styled.div`
+export const SColumn = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -26,7 +26,7 @@ export const Column = styled.div`
   margin-bottom: 30px;
 `;
 
-export const Row = styled.div`
+export const SRow = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
@@ -35,7 +35,7 @@ export const Row = styled.div`
   }
 `;
 
-export const Link = styled(LinkR)`
+export const SLink = styled(LinkR)`
   margin-bottom: 20px;
   font-size: 14px;
   text-decoration: none;
@@ -47,14 +47,14 @@ export const Link = styled(LinkR)`
   }
 `;
 
-export const Title = styled.p`
+export const STitle = styled.p`
   font-size: 18px;
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
 `;
 
-export const Copyright = styled.div`
+export const SCopyright = styled.div`
   display: flex;
   justify-content: center;
   color: white;
@@ -63,7 +63,7 @@ export const Copyright = styled.div`
   font-family: "游ゴシック体";
 `;
 
-export const FooterItem = styled.p`
+export const SFooterItem = styled.p`
   font-size: 14px;
   color: white;
   display: flex;

@@ -5,6 +5,7 @@ import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
 import Image from "../public/clinic-image.jpeg";
+import { ScrollReveal } from "../components/container/ScrollReveal";
 
 export const AboutUsPage = () => {
   return (
@@ -13,20 +14,24 @@ export const AboutUsPage = () => {
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <ContainerA
-        title={"ご挨拶"}
-        text={
-          "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちは"
-        }
-        image={Image}
-        shadowColor={"#de8787"}
-      />
-      <ContainerA
-        title={"施術実績"}
-        text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
-        image={Image}
-        widthRatio={50}
-      />
+      <ScrollReveal move="top">
+        <ContainerA
+          title={"ご挨拶"}
+          text={
+            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちは"
+          }
+          image={Image}
+          shadowColor={"#de8787"}
+        />
+        <ContainerA
+          title={"施術実績"}
+          text={
+            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"
+          }
+          image={Image}
+          widthRatio={50}
+        />
+      </ScrollReveal>
       <Footer />
     </>
   );

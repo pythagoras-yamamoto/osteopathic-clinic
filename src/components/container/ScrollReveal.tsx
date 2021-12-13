@@ -11,7 +11,7 @@ export const ScrollReveal: FC<ScrollRevealProps> = ({ children, move }) => {
   useEffect(() => {
     if (sectionRef.current)
       scrollReveal().reveal(sectionRef.current, {
-        reset: true,
+        reset: false,
         delay: 200,
         opacity: 0,
         origin:

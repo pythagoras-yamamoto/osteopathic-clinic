@@ -65,6 +65,9 @@ const STitleOnImage = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 3rem;
   }
+
+  @media screen and (max-width: 600px) {
+  }
 `;
 
 const STextOnImage = styled.div`
@@ -80,5 +83,9 @@ const STextOnImage = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 `;

@@ -44,8 +44,13 @@ export const SContainerWrapper = styled.div`
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 
   @media screen and (max-width: 768px) {
-    margin-top: 50px;
     padding: 50px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `;
 
@@ -59,6 +64,9 @@ export const STitleWrapper = styled.div`
   background-repeat: no-repeat;
   height: 150px;
   margin-right: 5%;
+
+  @media screen and (max-width: 600px) {
+    margin-right: 0;
 `;
 
 const STitle = styled.h2`

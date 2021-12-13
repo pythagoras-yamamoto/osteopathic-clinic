@@ -47,6 +47,10 @@ const SImage = styled.img`
   width: 90vw;
   height: auto;
   box-shadow: 0px 5px 0 rgb(0 0 0 / 15%);
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+  }
 `;
 
 // slickの仕様で右側に余白ができる。それを解消するために使用したスタイリング。

@@ -47,6 +47,12 @@ export const SContainerWrapper = styled.div`
     margin-top: 50px;
     padding: 50px 0;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 export const STitleWrapper = styled.div`

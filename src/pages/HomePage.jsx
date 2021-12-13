@@ -5,6 +5,7 @@ import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { ContainerB } from "../components/container/ContainerB";
 import { SwiperImageSlider } from "../components/container/ImageSlider";
+import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
 
 import Image from "../public/clinic-image.jpeg";
@@ -25,23 +26,25 @@ export const HomePage = () => {
         <SwiperImageSlider />
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
-      <ContainerA
-        title={"コンセプト"}
-        text={
-          "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
-        }
-        image={Image}
-        shadowColor={"#de8787"}
-      />
-      <ContainerA
-        title={"料金・メニュー"}
-        text={
-          "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
-        }
-        image={Image}
-        widthRatio={60}
-      />
-      <ContainerB title={"アクセス"} image={Image} widthRatio={47} />
+      <ScrollReveal move="top">
+        <ContainerA
+          title={"コンセプト"}
+          text={
+            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
+          }
+          image={Image}
+          shadowColor={"#de8787"}
+        />
+        <ContainerA
+          title={"料金・メニュー"}
+          text={
+            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
+          }
+          image={Image}
+          widthRatio={60}
+        />
+        <ContainerB title={"アクセス"} image={Image} widthRatio={47} />
+      </ScrollReveal>
       <Footer />
     </>
   );

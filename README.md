@@ -28,6 +28,9 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 - Styled Components での命名時は関数名に大文字の S をつける。
 - クラス名Container vs Wrapperの命名議論は二つの間に意味的な区分は設けず、Wrapperに統一。
 
+## ディレクトリ構成
+
+
 ## Figma
 https://www.figma.com/file/KKQQmN2AKF4Tz9QUc1Rfyl/Untitled?node-id=2%3A2
 

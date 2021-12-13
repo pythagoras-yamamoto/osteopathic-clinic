@@ -9,18 +9,18 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 <img width="993" alt="スクリーンショット 2021-12-13 14 40 59" src="https://user-images.githubusercontent.com/60994397/145758952-07013da9-bc99-401f-98c2-9a1d9818e4fe.png">
 <img width="1440" alt="スクリーンショット 2021-12-13 14 39 12" src="https://user-images.githubusercontent.com/60994397/145758966-2daa47ee-8803-4696-ad89-bf73531b032c.png">
 
-<!-- <img width="989" alt="スクリーンショット 2021-12-06 23 49 52" src="https://user-images.githubusercontent.com/60994397/144868852-e58cbda3-7879-4538-b5c9-0784410c8b05.png">
+<!-- <img width="989" alt="スクリーンショット 2021-12-06 23 49 52" src="https://user-images.githubusercontent.com/60994397/144868852-e58cbda3-7879-4538-b5c9-0784410c8b05.png"> 
 
 
 <img width="982" alt="スクリーンショット 2021-12-06 23 50 25" src="https://user-images.githubusercontent.com/60994397/144868398-bb4e0132-9837-4557-b142-2cca69243585.png">
  -->
 
 ## 概要
-2022年4月new open予定の女性専用整体院「めめ」のwebサイト。
+2022年4月new open予定の女性専用整体院「めめ」のwebサイト。デザインから実装まで担当。
 
 ## 使用技術 
-実装の大部分にCSS in JSを採用。アニメーション部分にFramer motionを使用。  
-使用技術 : React.js, styled-components, Framer motion, Vercel
+全体をReactで実装。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  
+使用技術 : React.js, styled-components,Swiper,react-reveal, Vercel
 
 
 ## 共通事項
@@ -40,11 +40,15 @@ https://www.figma.com/file/KKQQmN2AKF4Tz9QUc1Rfyl/Untitled?node-id=2%3A2
 
 https://qiita.com/punkshiraishi/items/24ac8abbd661e8062f52?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
 
-### styled components：
+### styled components:
 
 https://zenn.dev/syu/articles/0f92abf7f0b5c5
 
 https://gist.github.com/kenmori/60bf7b67819061f41ce960617c035955
+
+### react-reveal:
+
+https://www.react-reveal.com/
 
 ### 選定技術:
 

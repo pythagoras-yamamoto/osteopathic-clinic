@@ -36,9 +36,12 @@ https://www.figma.com/file/KKQQmN2AKF4Tz9QUc1Rfyl/Untitled?node-id=2%3A2
 
 
 ## 参考
-### 命名規則:
+### ディレクトリ構成・命名規則:
+
+https://zenn.dev/a_da_chi/articles/80879f4813ecac
 
 https://qiita.com/punkshiraishi/items/24ac8abbd661e8062f52?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
+
 
 ### styled components:
 

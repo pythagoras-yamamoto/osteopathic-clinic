@@ -17,6 +17,7 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 
 ## 概要
 2022年4月new open予定の女性専用整体院「めめ」のwebサイト。デザインから実装まで担当。
+[整体院のブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog) も作成。
 
 ## 使用技術 
 全体をReactで実装。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  

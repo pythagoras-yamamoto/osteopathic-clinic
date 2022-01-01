@@ -20,7 +20,7 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 [整体院のブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog) も作成。
 
 ## 使用技術 
-全体をReactで実装。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  
+全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  
 使用技術 : React.js, styled-components,Swiper,react-reveal, Vercel
 
 

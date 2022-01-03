@@ -17,16 +17,16 @@ export const Router = () => {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/AboutUsPage">
+      <Route path="/AboutUs">
         <AboutUs />
       </Route>
-      <Route path="/ContactPage">
+      <Route path="/Contact">
         <Contact />
       </Route>
-      <Route path="/ResearvationPage">
+      <Route path="/Researvation">
         <Researvation />
       </Route>
-      <Route path="/MenuPricePage">
+      <Route path="/MenuPrice">
         <MenuPrice />
       </Route>
       <Route path="*">

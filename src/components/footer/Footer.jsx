@@ -11,9 +11,11 @@ export const Footer = () => {
           <SLink to="/">ホーム</SLink>
           <SLink to="/AboutUs">当院について</SLink>
           <SLink to="/MenuPrice">メニュー・料金</SLink>
-          <SLink to="Researvation">予約状況</SLink>
-          <SLink to="https://meme-clinic.netlify.app/">ブログ</SLink>
-          <SLink to="Contact">お問い合わせ</SLink>
+          <SLink to="/Researvation">予約状況</SLink>
+          <SExternalLink target="blank" href="https://meme-clinic.netlify.app/">
+            ブログ
+          </SExternalLink>
+          <SLink to="/Contact">お問い合わせ</SLink>
         </SColumn>
         <SColumn>
           <STitle>Infomation</STitle>
@@ -68,6 +70,18 @@ const SRow = styled.div`
 `;
 
 const SLink = styled(LinkR)`
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 200ms ease-in;
+  }
+`;
+
+const SExternalLink = styled.a`
   margin-bottom: 20px;
   font-size: 14px;
   text-decoration: none;

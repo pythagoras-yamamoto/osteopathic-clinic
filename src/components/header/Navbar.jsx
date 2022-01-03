@@ -26,6 +26,14 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/Researvation">RESEARVATION</SNavLinks>
             </SNavItem>
             <SNavItem>
+              <SNavExternalLink
+                target="blank"
+                href="https://meme-clinic.netlify.app/"
+              >
+                BLOG
+              </SNavExternalLink>
+            </SNavItem>
+            <SNavItem>
               <SNavLinks to="/Contact">CONTACT</SNavLinks>
             </SNavItem>
           </SNavMenu>
@@ -115,6 +123,19 @@ const SNavItem = styled.li`
 `;
 
 const SNavLinks = styled(LinkR)`
+  color: black;
+  /* display: flex;
+  align-items: center; */
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid #01bf71;
+  }
+`;
+
+const SNavExternalLink = styled.a`
   color: black;
   /* display: flex;
   align-items: center; */

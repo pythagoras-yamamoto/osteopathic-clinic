@@ -15,6 +15,12 @@ export const NavSidebar = ({ isOpen, toggle }) => {
           <SSidebarLinks to="/AboutUs">About</SSidebarLinks>
           <SSidebarLinks to="/MenuPrice">Menu & Price</SSidebarLinks>
           <SSidebarLinks to="/Researvation">Researvation</SSidebarLinks>
+          <SSidebarExternalLink
+            target="blank"
+            href="https://meme-clinic.netlify.app/"
+          >
+            Blog
+          </SSidebarExternalLink>
           <SSidebarLinks to="/Contact">Contact</SSidebarLinks>
         </SSidebarMenu>
       </SSidebarWrapper>
@@ -65,6 +71,24 @@ const SSidebarMenu = styled.ul`
 `;
 
 const SSidebarLinks = styled(Link)`
+  background: white;
+  white-space: nowrap;
+  padding: 30px 60px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.1s ease-in-out;
+    font-size: 20px;
+    border-bottom: 1px solid #01bf71;
+  }
+`;
+
+const SSidebarExternalLink = styled.a`
   background: white;
   white-space: nowrap;
   padding: 30px 60px;

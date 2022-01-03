@@ -1,48 +1,45 @@
 import React, { useState } from "react";
 import { Grid, TextField } from "@material-ui/core";
-import { init, sendForm, send } from "emailjs-com";
+import Button from "@material-ui/core/Button";
+import SendIcon from "@material-ui/icons/Send";
+import { init, send } from "emailjs-com";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
-  const [title, setTitle] = useState("");
 
   const sendEmail = () => {
-    const user_id = "";
-    const service_id = "";
-    const template_id = "";
-    if (
-      user_id != undefined &&
-      service_id != undefined &&
-      template_id != undefined
-    ) {
-      init(user_id);
+    const user_id = "user_lJKxWcZEtj7qKiZ1wNgb8";
+    const service_id = "service_e4ptsmy";
+    const template_id = "template_7x0uyj6";
 
-      const template_param = {
-        to_name: name,
-        email: mail,
-        message: message
-      };
+    init(user_id);
 
-      send(service_id, template_id, template_param).then(() => {
-        console.log("success to send email");
-      });
-    }
+    const template_param = {
+      to_name: name,
+      email: mail,
+      message: message
+    };
+
+    send(service_id, template_id, template_param).then(() => {
+      console.log("success to send email");
+
+      setName("");
+      setMail("");
+      setMessage("");
+    });
   };
+
   const onChangeName = (e) => {
     setName(e.target.value);
   };
   const onChangeMail = (e) => {
     setMail(e.target.value);
   };
-  const onChangeTitle = (e) => {
-    setTitle(e.target.value);
-  };
   const onChangeMessage = (e) => {
     setMessage(e.target.value);
   };
-
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("push submit");
@@ -56,6 +53,7 @@ export const ContactForm = () => {
         <Grid item xs={8}>
           <form onSubmit={onSubmit}>
             <TextField
+              id="outlined-multiline-flexible"
               className="contact-name"
               type="text"
               required
@@ -78,16 +76,6 @@ export const ContactForm = () => {
               InputProps={{ disableUnderline: true }}
             />
             <TextField
-              className="contact-title"
-              type="text"
-              label="件名"
-              fullWidth
-              margin="normal"
-              onChange={onChangeTitle}
-              value={title}
-              InputProps={{ disableUnderline: true }}
-            />
-            <TextField
               className="contact-message"
               type="text"
               required
@@ -98,7 +86,9 @@ export const ContactForm = () => {
               value={message}
               InputProps={{ disableUnderline: true }}
             />
-            <input className="contact-submit" type="submit" />
+            <Button variant="contained" endIcon={<SendIcon />}>
+              Send
+            </Button>
           </form>
         </Grid>
       </Grid>

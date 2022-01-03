@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/header/Header";
-import { ContainerC } from "../components/container/ContainerC";
+import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
-import { ScrollReveal } from "../components/container/ScrollReveal";
 // import { Calendar } from "../components/Calendar";
+import { ScrollReveal } from "../components/container/ScrollReveal";
 import Image from "../public/clinic-image.jpeg";
 
-export const ResearvationPage = () => {
+export const MenuPrice = () => {
   return (
     <>
       <Header />
@@ -16,13 +16,13 @@ export const ResearvationPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ScrollReveal move="top">
-        <ContainerC
-          title={"予約状況"}
+        <ContainerA
+          title={"メニュー"}
           text={
-            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"
+            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
           }
           image={Image}
-          widthRatio={100}
+          shadowColor={"#de8787"}
         />
       </ScrollReveal>
       <Footer />

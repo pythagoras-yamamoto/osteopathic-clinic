@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/header/Header";
-import { ContainerA } from "../components/container/ContainerA";
+import { ContainerC } from "../components/container/ContainerC";
 import { Footer } from "../components/footer/Footer";
-import { ContactForm } from "../components/container/ContactForm";
-// import { EmbedTwitter } from "../components/EmbedTwiter";
 import { ScrollReveal } from "../components/container/ScrollReveal";
+// import { Calendar } from "../components/Calendar";
 import Image from "../public/clinic-image.jpeg";
 
-export const ContactPage = () => {
+export const Researvation = () => {
   return (
     <>
       <Header />
@@ -17,16 +16,14 @@ export const ContactPage = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ScrollReveal move="top">
-        <ContactForm />
-        <ContainerA
-          title={"お問い合わせ"}
+        <ContainerC
+          title={"予約状況"}
           text={
-            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
+            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"
           }
           image={Image}
-          shadowColor={"#de8787"}
+          widthRatio={100}
         />
-        {/* <EmbedTwitter /> */}
       </ScrollReveal>
       <Footer />
     </>

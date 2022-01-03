@@ -2,12 +2,12 @@ import React from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 // import SlideRoutes from "react-slide-routes";
 
-import { HomePage } from "../pages/HomePage";
-import { AboutUsPage } from "..//pages/AboutUsPage";
-import { ContactPage } from "..//pages/ContactPage";
-import { ResearvationPage } from "../pages/ResearvationPage";
-import { MenuPricePage } from "../pages/MenuPricePage";
-import { Page404 } from "../pages/Page404";
+import { Home } from "../pages/Home";
+import { AboutUs } from "..//pages/AboutUs";
+import { Contact } from "..//pages/Contact";
+import { Researvation } from "../pages/Researvation";
+import { MenuPrice } from "../pages/MenuPrice";
+import { NotFound } from "../pages/NotFound";
 
 export const Router = () => {
   // const location = useLocation();
@@ -15,22 +15,22 @@ export const Router = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <HomePage />
+        <Home />
       </Route>
       <Route path="/AboutUsPage">
-        <AboutUsPage />
+        <AboutUs />
       </Route>
       <Route path="/ContactPage">
-        <ContactPage />
+        <Contact />
       </Route>
       <Route path="/ResearvationPage">
-        <ResearvationPage />
+        <Researvation />
       </Route>
       <Route path="/MenuPricePage">
-        <MenuPricePage />
+        <MenuPrice />
       </Route>
       <Route path="*">
-        <Page404 />
+        <NotFound />
       </Route>
     </Switch>
   );

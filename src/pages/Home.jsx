@@ -10,7 +10,7 @@ import { Footer } from "../components/footer/Footer";
 
 import Image from "../public/clinic-image.jpeg";
 
-export const HomePage = () => {
+export const Home = () => {
   return (
     <>
       <Header />

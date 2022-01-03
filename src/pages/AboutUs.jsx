@@ -7,7 +7,7 @@ import { Footer } from "../components/footer/Footer";
 import Image from "../public/clinic-image.jpeg";
 import { ScrollReveal } from "../components/container/ScrollReveal";
 
-export const AboutUsPage = () => {
+export const AboutUs = () => {
   return (
     <>
       <Header />

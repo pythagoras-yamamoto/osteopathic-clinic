@@ -33,12 +33,12 @@ export const Footer = () => {
         <SColumn>
           <STitle>Social</STitle>
           <SLink to="https://www.instagram.com/meme.h1sa/">Instagram</SLink>
-          <SLink to="#">Blog</SLink>
+          <SExternalLink target="blank" href="https://meme-clinic.netlify.app/">
+            Blog
+          </SExternalLink>
         </SColumn>
       </SRow>
-      <SCopyright>
-        &copy; {new Date().getFullYear()} Netsu Osteopathic Clinic
-      </SCopyright>
+      <SCopyright>&copy; {new Date().getFullYear()} Salon Meme</SCopyright>
     </SContainer>
   );
 };

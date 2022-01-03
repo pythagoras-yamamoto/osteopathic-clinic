@@ -17,16 +17,16 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/">HOME</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/AboutUsPage">ABOUT</SNavLinks>
+              <SNavLinks to="/AboutUs">ABOUT</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/MenuPricePage">MENU & PRICE</SNavLinks>
+              <SNavLinks to="/MenuPrice">MENU & PRICE</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/ResearvationPage">RESEARVATION</SNavLinks>
+              <SNavLinks to="/Researvation">RESEARVATION</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/ContactPage">CONTACT</SNavLinks>
+              <SNavLinks to="/Contact">CONTACT</SNavLinks>
             </SNavItem>
           </SNavMenu>
         </SNavContainer>

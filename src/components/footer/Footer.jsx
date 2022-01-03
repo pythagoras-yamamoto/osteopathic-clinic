@@ -7,9 +7,9 @@ export const Footer = () => {
     <SContainer>
       <SRow>
         <SColumn>
-          <STitle>About Clinic</STitle>
+          <STitle>About Salon</STitle>
           <SLink to="/">ホーム</SLink>
-          <SLink to="/AboutUs">当院について</SLink>
+          <SLink to="/AboutUs">当サロンについて</SLink>
           <SLink to="/MenuPrice">メニュー・料金</SLink>
           <SLink to="/Researvation">予約状況</SLink>
           <SExternalLink target="blank" href="https://meme-clinic.netlify.app/">
@@ -33,9 +33,9 @@ export const Footer = () => {
         <SColumn>
           <STitle>Social</STitle>
           <SLink to="https://www.instagram.com/meme.h1sa/">Instagram</SLink>
-          <SExternalLink target="blank" href="https://meme-clinic.netlify.app/">
+          {/* <SExternalLink target="blank" href="https://meme-clinic.netlify.app/">
             Blog
-          </SExternalLink>
+          </SExternalLink> */}
         </SColumn>
       </SRow>
       <SCopyright>&copy; {new Date().getFullYear()} Salon Meme</SCopyright>

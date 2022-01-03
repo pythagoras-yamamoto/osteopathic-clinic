@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Grid, TextField } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
 import { init, send } from "emailjs-com";
 
@@ -8,6 +7,7 @@ export const ContactForm = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
+  //todo 電話番号
 
   const sendEmail = () => {
     const user_id = "user_lJKxWcZEtj7qKiZ1wNgb8";
@@ -24,6 +24,7 @@ export const ContactForm = () => {
 
     send(service_id, template_id, template_param).then(() => {
       console.log("success to send email");
+      alert("予約を受けつけました");
 
       setName("");
       setMail("");

@@ -12,10 +12,10 @@ export const NavSidebar = ({ isOpen, toggle }) => {
       <SSidebarWrapper>
         <SSidebarMenu>
           <SSidebarLinks to="/">Home</SSidebarLinks>
-          <SSidebarLinks to="/AboutUsPage">About</SSidebarLinks>
-          <SSidebarLinks to="/MenuPricePage">Menu & Price</SSidebarLinks>
-          <SSidebarLinks to="/ResearvationPage">Researvation</SSidebarLinks>
-          <SSidebarLinks to="/ContactPage">Contact</SSidebarLinks>
+          <SSidebarLinks to="/AboutUs">About</SSidebarLinks>
+          <SSidebarLinks to="/MenuPrice">Menu & Price</SSidebarLinks>
+          <SSidebarLinks to="/Researvation">Researvation</SSidebarLinks>
+          <SSidebarLinks to="/Contact">Contact</SSidebarLinks>
         </SSidebarMenu>
       </SSidebarWrapper>
     </SNavSidebarContainer>

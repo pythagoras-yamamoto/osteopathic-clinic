@@ -9,26 +9,29 @@ export const Footer = () => {
         <SColumn>
           <STitle>About Clinic</STitle>
           <SLink to="/">ホーム</SLink>
-          <SLink to="/AboutUsPage">当院について</SLink>
-          <SLink to="/MenuPricePage">メニュー・料金</SLink>
-          <SLink to="ResearvationPage">予約状況</SLink>
-          <SLink to="ContactPage">お問い合わせ</SLink>
+          <SLink to="/AboutUs">当院について</SLink>
+          <SLink to="/MenuPrice">メニュー・料金</SLink>
+          <SLink to="Researvation">予約状況</SLink>
+          <SLink to="https://meme-clinic.netlify.app/">ブログ</SLink>
+          <SLink to="Contact">お問い合わせ</SLink>
         </SColumn>
         <SColumn>
           <STitle>Infomation</STitle>
           <SFooterItem>営業時間 : 10:00 - 21:00 </SFooterItem>
-          <SFooterItem>住所 : 新潟県十日町市 </SFooterItem>
+          <SFooterItem>
+            住所 : 長野市上野2丁目1183-41　ハイツ若夢102号
+          </SFooterItem>
         </SColumn>
         <SColumn>
           <STitle>Contact</STitle>
-          <SFooterItem>LINE : </SFooterItem>
-          <SFooterItem>電話番号 : </SFooterItem>
-          <SFooterItem> メール : </SFooterItem>
+          <SFooterItem>LINE : @939didbq</SFooterItem>
+          {/* <SFooterItem>電話番号 : </SFooterItem> */}
+          <SFooterItem> メール : meme.hisa33@gmail.com</SFooterItem>
         </SColumn>
         <SColumn>
           <STitle>Social</STitle>
-          <SLink to="#">instagram</SLink>
-          <SLink to="#">note</SLink>
+          <SLink to="https://www.instagram.com/meme.h1sa/">Instagram</SLink>
+          <SLink to="#">Blog</SLink>
         </SColumn>
       </SRow>
       <SCopyright>
@@ -45,14 +48,6 @@ const SContainer = styled.div`
   @media (max-width: 1000px) {
     padding: 70px 20px 10px 20px;
   }
-`;
-
-const SWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
 `;
 
 const SColumn = styled.div`

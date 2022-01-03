@@ -67,6 +67,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: bold;
+
   color: rgb(0, 116, 127);
   background: rgba(255, 255, 255, 0.5);
   height: 100px;
@@ -85,6 +86,7 @@ const SContentsWrapeer = styled.div`
   margin-top: 80px;
   width: 80vw;
   margin-right: 5%;
+  margin-bottom: 100px;
 
   @media screen and (max-width: 768px) {
     margin-top: 50px;
@@ -99,9 +101,10 @@ const SContentsWrapeer = styled.div`
 const SText = styled.div`
   text-align: left;
   font-size: 1rem;
+  font-weight: 500;
   overflow-wrap: break-word;
   white-space: pre-wrap;
-
+  letter-spacing: 0.08em;
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {

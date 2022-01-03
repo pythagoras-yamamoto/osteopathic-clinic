@@ -20,7 +20,7 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/AboutUs">ABOUT</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/MenuPrice">MENU & PRICE</SNavLinks>
+              <SNavLinks to="/MenuPrice">MENU・PRICE</SNavLinks>
             </SNavItem>
             <SNavItem>
               <SNavLinks to="/Researvation">RESEARVATION</SNavLinks>

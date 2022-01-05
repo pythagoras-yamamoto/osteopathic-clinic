@@ -7,10 +7,7 @@ import { Calendar } from "./Calendar";
 export const ContainerC = (props) => {
   const {
     title, //title　: Item name
-    titleImage,
-    image, //, image : Img part of the item
-    widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
-    shadowColor
+    titleImage
   } = props;
 
   return (
@@ -20,15 +17,9 @@ export const ContainerC = (props) => {
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
-          <SCalendar width={widthRatio}>
+          <SCalendar>
             <Calendar />
           </SCalendar>
-          <SImage
-            shadowColor={shadowColor}
-            src={image}
-            width={widthRatio}
-            alt=""
-          ></SImage>
         </SContentsWrapeer>
       </SContainerWrapper>
     </>
@@ -94,13 +85,7 @@ const SContentsWrapeer = styled.div`
 `;
 
 const SCalendar = styled.div`
-  width: ${(props) => (props.width ? 95 - props.width : 55)}%;
-`;
-
-const SImage = styled.img`
-  width: ${(props) => (props.width ? props.width : 40)}%;
-  /* box-shadow: 15px -15px ${(props) =>
-    props.shadowColor ? props.shadowColor : "#deb887"}; */
+  width: 100%;
 `;
 
 const SubTitle = styled.p`

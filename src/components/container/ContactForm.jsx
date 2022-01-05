@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Grid, TextField } from "@material-ui/core";
-import SendIcon from "@material-ui/icons/Send";
+import styled from "styled-components";
+import { Grid, TextField, Button } from "@material-ui/core";
 import { init, send } from "emailjs-com";
 
 export const ContactForm = () => {
@@ -49,13 +49,13 @@ export const ContactForm = () => {
 
   return (
     <div className="contact-page">
-      <p className="contact-top">Contact</p>
       <Grid container alignItems="center" justify="center">
         <Grid item xs={8}>
           <form onSubmit={onSubmit}>
             <TextField
               id="outlined-multiline-flexible"
               className="contact-name"
+              variant="outlined"
               type="text"
               required
               label="氏名(必須)"
@@ -67,6 +67,7 @@ export const ContactForm = () => {
             />
             <TextField
               className="contact-mail"
+              variant="outlined"
               type="text"
               required
               label="メールアドレス(必須)"
@@ -78,6 +79,7 @@ export const ContactForm = () => {
             />
             <TextField
               className="contact-message"
+              variant="outlined"
               type="text"
               required
               label="お問い合わせ内容(必須)"
@@ -87,8 +89,15 @@ export const ContactForm = () => {
               value={message}
               InputProps={{ disableUnderline: true }}
             />
-            <Button variant="contained" endIcon={<SendIcon />}>
-              Send
+            <SSpace />
+            <Button
+              className="contact-button"
+              type="submit"
+              color="primary"
+              variant="outlined"
+              size="large"
+            >
+              送信
             </Button>
           </form>
         </Grid>
@@ -96,3 +105,7 @@ export const ContactForm = () => {
     </div>
   );
 };
+
+const SSpace = styled.div`
+  margin: 40px;
+`;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
-import { ContactForm } from "../components/container/ContactForm";
+import { ContactContainer } from "../components/container/ContactContainer";
 // import { EmbedTwitter } from "../components/EmbedTwiter";
 import { ScrollReveal } from "../components/container/ScrollReveal";
 import Image from "../public/clinic-image.jpeg";
@@ -17,7 +17,7 @@ export const Contact = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ScrollReveal move="top">
-        <ContactForm />
+        <ContactContainer title="お問い合わせ" />
         {/* <EmbedTwitter /> */}
       </ScrollReveal>
       <Footer />

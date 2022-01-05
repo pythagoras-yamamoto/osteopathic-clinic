@@ -18,14 +18,6 @@ export const Contact = () => {
       </SImageWraper>
       <ScrollReveal move="top">
         <ContactForm />
-        <ContainerA
-          title={"お問い合わせ"}
-          text={
-            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
-          }
-          image={Image}
-          shadowColor={"#de8787"}
-        />
         {/* <EmbedTwitter /> */}
       </ScrollReveal>
       <Footer />

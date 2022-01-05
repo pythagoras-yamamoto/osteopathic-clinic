@@ -49,8 +49,8 @@ class Map extends Component {
     // };
     const containerStyle = {
       width: "100%",
-      height: "50vh",
-      margin: "auto"
+      height: "50vh"
+      // margin: "auto"
     };
 
     return (

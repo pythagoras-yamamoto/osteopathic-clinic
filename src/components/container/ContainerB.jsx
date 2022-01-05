@@ -87,7 +87,7 @@ const SContentsWrapeer = styled.div`
   margin: auto;
   margin-top: 100px;
   width: 80vw;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 `;
 
 const SMap = styled.div`
@@ -100,9 +100,8 @@ const SMap = styled.div`
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
-  /* box-shadow: 15px -15px ${(props) =>
-    props.shadowColor ? props.shadowColor : "#deb887"}; */
-    @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;

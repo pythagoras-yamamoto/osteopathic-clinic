@@ -17,7 +17,7 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 
 ##  概要
 2022年1月下旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。デザインから実装まで担当。
-[整体院のブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog)、お問い合わせ自動化目的の[LINEBot](https://github.com/pythagoras-yamamoto/clinic-bot)も作成。
+[サロンのブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog)、お問い合わせ自動化を目的とした[LINEBot](https://github.com/pythagoras-yamamoto/clinic-bot)も作成。
 
 ## 機能
 #### 問い合わせフォーム

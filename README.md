@@ -15,9 +15,19 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 <img width="982" alt="スクリーンショット 2021-12-06 23 50 25" src="https://user-images.githubusercontent.com/60994397/144868398-bb4e0132-9837-4557-b142-2cca69243585.png">
  -->
 
-## 概要
-2022年1月下旬にプレオープン予定の女性専用整体院「めめ」のwebサイト。デザインから実装まで担当。
-[整体院のブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog) も作成。
+##  概要
+2022年1月下旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。デザインから実装まで担当。
+[整体院のブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog)、お問い合わせ自動化目的の[LINEBot](https://github.com/pythagoras-yamamoto/clinic-bot)も作成。
+
+## 機能
+#### 問い合わせフォーム
+Email.jsを利用することで、問い合わせ先とサロン運営者に対して確認メールを自動で送信。
+#### 予約状況確認ページ
+Google CalendarとFullCalendarを連携することで、運営者が店舗のGoogle Calendarに書き込むだけで予約状況がwebサイトに反映される。
+#### ブログサイト
+Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。
+#### LINE bot
+予約等のお問い合わせ用のLINEbotを導入し、事務作業を改善。
 
 ## 使用技術 
 全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  

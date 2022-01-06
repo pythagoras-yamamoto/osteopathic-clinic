@@ -49,7 +49,7 @@ export const ContactForm = () => {
 
   return (
     <div className="contact-page">
-      <Grid container alignItems="center" justify="center">
+      <Grid container alignItems="center" justifyContent="center">
         <Grid item xs={8}>
           <form onSubmit={onSubmit}>
             <TextField
@@ -63,7 +63,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeName}
               value={name}
-              InputProps={{ disableUnderline: true }}
+              // InputProps={{ disableUnderline: true }}
             />
             <TextField
               className="contact-mail"
@@ -75,7 +75,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMail}
               value={mail}
-              InputProps={{ disableUnderline: true }}
+              // InputProps={{ disableUnderline: true }}
             />
             <TextField
               className="contact-message"
@@ -87,7 +87,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMessage}
               value={message}
-              InputProps={{ disableUnderline: true }}
+              // InputProps={{ disableUnderline: true }}
             />
             <SSpace />
             <Button

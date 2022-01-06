@@ -12,6 +12,14 @@ export const Calendar = () => {
       events={{
         googleCalendarId: "l05ur2ljobrce6nvvfg83k2u44@group.calendar.google.com"
       }}
+      headerToolbar={{
+        left: "prev,next today",
+        center: "title",
+        right: "dayGridMonth"
+      }}
+      locale="ja"
+      navLinks="false"
+      editable="false"
     />
   );
 };

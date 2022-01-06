@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/header/Header";
-import { ContainerA } from "../components/container/ContainerA";
+import { PriceTableContainer } from "../components/container/PriceTableContainer";
 import { Footer } from "../components/footer/Footer";
 // import { Calendar } from "../components/Calendar";
 import { ScrollReveal } from "../components/container/ScrollReveal";
@@ -16,14 +16,7 @@ export const MenuPrice = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       <ScrollReveal move="top">
-        <ContainerA
-          title={"メニュー"}
-          text={
-            "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは"
-          }
-          image={Image}
-          shadowColor={"#de8787"}
-        />
+        <PriceTableContainer title={"メニュー"} titleImage={Image} />
       </ScrollReveal>
       <Footer />
     </>

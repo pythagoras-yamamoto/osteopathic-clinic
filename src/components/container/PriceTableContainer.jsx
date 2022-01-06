@@ -84,6 +84,5 @@ const SContentsWrapeer = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 90vw;
-    margin: 25px;
   }
 `;

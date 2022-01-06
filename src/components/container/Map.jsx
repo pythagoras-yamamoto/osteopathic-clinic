@@ -8,10 +8,10 @@ class Map extends Component {
     this.state = {
       locationName: "",
       center: {
-        lat: -3.745,
-        lng: -38.523
+        lat: 36.68609272398972,
+        lng: 138.23314952238516
       },
-      isShowMarker: false
+      isShowMarker: true
     };
   }
   changeLocationName(e) {

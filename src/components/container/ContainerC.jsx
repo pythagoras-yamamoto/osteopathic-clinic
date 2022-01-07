@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import IMG from "../../public/title-back-image.png";
 import { Calendar } from "./Calendar";
+import { LinkContactButton } from "./LinkContactButton";
 
 export const ContainerC = (props) => {
   const {
@@ -20,6 +21,7 @@ export const ContainerC = (props) => {
           <SCalendar>
             <Calendar />
           </SCalendar>
+          <LinkContactButton textColor="ご予約はこちら" />
         </SContentsWrapeer>
       </SContainerWrapper>
     </>

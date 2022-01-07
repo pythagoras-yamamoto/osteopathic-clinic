@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import IMG from "../../public/title-back-image.png";
 import { PriceTable } from "./PriceTable";
+import { LinkContactButton } from "./LinkContactButton";
 
 export const PriceTableContainer = (props) => {
   const {
@@ -17,6 +18,7 @@ export const PriceTableContainer = (props) => {
         </STitleWrapper>
         <SContentsWrapeer>
           <PriceTable />
+          <LinkContactButton />
         </SContentsWrapeer>
       </SContainerWrapper>
     </>

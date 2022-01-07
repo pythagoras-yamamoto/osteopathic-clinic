@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import IMG from "../../public/title-back-image.png";
+import { LinkContactButton } from "./LinkContactButton";
 
 export const ContainerA = (props) => {
   const {
@@ -27,6 +28,7 @@ export const ContainerA = (props) => {
             alt="No Image"
           ></SImage>
         </SContentsWrapeer>
+        <LinkContactButton />
       </SContainerWrapper>
     </>
   );

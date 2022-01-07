@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 export const PriceTableElement = (props) => {
-  const { title, price, min, menu, text } = props;
+  const { title, price, min, menu, text, titleColor } = props;
   return (
     <Pricecard>
-      <Title>{title}</Title>
+      <Title titleColor={titleColor}>{title}</Title>
       <Wrapper>
         <Price>
           <span>¥ </span>
@@ -33,7 +33,7 @@ const Pricecard = styled.li`
 `;
 
 const Title = styled.h3`
-  background: #a2bc10;
+  background: ${(props) => (props.titleColor ? props.titleColor : "#a2bc10")};
   color: #fff;
   padding: 10px;
 `;

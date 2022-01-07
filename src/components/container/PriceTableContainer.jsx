@@ -28,7 +28,7 @@ export const SContainerWrapper = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
   width: 90vw;
-  padding: 50px 0;
+  padding-top: 50px;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 
   @media screen and (max-width: 768px) {

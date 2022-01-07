@@ -31,7 +31,7 @@ Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動で�
 
 ## 使用技術 
 全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  
-使用技術 : React.js, styled-components,Swiper,react-reveal, Vercel
+使用技術 : React.js, styled-components,Swiper,react-reveal, Vercel, Material UI
 
 
 ## 共通事項

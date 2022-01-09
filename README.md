@@ -23,9 +23,9 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 #### 問い合わせフォーム
 Email.jsを利用することで、問い合わせ先とサロン運営者に対して確認メールを自動で送信。
 #### 予約状況確認ページ
-Google CalendarとFullCalendarを連携することで、運営者が店舗のGoogle Calendarに書き込むだけで予約状況がwebサイトに反映される。
+Google CalendarとFullCalendarを連携することで、運営者が店舗のGoogle Calendarに書き込むだけで予約状況がwebサイトに反映される。ノンプログラマーでも予約状況の更新が手軽に可能。
 #### ブログサイト
-Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。
+Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。ノンプログラマーでもブログ記事の更新が手軽に可能。
 #### LINE bot
 予約等のお問い合わせ用のLINEbotを導入し、事務作業を改善。
 

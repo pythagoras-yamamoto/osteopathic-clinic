@@ -35,6 +35,7 @@ export const ContainerA = (props) => {
 };
 
 export const SContainerWrapper = styled.div`
+  letter-spacing: 0.2em;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -102,11 +103,11 @@ const SContentsWrapeer = styled.div`
 
 const SText = styled.div`
   text-align: left;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 500;
   overflow-wrap: break-word;
   white-space: pre-wrap;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.4rem;
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {

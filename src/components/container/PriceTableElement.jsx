@@ -27,9 +27,10 @@ const Pricecard = styled.li`
   padding-bottom: 1rem;
   box-sizing: border-box;
   margin: 0 auto 3em;
-  min-width: 300px;
+  /* min-width: 300px; */
   max-width: 600px;
-  min-height: 450px;
+  min-width: 300px;
+  min-height: 600px;
 `;
 
 const Title = styled.h3`

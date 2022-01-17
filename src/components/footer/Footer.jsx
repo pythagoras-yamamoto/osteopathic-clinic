@@ -47,7 +47,8 @@ export const Footer = () => {
 
 const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
-  background: #00747f;
+  /* background: #00747f; */
+  background: #5f9ea0;
 
   @media (max-width: 1000px) {
     padding: 70px 20px 10px 20px;

@@ -2,12 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "../components/header/Header";
-import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
 import { ContactContainer } from "../components/container/ContactContainer";
 // import { EmbedTwitter } from "../components/EmbedTwiter";
 import { ScrollReveal } from "../components/container/ScrollReveal";
-import Image from "../public/clinic-image.jpeg";
+import Image from "../public/roader2.jpg";
 
 export const Contact = () => {
   return (

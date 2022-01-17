@@ -6,7 +6,6 @@ import { LinkContactButton } from "./LinkContactButton";
 export const ContainerA = (props) => {
   const {
     title, //title　: Item name
-    titleImage,
     text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
@@ -16,7 +15,7 @@ export const ContainerA = (props) => {
   return (
     <>
       <SContainerWrapper>
-        <STitleWrapper titleImage={titleImage}>
+        <STitleWrapper titleImage={IMG}>
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
@@ -77,7 +76,7 @@ const STitle = styled.h2`
   width: 300px;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 22px;
   }
 `;
 
@@ -107,11 +106,14 @@ const SText = styled.div`
   font-weight: 500;
   overflow-wrap: break-word;
   white-space: pre-wrap;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2em;
+  line-height: 2;
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {
     /* font-size: 18px; */
+    font-size: 16px;
+    letter-spacing: 0.12em;
     width: 100%;
     margin-bottom: 100px;
   }
@@ -119,10 +121,16 @@ const SText = styled.div`
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
-  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#deb887")};
+  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#FFF0F5")};
+  max-width: 400px;
+  max-height: 300px;
+  height: auto;
 
   @media screen and (max-width: 768px) {
+    max-width: initial;
+    max-height: initial;
+    height: auto;
     font-size: 18px;
-    width: 95%;
+    width: 100%;
   }
 `;

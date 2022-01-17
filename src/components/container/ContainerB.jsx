@@ -27,7 +27,7 @@ export const ContainerB = (props) => {
             shadowColor={shadowColor}
             src={image}
             width={widthRatio}
-            alt="No Image"
+            alt=""
           ></SImage>
         </SContentsWrapeer>
       </SContainerWrapper>
@@ -91,10 +91,11 @@ const SContentsWrapeer = styled.div`
 `;
 
 const SMap = styled.div`
-  width: ${(props) => (props.width ? 95 - props.width : 55)}%;
+  /* width: ${(props) => (props.width ? 95 - props.width : 55)}%; */
+  width: 100%;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    /* width: 100%; */
   }
 `;
 

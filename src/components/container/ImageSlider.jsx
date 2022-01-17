@@ -16,7 +16,9 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Img from "../../public/clinic-image.jpeg";
+import Img1 from "../../public/roader1.jpg";
+import Img2 from "../../public/roader2.jpg";
+import Img3 from "../../public/roader3.jpg";
 
 export const ImageSlider = () => {
   const settings = {
@@ -31,13 +33,13 @@ export const ImageSlider = () => {
   return (
     <ImgWrapper>
       <Slider {...settings}>
+        <SImage src={Img1} alt="" />
+        <SImage src={Img2} alt="" />
+        <SImage src={Img3} alt="" />
+        {/* <SImage src={Img} alt="" />
         <SImage src={Img} alt="" />
         <SImage src={Img} alt="" />
-        <SImage src={Img} alt="" />
-        <SImage src={Img} alt="" />
-        <SImage src={Img} alt="" />
-        <SImage src={Img} alt="" />
-        <SImage src={Img} alt="" />
+        <SImage src={Img} alt="" /> */}
       </Slider>
     </ImgWrapper>
   );
@@ -81,13 +83,13 @@ export const SwiperImageSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <SImage src={Img} alt="" />
+          <SImage src={Img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <SImage src={Img} alt="" />
+          <SImage src={Img2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <SImage src={Img} alt="" />
+          <SImage src={Img3} alt="" />
         </SwiperSlide>
       </Swiper>
     </ImgWrapper>

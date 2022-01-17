@@ -8,7 +8,8 @@ import { SwiperImageSlider } from "../components/container/ImageSlider";
 import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
 
-import Image from "../public/clinic-image.jpeg";
+import Image from "../public/concept.jpg";
+import titleImage from "../public/calendar.jpeg";
 
 export const Home = () => {
   return (
@@ -28,12 +29,13 @@ export const Home = () => {
       </SImageWraper>
       <ScrollReveal move="top">
         <ContainerA
+          titleImage={titleImage}
           title={"コンセプト"}
           text={
             "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
           }
           image={Image}
-          shadowColor={"#de8787"}
+          shadowColor={"#FFFAFA"}
         />
         <ContainerA
           title={"料金・メニュー"}
@@ -41,9 +43,9 @@ export const Home = () => {
             "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
           }
           image={Image}
-          widthRatio={60}
+          // widthRatio={60}
         />
-        <ContainerB title={"アクセス"} image={Image} widthRatio={47} />
+        <ContainerB title={"アクセス"} widthRatio={0} />
       </ScrollReveal>
       <Footer />
     </>

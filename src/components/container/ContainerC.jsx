@@ -55,7 +55,6 @@ export const STitleWrapper = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
 
   @media screen and (max-width: 600px) {
     margin-right: 0;

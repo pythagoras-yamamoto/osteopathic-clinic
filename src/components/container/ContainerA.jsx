@@ -34,6 +34,7 @@ export const ContainerA = (props) => {
 };
 
 export const SContainerWrapper = styled.div`
+  /* font-family: "メイリオ"; */
   letter-spacing: 0.2em;
   margin: auto;
   margin-top: 50px;

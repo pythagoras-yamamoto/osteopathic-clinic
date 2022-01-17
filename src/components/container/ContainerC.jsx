@@ -55,7 +55,6 @@ export const STitleWrapper = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
 
   @media screen and (max-width: 600px) {
     margin-right: 0;
@@ -87,19 +86,4 @@ const SContentsWrapeer = styled.div`
 
 const SCalendar = styled.div`
   width: 100%;
-`;
-
-const SubTitle = styled.p`
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(0, 116, 127);
-  background: rgba(255, 255, 255, 0.5);
-  height: 150px;
-  width: 300px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 10px;
-  }
 `;

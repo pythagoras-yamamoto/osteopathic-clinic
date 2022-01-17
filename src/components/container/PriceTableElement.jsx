@@ -57,6 +57,13 @@ const SubText = styled.p`
 const Text = styled.p`
   padding: 20px 0;
   text-align: left;
+  letter-spacing: 0.12em;
+  font-size: 18px;
+
+  @media screen and (max-width: 768px) {
+    /* font-size: 18px; */
+    font-size: 16px;
+  }
 `;
 
 const Wrapper = styled.div`

@@ -5,7 +5,7 @@ import { Header } from "../components/header/Header";
 import { PriceTableContainer } from "../components/container/PriceTableContainer";
 import { Footer } from "../components/footer/Footer";
 // import { Calendar } from "../components/Calendar";
-import { ScrollReveal } from "../components/container/ScrollReveal";
+// import { ScrollReveal } from "../components/container/ScrollReveal";
 import Image from "../public/roader2.jpg";
 
 export const MenuPrice = () => {
@@ -15,9 +15,9 @@ export const MenuPrice = () => {
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <ScrollReveal move="top">
-        <PriceTableContainer title={"メニュー"} titleImage={Image} />
-      </ScrollReveal>
+      {/* <ScrollReveal move="top"> */}
+      <PriceTableContainer title={"メニュー"} titleImage={Image} />
+      {/* </ScrollReveal> */}
       <Footer />
     </>
   );

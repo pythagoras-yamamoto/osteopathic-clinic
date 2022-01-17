@@ -67,7 +67,7 @@ const STitle = styled.h2`
   width: 300px;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 `;
 

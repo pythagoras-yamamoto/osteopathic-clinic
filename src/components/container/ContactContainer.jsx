@@ -49,6 +49,7 @@ export const STitleWrapper = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 50px;
 `;
 
 const STitle = styled.h2`

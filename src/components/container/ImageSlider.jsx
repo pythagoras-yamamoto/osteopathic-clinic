@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Img1 from "../../public/roader1.jpg";
 import Img2 from "../../public/roader2.jpg";
-import Img3 from "../../public/roader3.jpg";
+import Img3 from "../../public/roader4.jpg";
 
 export const ImageSlider = () => {
   const settings = {

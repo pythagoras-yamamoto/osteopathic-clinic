@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
 
@@ -12,6 +13,8 @@ export const LinkContactButton = () => {
           color="primary"
           variant="outlined"
           size="large"
+          component={Link}
+          to="/Contact"
         >
           ご予約はこちら
         </Button>

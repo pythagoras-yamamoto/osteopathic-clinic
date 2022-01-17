@@ -1,5 +1,6 @@
 // import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import styled from "styled-components";
 import "swiper/css";
 
 import "swiper/css/effect-coverflow";
@@ -12,7 +13,6 @@ import SwiperCore, {
 } from "swiper";
 
 import Slider from "react-slick";
-import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

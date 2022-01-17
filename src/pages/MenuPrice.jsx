@@ -16,7 +16,7 @@ export const MenuPrice = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       {/* <ScrollReveal move="top"> */}
-      <PriceTableContainer title={"メニュー"} titleImage={Image} />
+      <PriceTableContainer title={"Menu & Price"} titleImage={Image} />
       {/* </ScrollReveal> */}
       <Footer />
     </>

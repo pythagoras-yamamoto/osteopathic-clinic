@@ -77,7 +77,7 @@ const SNavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   margin-left: 30px;
 
@@ -124,8 +124,7 @@ const SNavItem = styled.li`
 
 const SNavLinks = styled(LinkR)`
   color: black;
-  /* display: flex;
-  align-items: center; */
+  font-weight: 700;
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
@@ -137,11 +136,10 @@ const SNavLinks = styled(LinkR)`
 
 const SNavExternalLink = styled.a`
   color: black;
-  /* display: flex;
-  align-items: center; */
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
+  font-weight: 700;
 
   &:hover {
     border-bottom: 2px solid #01bf71;

@@ -16,7 +16,7 @@ export const Contact = () => {
         <SImage src={Image} alt="" />
       </SImageWraper>
       {/* <ScrollReveal move="top"> */}
-      <ContactContainer title="お問い合わせ" />
+      <ContactContainer title="Contact" />
       {/* <EmbedTwitter /> */}
       {/* </ScrollReveal> */}
       <Footer />

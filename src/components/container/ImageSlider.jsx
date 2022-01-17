@@ -48,6 +48,7 @@ export const ImageSlider = () => {
 const SImage = styled.img`
   width: 90vw;
   height: auto;
+  max-height: 100vh;
   box-shadow: 0px 5px 0 rgb(0 0 0 / 15%);
 
   @media screen and (max-width: 600px) {

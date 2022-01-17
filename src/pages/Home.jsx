@@ -30,7 +30,7 @@ export const Home = () => {
       {/* <ScrollReveal move="top"> */}
       <ContainerA
         titleImage={titleImage}
-        title={"コンセプト"}
+        title={"Concept"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにこんにちはこんにちはこんにちはこんにちは"
         }
@@ -38,14 +38,14 @@ export const Home = () => {
         shadowColor={"#FFFAFA"}
       />
       <ContainerA
-        title={"料金・メニュー"}
+        title={"Menu & Price"}
         text={
           "こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちははこんにちはこんにちはこんにちはこんにちはこんにちはこんにちこんにちはこんにちは"
         }
         image={Image}
         // widthRatio={60}
       />
-      <ContainerB title={"アクセス"} widthRatio={0} />
+      <ContainerB title={"Access"} widthRatio={0} />
       {/* </ScrollReveal> */}
       <Footer />
     </>

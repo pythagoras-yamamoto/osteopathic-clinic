@@ -76,7 +76,7 @@ const SSidebarLinks = styled(Link)`
   padding: 30px 60px;
   color: black;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   outline: none;
   cursor: pointer;
   text-decoration: none;

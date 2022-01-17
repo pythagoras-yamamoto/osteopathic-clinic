@@ -17,7 +17,7 @@ export const Researvation = () => {
       </SImageWraper>
       {/* <ScrollReveal move="top"> */}
       <ContainerC
-        title={"予約状況"}
+        title={"Reserve"}
         text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
         image={Image}
         widthRatio={100}

@@ -20,7 +20,7 @@ export const Home = () => {
         <STextOnImage>
           <p>女性施術者による女性専用サロンです。</p>
           <p>
-            それぞれのお身体,体調に合わせたオーダーメイドの鍼灸施術を行います。
+            それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
           </p>
         </STextOnImage>
         {/* <ImageSlider></ImageSlider> */}

@@ -6,7 +6,7 @@ import { ContainerC } from "../components/container/ContainerC";
 import { Footer } from "../components/footer/Footer";
 import { ScrollReveal } from "../components/container/ScrollReveal";
 // import { Calendar } from "../components/Calendar";
-import Image from "../public/clinic-image.jpeg";
+import Image from "../public/roader2.jpg";
 
 export const Researvation = () => {
   return (

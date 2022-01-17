@@ -17,6 +17,7 @@ export const PriceTable = () => {
       />
       <PriceTableElement
         title="コース B"
+        titleColor="#1E90FF"
         price="10,000"
         min="/ 120min"
         menu="ボディリバランス ＋ ヘッドリラクゼーション"
@@ -27,7 +28,7 @@ export const PriceTable = () => {
       />
       <PriceTableElement
         title="コース C"
-        titleColor="greenyellow"
+        titleColor="#008080"
         price="12,000"
         min="/ 120min"
         menu="ボディリバランス ＋ フェイシャルトリートメント"

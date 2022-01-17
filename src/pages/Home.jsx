@@ -20,7 +20,7 @@ export const Home = () => {
         <STextOnImage>
           <p>女性施術者による女性専用サロンです。</p>
           <p>
-            それぞれのお身体,体調に合わせたオーダーメイドの鍼灸施術を行います
+            それぞれのお身体,体調に合わせたオーダーメイドの鍼灸施術を行います。
           </p>
         </STextOnImage>
         {/* <ImageSlider></ImageSlider> */}
@@ -60,15 +60,15 @@ const SImageWraper = styled.div`
 
 const STitleOnImage = styled.h1`
   position: absolute;
-  top: 30%;
-  font-size: 4rem;
-  font-weight: bold;
+  font-family: "Satisfy";
+  top: 20%;
+  font-size: 120px;
   color: white;
-  margin-left: 15%;
+  margin-left: 20%;
   z-index: 10;
 
   @media screen and (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 80px;
   }
 
   @media screen and (max-width: 600px) {
@@ -80,14 +80,17 @@ const STextOnImage = styled.div`
   top: 50%;
   color: white;
   z-index: 10;
-  margin-left: 15%;
+  margin-left: 20%;
   text-align: left;
   font-size: 20px;
+  font-family: "Lato";
+  font-weight: 700;
   width: 70%;
   overflow-wrap: keep-all;
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 600px) {

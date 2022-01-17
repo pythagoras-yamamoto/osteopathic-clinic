@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // import SlideRoutes from "react-slide-routes";
 
 import { Home } from "../pages/Home";

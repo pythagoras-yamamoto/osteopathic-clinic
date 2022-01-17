@@ -5,7 +5,7 @@ import { Header } from "../components/header/Header";
 import { Footer } from "../components/footer/Footer";
 import { ContactContainer } from "../components/container/ContactContainer";
 // import { EmbedTwitter } from "../components/EmbedTwiter";
-import { ScrollReveal } from "../components/container/ScrollReveal";
+// import { ScrollReveal } from "../components/container/ScrollReveal";
 import Image from "../public/roader2.jpg";
 
 export const Contact = () => {
@@ -15,10 +15,10 @@ export const Contact = () => {
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <ScrollReveal move="top">
-        <ContactContainer title="お問い合わせ" />
-        {/* <EmbedTwitter /> */}
-      </ScrollReveal>
+      {/* <ScrollReveal move="top"> */}
+      <ContactContainer title="お問い合わせ" />
+      {/* <EmbedTwitter /> */}
+      {/* </ScrollReveal> */}
       <Footer />
     </>
   );

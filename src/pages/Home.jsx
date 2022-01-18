@@ -90,7 +90,7 @@ const STextOnImage = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-    font-weight: 500;
+    /* font-weight: 500; */
   }
 
   @media screen and (max-width: 600px) {

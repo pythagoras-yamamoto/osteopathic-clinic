@@ -31,13 +31,12 @@ Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動で�
 予約等のお問い合わせ用のLINEbotを導入し、事務作業を改善。
 
 ## 使用技術 
-全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用。アニメーション部分にはswiper,react-revealを導入。  
-使用技術 : React.js, styled-components,Swiper,react-reveal, Vercel, Material UI
+全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用(一部にMaterialUI使用)。アニメーション部分にはreact-slick,react-revealを導入。  
+使用技術 : React.js, styled-components,react-slick,react-reveal, Vercel, Material UI
 
 
 ## 共通事項
 - CSS のあて方は基本的にStyled Components(例外は認める)。
-- Styled Components での命名時は関数名に大文字の S をつける。
 - クラス名Container vs Wrapperの命名議論は二つの間に意味的な区分は設けず、Wrapperに統一。
 
 ## ディレクトリ構成
@@ -72,7 +71,3 @@ https://qiita.com/ozora/items/33e00dcaca372db04560
 ### codesandbox:
 
 https://codesandbox.io/
-
-使い方. 
-- template で main に戻れる
-- Fork して LinkSandbox 押して、メインブランチじゃない方（コミットをブランチ PR の方)にする

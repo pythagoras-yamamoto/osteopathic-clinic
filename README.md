@@ -5,13 +5,16 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 
 #### サンプル画像
 
-<img width="1122" alt="スクリーンショット 2022-01-18 23 41 37" src="https://user-images.githubusercontent.com/60994397/149958707-c78a0415-f61f-4dac-b227-a3ce1ae93227.png">
+#### PC
+<img width="1100" alt="スクリーンショット 2022-01-18 23 41 37" src="https://user-images.githubusercontent.com/60994397/149958707-c78a0415-f61f-4dac-b227-a3ce1ae93227.png">
+<img width="1100" alt="スクリーンショット 2022-01-18 23 43 51" src="https://user-images.githubusercontent.com/60994397/149959086-47681bc1-c239-42b6-b5bd-fcbc3af9b120.png">
+<img width="1100" alt="スクリーンショット 2022-01-19 0 08 06" src="https://user-images.githubusercontent.com/60994397/149963375-0ac29176-6547-4a2f-93b5-cc0b1f03a9c6.png">
 
-<img width="1107" alt="スクリーンショット 2022-01-18 23 43 51" src="https://user-images.githubusercontent.com/60994397/149959086-47681bc1-c239-42b6-b5bd-fcbc3af9b120.png">
+#### タブレット
+<img width="328" alt="スクリーンショット 2022-01-18 23 54 34" src="https://user-images.githubusercontent.com/60994397/149961263-776439d9-9eba-4802-bdc3-bb20f63623a4.png">　<img width="327" alt="スクリーンショット 2022-01-18 23 56 39" src="https://user-images.githubusercontent.com/60994397/149962881-0b1bbefb-1126-4007-9189-2a02eb2451b7.png">
 
-<img width="208"  alt="スクリーンショット 2022-01-18 23 39 05" src="https://user-images.githubusercontent.com/60994397/149958815-3ca108cb-53c7-490f-9f59-0d9b04af1f54.png">　<img width="208"  alt="スクリーンショット 2022-01-18 23 39 05" src="https://user-images.githubusercontent.com/60994397/149958815-3ca108cb-53c7-490f-9f59-0d9b04af1f54.png">
-
-
+#### スマホ
+<img width="210" alt="スクリーンショット 2022-01-19 0 02 12" src="https://user-images.githubusercontent.com/60994397/149962410-e53092a5-a6c1-4a99-83c8-421f57cae00c.png">　<img width="208"  alt="スクリーンショット 2022-01-18 23 39 05" src="https://user-images.githubusercontent.com/60994397/149958815-3ca108cb-53c7-490f-9f59-0d9b04af1f54.png">　<img width="210" alt="スクリーンショット 2022-01-18 23 53 00" src="https://user-images.githubusercontent.com/60994397/149961293-cd80e983-f3b7-4fc2-8d5d-c7712cbcac16.png">　
 
 
 ##  概要

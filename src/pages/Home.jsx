@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { ContainerB } from "../components/container/ContainerB";
-// import { SwiperImageSlider } from "../components/container/ImageSlider";
+import { ImageSlider } from "../components/container/ImageSlider";
 // import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
 
@@ -23,7 +23,7 @@ export const Home = () => {
             それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
           </p>
         </STextOnImage>
-        {/* <ImageSlider></ImageSlider> */}
+        <ImageSlider></ImageSlider>
         {/* <SwiperImageSlider /> */}
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>

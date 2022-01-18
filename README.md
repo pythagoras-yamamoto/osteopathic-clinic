@@ -5,15 +5,14 @@ https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
 
 #### サンプル画像
 
-<img width="1440" alt="スクリーンショット 2021-12-13 14 38 24" src="https://user-images.githubusercontent.com/60994397/145758625-cb7c18d8-5163-428f-ae4f-af2195b6b1c8.png">
-<img width="993" alt="スクリーンショット 2021-12-13 14 40 59" src="https://user-images.githubusercontent.com/60994397/145758952-07013da9-bc99-401f-98c2-9a1d9818e4fe.png">
-<img width="1440" alt="スクリーンショット 2021-12-13 14 39 12" src="https://user-images.githubusercontent.com/60994397/145758966-2daa47ee-8803-4696-ad89-bf73531b032c.png">
+<img width="1122" alt="スクリーンショット 2022-01-18 23 41 37" src="https://user-images.githubusercontent.com/60994397/149958707-c78a0415-f61f-4dac-b227-a3ce1ae93227.png">
 
-<!-- <img width="989" alt="スクリーンショット 2021-12-06 23 49 52" src="https://user-images.githubusercontent.com/60994397/144868852-e58cbda3-7879-4538-b5c9-0784410c8b05.png"> 
+<img width="1107" alt="スクリーンショット 2022-01-18 23 43 51" src="https://user-images.githubusercontent.com/60994397/149959086-47681bc1-c239-42b6-b5bd-fcbc3af9b120.png">
+
+<img width="208"  alt="スクリーンショット 2022-01-18 23 39 05" src="https://user-images.githubusercontent.com/60994397/149958815-3ca108cb-53c7-490f-9f59-0d9b04af1f54.png">　<img width="208"  alt="スクリーンショット 2022-01-18 23 39 05" src="https://user-images.githubusercontent.com/60994397/149958815-3ca108cb-53c7-490f-9f59-0d9b04af1f54.png">
 
 
-<img width="982" alt="スクリーンショット 2021-12-06 23 50 25" src="https://user-images.githubusercontent.com/60994397/144868398-bb4e0132-9837-4557-b142-2cca69243585.png">
- -->
+
 
 ##  概要
 2022年1月下旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。デザインから実装まで担当。

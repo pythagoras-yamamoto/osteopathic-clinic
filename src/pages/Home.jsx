@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { ContainerB } from "../components/container/ContainerB";
-import { SwiperImageSlider } from "../components/container/ImageSlider";
+// import { SwiperImageSlider } from "../components/container/ImageSlider";
 // import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
 
@@ -24,7 +24,7 @@ export const Home = () => {
           </p>
         </STextOnImage>
         {/* <ImageSlider></ImageSlider> */}
-        <SwiperImageSlider />
+        {/* <SwiperImageSlider /> */}
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
       {/* <ScrollReveal move="top"> */}

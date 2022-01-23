@@ -17,7 +17,7 @@
 
 
 ##  概要
-2022年1月下旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。デザインから実装まで担当。
+2022年2月上旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。デザインから実装まで担当。
 [サロンのブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog)、お問い合わせ自動化を目的とした[LINEBot](https://github.com/pythagoras-yamamoto/clinic-bot)も作成。
 
 ## 機能

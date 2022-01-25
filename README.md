@@ -42,10 +42,6 @@ Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動で�
 ## ディレクトリ構成
 
 
-## Figma
-https://www.figma.com/file/KKQQmN2AKF4Tz9QUc1Rfyl/Untitled?node-id=2%3A2
-
-
 ## 参考
 ### ディレクトリ構成・命名規則:
 

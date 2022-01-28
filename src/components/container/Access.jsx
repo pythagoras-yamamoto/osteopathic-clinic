@@ -4,7 +4,7 @@ import styled from "styled-components";
 import IMG from "../../public/title-back-image.png";
 import Map from "./Map";
 
-export const ContainerB = (props) => {
+export const Access = (props) => {
   const {
     title, //title　: Item name
     titleImage,

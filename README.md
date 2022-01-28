@@ -1,5 +1,5 @@
 ## サイトイメージ
-#### 公開URL : https://salon-meme.vercel.app/ 
+#### 公開URL : https://memesalon.vercel.app/
 <!-- #### codesandbox : (⚠︎codesandboxのリンクから入ると画像が読み込まれません) https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
  -->
 #### サンプル画像

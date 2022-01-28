@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
-import { ContainerB } from "../components/container/ContainerB";
+import { Access } from "../components/container/Access";
 import { ImageSlider } from "../components/container/ImageSlider";
 // import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
@@ -45,7 +45,7 @@ export const Home = () => {
         image={Image}
         // widthRatio={60}
       />
-      <ContainerB title={"Access"} widthRatio={0} />
+      <Access title={"Access"} widthRatio={0} />
       {/* </ScrollReveal> */}
       <Footer />
     </>

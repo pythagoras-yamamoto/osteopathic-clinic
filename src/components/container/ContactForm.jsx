@@ -7,6 +7,8 @@ export const ContactForm = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
+  // const [phone, setPhone] = useState("");
+
   //todo 電話番号
 
   const sendEmail = () => {
@@ -20,6 +22,7 @@ export const ContactForm = () => {
       to_name: name,
       email: mail,
       message: message
+      // phone: phone
     };
 
     send(service_id, template_id, template_param).then(() => {
@@ -29,6 +32,7 @@ export const ContactForm = () => {
       setName("");
       setMail("");
       setMessage("");
+      // setPhone("");
     });
   };
 
@@ -41,6 +45,9 @@ export const ContactForm = () => {
   const onChangeMessage = (e) => {
     setMessage(e.target.value);
   };
+  // const onChangePhone = (e) => {
+  //   setPhone(e.target.value);
+  // };
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("push submit");
@@ -70,13 +77,25 @@ export const ContactForm = () => {
               variant="outlined"
               type="text"
               required
-              label="メールアドレス(必須)"
+              label="メールアドレスまたは電話番号(必須)"
               fullWidth
               margin="normal"
               onChange={onChangeMail}
               value={mail}
               // InputProps={{ disableUnderline: true }}
             />
+            {/* <TextField
+              className="contact-message"
+              variant="outlined"
+              type="text"
+              required
+              label="電話番号(必須)"
+              fullWidth
+              margin="normal"
+              onChange={onChangeMessage}
+              value={message}
+              // InputProps={{ disableUnderline: true }}
+            /> */}
             <TextField
               className="contact-message"
               variant="outlined"

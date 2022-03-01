@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import IMG from "../../public/title-back-image.png";
+import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
 import Map from "./Map";
 
 export const Access = (props) => {

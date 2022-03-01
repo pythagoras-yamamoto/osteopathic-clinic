@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
-import HeroImage from "../public/roader2.jpg";
+import HeroImage from "../public/LINE_ALBUM_clinic_220301_6.jpg";
 import GreetImage from "../public/concept.jpg";
 import AchiveImage from "../public/achive.jpg";
 

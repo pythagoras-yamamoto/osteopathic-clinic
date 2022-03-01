@@ -8,7 +8,8 @@ import { ImageSlider } from "../components/container/ImageSlider";
 // import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
 
-import Image from "../public/concept.jpg";
+import ImageConcept from "../public/LINE_ALBUM_clinic_220301_4.jpg";
+import ImageMenu from "../public/LINE_ALBUM_clinic_220301_1.jpg";
 import titleImage from "../public/calendar.jpeg";
 
 export const Home = () => {
@@ -34,7 +35,7 @@ export const Home = () => {
         text={
           "『温かく優しく、柔らかな本来の「私」を見つけるひとときを過ごせる場所』をコンセプトに優しいタッチにてトリートメント、リラクゼーションを行っていきます。\n\n身体の力、緊張を緩め、心身ともにリラックスすることで身体は軽くなり心には余裕が出来てきます。余裕をつくることで今まで出来なかった、できる状態ではなかった『本来の自分を見つける』ということが出来るきっかけを作れる場所でありたいと思います。"
         }
-        image={Image}
+        image={ImageConcept}
         shadowColor={"#FFFAFA"}
       />
       <ContainerA
@@ -42,7 +43,7 @@ export const Home = () => {
         text={
           "当サロンでは3種類のコースを設けております。\n\n日々の疲れ、頭痛、肩こり、不眠など、お客様のお悩みにあったコースを選択できます。価格帯は9,000~12,000円に設定しています。\n\n詳しい内容は「MENU&PRICE」ページからご確認ください"
         }
-        image={Image}
+        image={ImageMenu}
         // widthRatio={60}
       />
       <Access title={"Access"} widthRatio={0} />

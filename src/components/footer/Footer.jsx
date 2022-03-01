@@ -36,7 +36,7 @@ export const Footer = () => {
             target="blank"
             href="https://www.instagram.com/meme.h1sa/"
           >
-            Instagram
+            Instagram: 
           </SExternalLink>
         </SColumn>
       </SRow>

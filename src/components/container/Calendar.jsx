@@ -6,7 +6,7 @@ import googleCalendarPlugin from "@fullcalendar/google-calendar";
 export const Calendar = () => {
   return (
     <FullCalendar
-      googleCalendarApiKey="AIzaSyCImQComI5DWqyjnIqwMLYl6ihaEeliF50"
+      googleCalendarApiKey="AIzaSyCvGNAFBo-ukoPEcVIS2v1SxoW0PXonTXE"
       plugins={[dayGridPlugin, googleCalendarPlugin]}
       initialView="dayGridMonth"
       events={{

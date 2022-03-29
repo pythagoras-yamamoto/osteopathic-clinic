@@ -25,7 +25,7 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/MenuPrice">MENU・PRICE</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/Researvation">RESEARVATION</SNavLinks>
+              <SNavLinks to="/Researvation">RESERVATION</SNavLinks>
             </SNavItem>
             <SNavItem>
               <SNavExternalLink

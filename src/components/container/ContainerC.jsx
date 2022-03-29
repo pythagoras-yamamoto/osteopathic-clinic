@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import IMG from "../../public/title-back-image.png";
+import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
 import { Calendar } from "./Calendar";
 import { LinkContactButton } from "./LinkContactButton";
 
@@ -66,7 +66,7 @@ const STitle = styled.h2`
   align-items: center;
   font-weight: bold;
   color: rgb(0, 116, 127);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
 
@@ -94,7 +94,7 @@ const SubTitle = styled.p`
   font-weight: bold;
   font-size: 20px;
   color: rgb(0, 116, 127);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 249, 238, 0.5);
   height: 150px;
   width: 300px;
 

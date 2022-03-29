@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import IMG from "../../public/title-back-image.png";
+import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
 import { LinkContactButton } from "./LinkContactButton";
 
 export const ContainerA = (props) => {
@@ -71,7 +71,7 @@ const STitle = styled.h2`
   font-weight: bold;
 
   color: rgb(0, 116, 127);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
 
@@ -104,6 +104,7 @@ const SText = styled.div`
   text-align: left;
   font-size: 18px;
   font-weight: 500;
+  font-family: "MS Pゴシック", ,sans-serif;
   overflow-wrap: break-word;
   white-space: pre-wrap;
   letter-spacing: 0.2em;

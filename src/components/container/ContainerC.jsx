@@ -94,7 +94,7 @@ const SubTitle = styled.p`
   font-weight: bold;
   font-size: 20px;
   color: rgb(0, 116, 127);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 249, 238, 0.5);
   height: 150px;
   width: 300px;
 

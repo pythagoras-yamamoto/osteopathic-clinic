@@ -59,7 +59,7 @@ const STitle = styled.h2`
   font-weight: bold;
 
   color: rgb(0, 116, 127);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
 

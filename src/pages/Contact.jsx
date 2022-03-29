@@ -6,7 +6,7 @@ import { Footer } from "../components/footer/Footer";
 import { ContactContainer } from "../components/container/ContactContainer";
 // import { EmbedTwitter } from "../components/EmbedTwiter";
 // import { ScrollReveal } from "../components/container/ScrollReveal";
-import Image from "../public/roader2.jpg";
+import Image from "../public/LINE_ALBUM_clinic_220301_4.jpg";
 
 export const Contact = () => {
   return (

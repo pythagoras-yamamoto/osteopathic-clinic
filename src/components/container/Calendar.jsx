@@ -6,11 +6,11 @@ import googleCalendarPlugin from "@fullcalendar/google-calendar";
 export const Calendar = () => {
   return (
     <FullCalendar
-      googleCalendarApiKey="AIzaSyA_QJwjtIXCNA4GS8Wzi82JkLA9LNRnu0g"
+      googleCalendarApiKey="AIzaSyCvGNAFBo-ukoPEcVIS2v1SxoW0PXonTXE"
       plugins={[dayGridPlugin, googleCalendarPlugin]}
       initialView="dayGridMonth"
       events={{
-        googleCalendarId: "l05ur2ljobrce6nvvfg83k2u44@group.calendar.google.com"
+        googleCalendarId: "meme.hisa33@gmail.com"
       }}
       headerToolbar={{
         left: "prev,next today",

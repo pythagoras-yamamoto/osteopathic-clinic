@@ -2,13 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import LogoIMG from "../../public/LINE_ALBUM_clinic_220301_2.jpg";
 
 export const Navbar = ({ toggle }) => {
   return (
     <>
       <SNav>
         <SNavContainer>
-          <SNavLogo to="/">Meme</SNavLogo>
+          {/* <SNavLogo to="/">Home</SNavLogo> */}
+          <SLogoIage src = { LogoIMG } alt = 'LogoImage'></SLogoIage>
           <SMobileIcon onClick={toggle}>
             <FaBars />
           </SMobileIcon>
@@ -23,7 +25,7 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/MenuPrice">MENU・PRICE</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/Researvation">RESEARVATION</SNavLinks>
+              <SNavLinks to="/Researvation">RESERVATION</SNavLinks>
             </SNavItem>
             <SNavItem>
               <SNavExternalLink
@@ -70,23 +72,30 @@ const SNavContainer = styled.div`
   max-width: 1100px;
 `;
 
-const SNavLogo = styled(LinkR)`
-  color: black;
+// const SNavLogo = styled(LinkR)`
+//   color: black;
+//   justify-self: flex-start;
+//   cursor: pointer;
+//   font-size: 1.5rem;
+//   display: flex;
+//   align-items: center;
+//   font-weight: 700;
+//   text-decoration: none;
+//   margin-left: 30px;
+
+//   @media screen and (max-width: 768px) {
+//     margin-left: 0;
+//     top: 1.2rem;
+//     right: 1.5rem;
+//   }
+// `;
+
+const SLogoIage = styled.img`
   justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  font-weight: 700;
-  text-decoration: none;
   margin-left: 30px;
-
-  @media screen and (max-width: 768px) {
-    margin-left: 0;
-    top: 1.2rem;
-    right: 1.5rem;
-  }
-`;
+`
 
 const SMobileIcon = styled.div`
   display: none;

@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Img1 from "../../public/roader1.jpg";
-import Img2 from "../../public/roader2.jpg";
-import Img3 from "../../public/roader4.jpg";
+import Img1 from "../../public/LINE_ALBUM_clinic_220301_0_0.jpg";
+import Img2 from "../../public/LINE_ALBUM_clinic_220301_1.jpg";
+import Img3 from "../../public/LINE_ALBUM_clinic_220301_6.jpg";
 
 export const ImageSlider = () => {
   const settings = {

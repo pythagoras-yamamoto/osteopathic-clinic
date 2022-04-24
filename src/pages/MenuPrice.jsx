@@ -6,7 +6,7 @@ import { PriceTableContainer } from "../components/container/PriceTableContainer
 import { Footer } from "../components/footer/Footer";
 // import { Calendar } from "../components/Calendar";
 // import { ScrollReveal } from "../components/container/ScrollReveal";
-import Image from "../public/LINE_ALBUM_clinic_220301_0.jpg";
+import Image from "../public/Salon_scene.jpg";
 
 export const MenuPrice = () => {
   return (

@@ -17,7 +17,7 @@ export const Home = () => {
     <>
       <Header />
       <SImageWraper>
-        <STitleOnImage>Meme</STitleOnImage>
+        <STitleOnImage>めめ</STitleOnImage>
         <STextOnImage>
           <p>女性施術者による女性専用サロンです。</p>
           <p>
@@ -61,7 +61,8 @@ const SImageWraper = styled.div`
 
 const STitleOnImage = styled.h1`
   position: absolute;
-  font-family: "Satisfy";
+  // font-family: "Satisfy";
+  font-family: Wawati SC;
   top: 20%;
   font-size: 120px;
   color: white;
@@ -83,8 +84,9 @@ const STextOnImage = styled.div`
   z-index: 10;
   margin-left: 20%;
   text-align: left;
-  font-size: 20px;
-  font-family: "Lato";
+  font-size: 30px;
+  // font-family: "Lato";
+  font-family: Hannotate SC;
   font-weight: 700;
   width: 70%;
   overflow-wrap: keep-all;

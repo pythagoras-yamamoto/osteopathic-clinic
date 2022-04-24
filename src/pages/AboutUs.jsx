@@ -5,8 +5,9 @@ import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
 import HeroImage from "../public/LINE_ALBUM_clinic_220301_6.jpg";
-import GreetImage from "../public/Message-Image-2.jpg";
-import AchiveImage from "../public/achive.jpg";
+import GreetImage from "../public/Message-Image.jpg";
+import AchiveImage from "../public/Treatment2.jpg";
+
 
 // import { ScrollReveal } from "../components/container/ScrollReveal";
 

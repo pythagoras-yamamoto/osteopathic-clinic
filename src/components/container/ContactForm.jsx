@@ -63,6 +63,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeName}
               value={name}
+              style={{fontFamily: "Hannotate SC"}}
               // InputProps={{ disableUnderline: true }}
             />
             <TextField
@@ -75,6 +76,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMail}
               value={mail}
+              style={{fontFamily: "Hannotate SC"}}
               // InputProps={{ disableUnderline: true }}
             />
             <TextField
@@ -87,6 +89,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMessage}
               value={message}
+              style = {{ fontFamily: 'Hannotate SC' }}
               // InputProps={{ disableUnderline: true }}
             />
             <SSpace />

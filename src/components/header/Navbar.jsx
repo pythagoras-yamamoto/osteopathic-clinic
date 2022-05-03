@@ -46,6 +46,7 @@ export const Navbar = ({ toggle }) => {
 };
 
 const SNav = styled.nav`
+  font-family: Lato;
   background: white;
   height: 80px;
   display: flex;

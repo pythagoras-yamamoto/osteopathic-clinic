@@ -29,13 +29,12 @@ Google CalendarとFullCalendarを連携することで、運営者が店舗のGo
 Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。ノンプログラマーでもブログ記事の更新が手軽に可能。
 
 ## 使用技術 
-全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用(一部にMaterialUI使用)。アニメーション部分にはreact-slick,react-revealを導入。  
+全体をReactで構築。スタイルの当て方にはstyled-componentを採用(一部にMaterialUI使用)。アニメーション部分にはreact-slick,react-revealを導入。  
 使用技術 : React.js, styled-components,react-slick,react-reveal, Vercel, Material UI
 
 
 ## 共通事項
 - CSS のあて方は基本的にStyled Components(例外は認める)。
-- クラス名Container vs Wrapperの命名議論は二つの間に意味的な区分は設けず、Wrapperに統一。
 
 ## ディレクトリ構成
 
@@ -62,6 +61,3 @@ https://www.react-reveal.com/
 
 https://qiita.com/ozora/items/33e00dcaca372db04560
 
-### codesandbox:
-
-https://codesandbox.io/

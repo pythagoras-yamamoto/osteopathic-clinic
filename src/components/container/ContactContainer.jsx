@@ -4,10 +4,7 @@ import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
 import { ContactForm } from "./ContactForm";
 
 export const ContactContainer = (props) => {
-  const {
-    title, //title　: Item name
-    titleImage,
-  } = props;
+  const { title, titleImage } = props;
 
   return (
     <>

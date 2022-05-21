@@ -27,8 +27,6 @@ Email.jsを利用することで、問い合わせ先とサロン運営者に対
 Google CalendarとFullCalendarを連携することで、運営者が店舗のGoogle Calendarに書き込むだけで予約状況がwebサイトに反映される。ノンプログラマーでも予約状況の更新が手軽に可能。
 #### ブログサイト
 Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。ノンプログラマーでもブログ記事の更新が手軽に可能。
-#### LINE bot
-予約等のお問い合わせ用のLINEbotを導入し、事務作業を改善。
 
 ## 使用技術 
 全体をReact(Next.js)でSSG化(予定)。スタイルの当て方にはstyled-componentを採用(一部にMaterialUI使用)。アニメーション部分にはreact-slick,react-revealを導入。  

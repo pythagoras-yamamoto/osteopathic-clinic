@@ -70,7 +70,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-family: "Lato";
+  font-family: "Yomogi";
 
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);
@@ -105,8 +105,8 @@ const SContentsWrapeer = styled.div`
 const SText = styled.div`
   text-align: left;
   font-size: 20px;
-  font-weight: 400;
-  font-family: "Zen Kaku Gothic Antique";
+  font-weight: 700;
+  font-family: "Yomogi";
   overflow-wrap: break-word;
   white-space: pre-wrap;
   letter-spacing: 0.2em;

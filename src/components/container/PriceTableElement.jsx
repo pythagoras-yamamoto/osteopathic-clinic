@@ -63,7 +63,7 @@ const Text = styled.p`
   padding: 20px 0;
   text-align: left;
   letter-spacing: 0.12em;
-  font-family: Hannotate SC;
+  font-family: "Lato";
 
   @media screen and (max-width: 768px) {
     /* font-size: 18px; */

@@ -36,7 +36,7 @@ export const Footer = () => {
             target="blank"
             href="https://www.instagram.com/meme.h1sa/"
           >
-            Instagram: 
+            Instagram:
           </SExternalLink>
         </SColumn>
       </SRow>
@@ -47,8 +47,8 @@ export const Footer = () => {
 
 const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
-  /* background: #00747f; */
   background: #5f9ea0;
+  font-family: "Lato";
 
   @media (max-width: 1000px) {
     padding: 70px 20px 10px 20px;

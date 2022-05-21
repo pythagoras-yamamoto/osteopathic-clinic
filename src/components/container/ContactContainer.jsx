@@ -55,7 +55,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-family: "Lato";
+  font-family: "Yomogi";
 
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);

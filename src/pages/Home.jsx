@@ -83,8 +83,8 @@ const STextOnImage = styled.div`
   z-index: 10;
   margin-left: 20%;
   text-align: left;
-  font-size: 24px;
-  font-family: "Zen Kaku Gothic Antique";
+  font-size: 30px;
+  font-family: "Yomogi";
   font-weight: 500;
   width: 70%;
   overflow-wrap: keep-all;

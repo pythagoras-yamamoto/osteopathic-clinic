@@ -70,7 +70,7 @@ const STitle = styled.h2`
   background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
-  font-family: "Lato";
+  font-family: "Yomogi";
 
   @media screen and (max-width: 768px) {
     font-size: 18px;

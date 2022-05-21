@@ -19,12 +19,12 @@ export const ContactForm = () => {
     const template_param = {
       to_name: name,
       email: mail,
-      message: message
+      message: message,
     };
 
     send(service_id, template_id, template_param).then(() => {
       console.log("success to send email");
-      alert("予約を受けつけました");
+      alert("お問い合わせを受けつけました");
 
       setName("");
       setMail("");
@@ -63,7 +63,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeName}
               value={name}
-              style={{fontFamily: "Hannotate SC"}}
+              style={{ fontFamily: "Hannotate SC" }}
               // InputProps={{ disableUnderline: true }}
             />
             <TextField
@@ -71,12 +71,11 @@ export const ContactForm = () => {
               variant="outlined"
               type="text"
               required
-              label="メールアドレス(必須)"
+              label="メールアドレスまたは電話番号(必須)"
               fullWidth
               margin="normal"
               onChange={onChangeMail}
               value={mail}
-              style={{fontFamily: "Hannotate SC"}}
               // InputProps={{ disableUnderline: true }}
             />
             <TextField
@@ -89,7 +88,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMessage}
               value={message}
-              style = {{ fontFamily: 'Hannotate SC' }}
+              style={{ fontFamily: "Zen Kaku Gothic Antique" }}
               // InputProps={{ disableUnderline: true }}
             />
             <SSpace />

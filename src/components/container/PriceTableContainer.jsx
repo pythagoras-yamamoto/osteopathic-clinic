@@ -33,6 +33,7 @@ export const SContainerWrapper = styled.div`
   padding-top: 50px;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
   border-radius: 50px;
+  font-family: "Yomogi";
 
   @media screen and (max-width: 768px) {
     margin-top: 50px;
@@ -61,7 +62,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-family: "Lato";
+  font-family: "Yomogi";
 
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);

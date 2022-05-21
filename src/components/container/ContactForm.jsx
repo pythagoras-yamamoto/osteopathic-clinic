@@ -98,6 +98,7 @@ export const ContactForm = () => {
               color="primary"
               variant="outlined"
               size="large"
+              style={{ fontFamily: "Yomogi" }}
             >
               送信
             </Button>

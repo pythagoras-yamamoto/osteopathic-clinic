@@ -8,7 +8,7 @@ export const LinkContactButton = () => {
     <>
       <Wrapper>
         <Button
-          style={{ fontFamily: "Hannotate SC" }}
+          style={{ fontFamily: "Yomogi" }}
           className="contact-button"
           type="submit"
           color="primary"

@@ -10,7 +10,7 @@ export const Navbar = ({ toggle }) => {
       <SNav>
         <SNavContainer>
           {/* <SNavLogo to="/">Home</SNavLogo> */}
-          <SLogoIage src = { LogoIMG } alt = 'LogoImage'></SLogoIage>
+          <SLogoIage src={LogoIMG} alt="LogoImage"></SLogoIage>
           <SMobileIcon onClick={toggle}>
             <FaBars />
           </SMobileIcon>
@@ -46,7 +46,7 @@ export const Navbar = ({ toggle }) => {
 };
 
 const SNav = styled.nav`
-  font-family: Lato;
+  font-family: "Lato";
   background: white;
   height: 80px;
   display: flex;
@@ -56,7 +56,7 @@ const SNav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 100;
-  opacity: 0.9;
+  // opacity: 0.9;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 
   @media screen and (max-width: 960px) {
@@ -73,30 +73,12 @@ const SNavContainer = styled.div`
   max-width: 1100px;
 `;
 
-// const SNavLogo = styled(LinkR)`
-//   color: black;
-//   justify-self: flex-start;
-//   cursor: pointer;
-//   font-size: 1.5rem;
-//   display: flex;
-//   align-items: center;
-//   font-weight: 700;
-//   text-decoration: none;
-//   margin-left: 30px;
-
-//   @media screen and (max-width: 768px) {
-//     margin-left: 0;
-//     top: 1.2rem;
-//     right: 1.5rem;
-//   }
-// `;
-
 const SLogoIage = styled.img`
   justify-self: flex-start;
   display: flex;
   align-items: center;
   margin-left: 30px;
-`
+`;
 
 const SMobileIcon = styled.div`
   display: none;

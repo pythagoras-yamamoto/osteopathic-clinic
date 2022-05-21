@@ -61,10 +61,9 @@ const SImageWraper = styled.div`
 
 const STitleOnImage = styled.h1`
   position: absolute;
-  // font-family: "Satisfy";
-  font-family: Wawati SC;
+  font-family: "Kaisei Opti";
   top: 20%;
-  font-size: 120px;
+  font-size: 140px;
   color: white;
   margin-left: 20%;
   z-index: 10;
@@ -84,10 +83,9 @@ const STextOnImage = styled.div`
   z-index: 10;
   margin-left: 20%;
   text-align: left;
-  font-size: 30px;
-  // font-family: "Lato";
-  font-family: Hannotate SC;
-  font-weight: 700;
+  font-size: 24px;
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: 500;
   width: 70%;
   overflow-wrap: keep-all;
 

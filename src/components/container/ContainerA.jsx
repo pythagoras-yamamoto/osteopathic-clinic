@@ -9,7 +9,7 @@ export const ContainerA = (props) => {
     text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
-    shadowColor
+    shadowColor,
   } = props;
 
   return (
@@ -41,7 +41,7 @@ export const SContainerWrapper = styled.div`
   width: 90vw;
   padding: 50px 0;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
-  border-radius:50px;
+  border-radius: 50px;
 
   @media screen and (max-width: 768px) {
     margin-top: 50px;
@@ -69,8 +69,8 @@ const STitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-family: Hannotate SC;
+  font-weight: 700;
+  font-family: "Lato";
 
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);
@@ -105,9 +105,8 @@ const SContentsWrapeer = styled.div`
 const SText = styled.div`
   text-align: left;
   font-size: 20px;
-  font-weight: 500;
-  // font-family: "MS Pゴシック", ,sans-serif;
-  font-family: Hannotate SC;
+  font-weight: 400;
+  font-family: "Zen Kaku Gothic Antique";
   overflow-wrap: break-word;
   white-space: pre-wrap;
   letter-spacing: 0.2em;

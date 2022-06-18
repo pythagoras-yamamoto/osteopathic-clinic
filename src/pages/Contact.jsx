@@ -1,24 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
+import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { Footer } from "../components/footer/Footer";
 import { ContactContainer } from "../components/container/ContactContainer";
-// import { EmbedTwitter } from "../components/EmbedTwiter";
-// import { ScrollReveal } from "../components/container/ScrollReveal";
 import Image from "../public/LINE_ALBUM_clinic_220301_4.jpg";
 
 export const Contact = () => {
   return (
     <>
+      <SEO title={"SALON MEME Contactページ"} />
       <Header />
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      {/* <ScrollReveal move="top"> */}
       <ContactContainer title="Contact" />
-      {/* <EmbedTwitter /> */}
-      {/* </ScrollReveal> */}
       <Footer />
     </>
   );

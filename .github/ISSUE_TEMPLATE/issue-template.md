@@ -1,6 +1,6 @@
 ---
 name: issue template
-about: Here is a template for creating an issue.
+about: Issue作成時のテンプレート
 title: ''
 labels: ''
 assignees: pythagoras-yamamoto

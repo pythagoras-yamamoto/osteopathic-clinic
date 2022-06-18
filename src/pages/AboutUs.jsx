@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
@@ -8,17 +9,16 @@ import HeroImage from "../public/LINE_ALBUM_clinic_220301_6.jpg";
 import GreetImage from "../public/Message-Image.jpg";
 import AchiveImage from "../public/Treatment2.jpg";
 
-
 // import { ScrollReveal } from "../components/container/ScrollReveal";
 
 export const AboutUs = () => {
   return (
     <>
+      <SEO title={"SALON MEME About Usページ"} />
       <Header />
       <SImageWraper>
         <SImage src={HeroImage} alt="" />
       </SImageWraper>
-      {/* <ScrollReveal move="top"> */}
       <ContainerA
         title={"Message"}
         titleImage={GreetImage}
@@ -34,7 +34,6 @@ export const AboutUs = () => {
         image={AchiveImage}
         widthRatio={50}
       />
-      {/* </ScrollReveal> */}
       <Footer />
     </>
   );

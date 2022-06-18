@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
+import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { ContainerC } from "../components/container/ContainerC";
 import { Footer } from "../components/footer/Footer";
-// import { ScrollReveal } from "../components/container/ScrollReveal";
-// import { Calendar } from "../components/Calendar";
+
 import Image from "../public/LINE_ALBUM_clinic_220301_7.jpg";
 
 export const Researvation = () => {
   return (
     <>
+      <SEO title={"SALON MEME Researvationページ"} />
       <Header />
       <SImageWraper>
         <SImage src={Image} alt="" />

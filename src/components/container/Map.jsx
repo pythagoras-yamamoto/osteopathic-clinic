@@ -9,9 +9,9 @@ class Map extends Component {
       locationName: "",
       center: {
         lat: 36.68609272398972,
-        lng: 138.23314952238516
+        lng: 138.23314952238516,
       },
-      isShowMarker: true
+      isShowMarker: true,
     };
   }
   changeLocationName(e) {
@@ -20,7 +20,7 @@ class Map extends Component {
       return;
     }
     this.setState({
-      locationName: e.target.value
+      locationName: e.target.value,
     });
   }
   geocode() {
@@ -32,11 +32,11 @@ class Map extends Component {
           let center = Object.assign({}, this.state.center);
           center = {
             lat: results[0].geometry.location.lat(),
-            lng: results[0].geometry.location.lng()
+            lng: results[0].geometry.location.lng(),
           };
           this.setState({
             center,
-            isShowMarker: true
+            isShowMarker: true,
           });
         }
       }
@@ -49,12 +49,11 @@ class Map extends Component {
     // };
     const containerStyle = {
       width: "100%",
-      height: "50vh"
+      height: "50vh",
       // margin: "auto"
     };
 
     return (
-      // <SMapWrapper>
       <LoadScript googleMapsApiKey="AIzaSyAoeC-jhvkXaUUCYG8S4KiSzGCxCoiFAO0">
         <GoogleMap
           mapContainerStyle={containerStyle}
@@ -64,7 +63,6 @@ class Map extends Component {
           {this.state.isShowMarker && <Marker position={this.state.center} />}
         </GoogleMap>
       </LoadScript>
-      //</SMapWrapper>
     );
   }
 }

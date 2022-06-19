@@ -5,7 +5,7 @@ import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Access } from "../components/container/Access";
 import { ImageSlider } from "../components/container/ImageSlider";
-// import { ScrollReveal } from "../components/container/ScrollReveal";
+import { CustomerComments } from "../components/container/CustomerComments";
 import { Footer } from "../components/footer/Footer";
 
 import ImageConcept from "../public/LINE_ALBUM_clinic_220301_4.jpg";
@@ -47,7 +47,7 @@ export const Home = () => {
         // widthRatio={60}
       />
       <Access title={"Access"} widthRatio={0} />
-      {/* </ScrollReveal> */}
+      <CustomerComments />
       <Footer />
     </>
   );

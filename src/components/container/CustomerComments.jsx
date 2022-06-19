@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+
 import { CustomerComment } from "./CustomerComment";
+
+import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
 
 export const CustomerComments = (props) => {
   const {
     title, //title　: Item name
     titleImage,
-    image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
-    shadowColor,
   } = props;
 
   return (
@@ -18,15 +19,11 @@ export const CustomerComments = (props) => {
           <STitle>{title}</STitle>
         </STitleWrapper>
         <SContentsWrapeer>
-          <SMap width={widthRatio}>
-            <Map />
-          </SMap>
-          <SImage
-            shadowColor={shadowColor}
-            src={image}
-            width={widthRatio}
-            alt=""
-          ></SImage>
+          <SCustomerComment width={widthRatio}>
+            <CustomerComment />
+            <CustomerComment />
+            <CustomerComment />
+          </SCustomerComment>
         </SContentsWrapeer>
       </SContainerWrapper>
     </>
@@ -87,22 +84,13 @@ const SContentsWrapeer = styled.div`
   margin: auto;
   margin-top: 100px;
   width: 80vw;
-  /* margin-right: 5%; */
 `;
 
-const SMap = styled.div`
+const SCustomerComment = styled.div`
   /* width: ${(props) => (props.width ? 95 - props.width : 55)}%; */
   width: 100%;
 
   @media screen and (max-width: 768px) {
     /* width: 100%; */
-  }
-`;
-
-const SImage = styled.img`
-  width: ${(props) => (props.width ? props.width : 40)}%;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
   }
 `;

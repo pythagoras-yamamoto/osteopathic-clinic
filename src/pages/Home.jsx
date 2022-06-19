@@ -47,7 +47,7 @@ export const Home = () => {
         // widthRatio={60}
       />
       <Access title={"Access"} widthRatio={0} />
-      <CustomerComments />
+      <CustomerComments title={"Comments"} widthRatio={0} />
       <Footer />
     </>
   );

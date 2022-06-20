@@ -28,7 +28,6 @@ export const Home = () => {
         {/* <SwiperImageSlider /> */}
         {/* <SImage src={Image} alt="" /> */}
       </SImageWraper>
-      {/* <ScrollReveal move="top"> */}
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -44,7 +43,6 @@ export const Home = () => {
           "当サロンでは3種類のコースを設けております。\n\n日々の疲れ、頭痛、肩こり、不眠など、お客様のお悩みにあったコースを選択できます。価格帯は9,000~12,000円に設定しています。\n\n詳しい内容は「MENU&PRICE」ページからご確認ください"
         }
         image={ImageMenu}
-        // widthRatio={60}
       />
       <Access title={"Access"} widthRatio={0} />
       <CustomerComments title={"Comments"} widthRatio={0} />

@@ -18,7 +18,7 @@ export const Home = () => {
     <>
       <SEO title={"SALON MEME TOPページ"} />
       <Header />
-      <SImageWraper>
+      <SImageWrapper>
         <STitleOnImage>めめ</STitleOnImage>
         <STextOnImage>
           <p>女性施術者による女性専用サロンです。</p>
@@ -27,7 +27,7 @@ export const Home = () => {
           </p>
         </STextOnImage>
         <ImageSlider />
-      </SImageWraper>
+      </SImageWrapper>
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -45,16 +45,13 @@ export const Home = () => {
         image={ImageMenu}
       />
       <Access title={"Access"} widthRatio={0} />
-<<<<<<< HEAD
       <CustomerComments title={"Comments"} widthRatio={0} />
-=======
->>>>>>> main
       <Footer />
     </>
   );
 };
 
-const SImageWraper = styled.div`
+const SImageWrapper = styled.div`
   position: relative;
   width: 100vw;
   height: auto;

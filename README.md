@@ -1,6 +1,5 @@
 ## サイトイメージ
 #### 公開URL : https://memesalon.vercel.app/
-<!-- #### codesandbox : (⚠︎codesandboxのリンクから入ると画像が読み込まれません) https://codesandbox.io/s/github/pythagoras-yamamoto/Osteopathic-Clinic
  -->
 #### サンプル画像
 
@@ -29,12 +28,9 @@ Google CalendarとFullCalendarを連携することで、運営者が店舗のGo
 Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。ノンプログラマーでもブログ記事の更新が手軽に可能。
 
 ## 使用技術 
-全体をReactで構築。スタイルの当て方にはstyled-componentを採用(一部にMaterialUI使用)。アニメーション部分にはreact-slick,react-revealを導入。  
+全体をReactで構築。スタイルの当て方にはstyled-componentを採用。MaterialUIを導入したので新しくCSS書く際にはこちらも利用。アニメーション部分にはreact-slick,react-revealを導入。  
 使用技術 : React.js, styled-components,react-slick,react-reveal, Vercel, Material UI
 
-
-## 共通事項
-- CSS のあて方は基本的にStyled Components(例外は認める)。
 
 ## ディレクトリ構成
 

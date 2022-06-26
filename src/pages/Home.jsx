@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Access } from "../components/container/Access";
@@ -15,6 +16,7 @@ import titleImage from "../public/calendar.jpeg";
 export const Home = () => {
   return (
     <>
+      <SEO title={"SALON MEME TOPページ"} />
       <Header />
       <SImageWraper>
         <STitleOnImage>めめ</STitleOnImage>
@@ -24,9 +26,7 @@ export const Home = () => {
             それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
           </p>
         </STextOnImage>
-        <ImageSlider></ImageSlider>
-        {/* <SwiperImageSlider /> */}
-        {/* <SImage src={Image} alt="" /> */}
+        <ImageSlider />
       </SImageWraper>
       <ContainerA
         titleImage={titleImage}
@@ -45,7 +45,10 @@ export const Home = () => {
         image={ImageMenu}
       />
       <Access title={"Access"} widthRatio={0} />
+<<<<<<< HEAD
       <CustomerComments title={"Comments"} widthRatio={0} />
+=======
+>>>>>>> main
       <Footer />
     </>
   );

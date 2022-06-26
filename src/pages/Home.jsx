@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Access } from "../components/container/Access";
 import { ImageSlider } from "../components/container/ImageSlider";
-// import { ScrollReveal } from "../components/container/ScrollReveal";
 import { Footer } from "../components/footer/Footer";
 
 import ImageConcept from "../public/LINE_ALBUM_clinic_220301_4.jpg";
@@ -15,6 +15,7 @@ import titleImage from "../public/calendar.jpeg";
 export const Home = () => {
   return (
     <>
+      <SEO title={"SALON MEME TOPページ"} />
       <Header />
       <SImageWraper>
         <STitleOnImage>めめ</STitleOnImage>
@@ -24,11 +25,8 @@ export const Home = () => {
             それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
           </p>
         </STextOnImage>
-        <ImageSlider></ImageSlider>
-        {/* <SwiperImageSlider /> */}
-        {/* <SImage src={Image} alt="" /> */}
+        <ImageSlider />
       </SImageWraper>
-      {/* <ScrollReveal move="top"> */}
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -44,10 +42,8 @@ export const Home = () => {
           "当サロンでは3種類のコースを設けております。\n\n日々の疲れ、頭痛、肩こり、不眠など、お客様のお悩みにあったコースを選択できます。価格帯は9,000~12,000円に設定しています。\n\n詳しい内容は「MENU&PRICE」ページからご確認ください"
         }
         image={ImageMenu}
-        // widthRatio={60}
       />
       <Access title={"Access"} widthRatio={0} />
-      {/* </ScrollReveal> */}
       <Footer />
     </>
   );

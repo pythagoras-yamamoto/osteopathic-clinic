@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-// import SlideRoutes from "react-slide-routes";
 
 import { Home } from "../pages/Home";
 import { AboutUs } from "..//pages/AboutUs";
@@ -10,8 +9,6 @@ import { MenuPrice } from "../pages/MenuPrice";
 import { NotFound } from "../pages/NotFound";
 
 export const Router = () => {
-  // const location = useLocation();
-
   return (
     <Switch>
       <Route exact path="/">

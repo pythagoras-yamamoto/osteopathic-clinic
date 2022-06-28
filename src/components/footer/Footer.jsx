@@ -50,7 +50,7 @@ export const Footer = () => {
 
 const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
-  background: #5f9ea0;
+  background: #9ae6b4;
   font-family: "Lato";
 
   @media (max-width: 1000px) {

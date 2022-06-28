@@ -2,15 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import LogoIMG from "../../public/LINE_ALBUM_clinic_220301_2.jpg";
+import LogoIMG from "../../public/header-logo-green.png";
 
 export const Navbar = ({ toggle }) => {
   return (
     <>
       <SNav>
         <SNavContainer>
-          {/* <SNavLogo to="/">Home</SNavLogo> */}
-          <SLogoIage src={LogoIMG} alt="LogoImage"></SLogoIage>
+          <SSiteTitle>
+            <SLogoImage src={LogoIMG} alt="LogoImage" />
+            <SLogoTitle>めめ</SLogoTitle>
+          </SSiteTitle>
           <SMobileIcon onClick={toggle}>
             <FaBars />
           </SMobileIcon>
@@ -73,11 +75,31 @@ const SNavContainer = styled.div`
   max-width: 1100px;
 `;
 
-const SLogoIage = styled.img`
-  justify-self: flex-start;
+const SSiteTitle = styled.div`
   display: flex;
+  justify-self: flex-start;
+`;
+
+const SLogoImage = styled.img`
   align-items: center;
   margin-left: 30px;
+  padding-top: 15px;
+  width: 50px;
+  height: 50px;
+`;
+
+const SLogoTitle = styled.h1`
+  font-family: "Kaisei Opti";
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: #48bb78;
+  padding-left: 0.8rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+  }
 `;
 
 const SMobileIcon = styled.div`

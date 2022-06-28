@@ -50,7 +50,7 @@ export const Footer = () => {
 
 const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
-  background: #9ae6b4;
+  background: #fff5f7;
   font-family: "Lato";
 
   @media (max-width: 1000px) {
@@ -79,7 +79,7 @@ const SLink = styled(LinkR)`
   margin-bottom: 20px;
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: black;
 
   &:hover {
     opacity: 0.8;
@@ -91,7 +91,7 @@ const SExternalLink = styled.a`
   margin-bottom: 20px;
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: black;
 
   &:hover {
     opacity: 0.8;
@@ -101,7 +101,7 @@ const SExternalLink = styled.a`
 
 const STitle = styled.p`
   font-size: 18px;
-  color: #fff;
+  color: black;
   margin-bottom: 40px;
   font-weight: bold;
 `;
@@ -109,14 +109,14 @@ const STitle = styled.p`
 const SCopyright = styled.div`
   display: flex;
   justify-content: center;
-  color: white;
+  color: black;
   font-size: 0.8rem;
   margin: 40px 0 20px 0;
 `;
 
 const SFooterItem = styled.p`
   font-size: 14px;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   text-align: left;

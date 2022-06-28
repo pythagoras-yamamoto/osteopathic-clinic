@@ -12,13 +12,16 @@ export const Footer = () => {
           <SLink to="/AboutUs">当サロンについて</SLink>
           <SLink to="/MenuPrice">メニュー・料金</SLink>
           <SLink to="/Researvation">予約状況</SLink>
-          <SExternalLink target="blank" href="https://meme-clinic.netlify.app/">
+          <SExternalLink
+            target="blank"
+            href="https://memesalon-blog.netlify.app/"
+          >
             ブログ
           </SExternalLink>
           <SLink to="/Contact">お問い合わせ</SLink>
         </SColumn>
         <SColumn>
-          <STitle>Infomation</STitle>
+          <STitle>Information</STitle>
           <SFooterItem>営業時間 : 10:00 - 21:00 </SFooterItem>
           <SFooterItem>
             住所 : 長野市上野2丁目1183-41　ハイツ若夢102号
@@ -47,7 +50,7 @@ export const Footer = () => {
 
 const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
-  background: #5f9ea0;
+  background: #9ae6b4;
   font-family: "Lato";
 
   @media (max-width: 1000px) {

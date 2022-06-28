@@ -9,7 +9,7 @@ import { ImageSlider } from "../components/container/ImageSlider";
 import { CustomerComments } from "../components/container/CustomerComments";
 import { Footer } from "../components/footer/Footer";
 
-import ImageConcept from "../public/LINE_ALBUM_clinic_220301_4.jpg";
+import ImageConcept from "../public/LINE_ALBUM_clinic_220628.png";
 import ImageMenu from "../public/LINE_ALBUM_clinic_220301_1.jpg";
 import titleImage from "../public/calendar.jpeg";
 
@@ -35,7 +35,6 @@ export const Home = () => {
           "『温かく優しく、柔らかな本来の「私」を見つけるひとときを過ごせる場所』をコンセプトに優しいタッチにてトリートメント、リラクゼーションを行っていきます。\n\n身体の力、緊張を緩め、心身ともにリラックスすることで身体は軽くなり心には余裕が出来てきます。余裕をつくることで今まで出来なかった、できる状態ではなかった『本来の自分を見つける』ということが出来るきっかけを作れる場所でありたいと思います。"
         }
         image={ImageConcept}
-        shadowColor={"#FFFAFA"}
       />
       <ContainerA
         title={"Menu & Price"}

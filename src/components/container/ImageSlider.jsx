@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Img1 from "../../public/Salon_scene.jpg";
-import Img2 from "../../public/LINE_ALBUM_clinic_220301_1.jpg";
+import Img2 from "../../public/roader1.jpg";
 import Img3 from "../../public/LINE_ALBUM_clinic_220301_7.jpg";
 
 export const ImageSlider = () => {

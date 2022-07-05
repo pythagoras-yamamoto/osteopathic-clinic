@@ -21,7 +21,7 @@ export const CustomerComments = (props) => {
         <SContentsWrapeer>
           <SCustomerComment width={widthRatio}>
             <CustomerComment />
-            <CustomerComment />
+            {/* {/* <CustomerComment /> */}
             <CustomerComment />
           </SCustomerComment>
         </SContentsWrapeer>
@@ -82,7 +82,7 @@ const SContentsWrapeer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 60px;
   width: 80vw;
 `;
 

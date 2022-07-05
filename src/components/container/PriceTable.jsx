@@ -7,16 +7,28 @@ export const PriceTable = () => {
     <SPriceTable>
       <PriceTableElement
         title="コース A"
-        titleColor="#06c7ea"
-        price="9,000"
+        titleColor="#008080"
+        price="7,000"
         min="/ 90min"
-        menu="フェイシャルトリートメント ＋ ヘッドリラクゼーション"
-        text="ハーブなどの自然素材のナチュラルな香りと優しいタッチで固くなった頭部を緩めていきます。
-        不眠でお悩みの方や頭痛、肩こりがある方におススメです。
+        menu="ボディリバランス"
+        text="身体の疲れや慢性的なコリでお悩みの方にオススメです。優しいタッチで硬まった身体を緩めていきます。
         "
       />
       <PriceTableElement
         title="コース B"
+        titleColor="#06c7ea"
+        price="9,000"
+        min="/ 90min"
+        menu="フェイシャルトリートメント ＋ ヘッドリラクゼーション"
+        text="不眠でお悩みの方や頭痛、肩こりがある方にオススメです。
+        頭部の血行促進によりお顔の血行も良くなります。
+        フェイシャルトリートメントではハーブなどの自然素材のナチュラルな
+        香りでトリートメントさせていただきます。
+        心身に溜まった疲れをハーブの香りと優しいタッチで癒していきます。        
+        "
+      />
+      <PriceTableElement
+        title="コース C"
         titleColor="#1E90FF"
         price="10,000"
         min="/ 120min"
@@ -27,7 +39,7 @@ export const PriceTable = () => {
         "
       />
       <PriceTableElement
-        title="コース C"
+        title="コース D"
         titleColor="#008080"
         price="12,000"
         min="/ 120min"

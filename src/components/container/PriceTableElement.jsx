@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const PriceTableElement = (props) => {
-  const { title, price, min, menu, text, titleColor } = props;
+  const { title, price, min, menu, text, titleColor, tag="span" } = props;
   return (
     <Pricecard>
       <Title titleColor={titleColor}>{title}</Title>
@@ -21,7 +21,7 @@ export const PriceTableElement = (props) => {
 };
 
 const Pricecard = styled.li`
-  flex: 0 0 33%;
+  flex: 0 0 25%;
   text-align: center;
   border: 1px solid #eee;
   padding-bottom: 1rem;
@@ -53,6 +53,7 @@ const SubText = styled.p`
   font-weight: 600;
   padding: 10px 0;
   letter-spacing: 0.12em;
+  min-height:50px;
 
   @media screen and (max-width: 768px) {
     font-size: 18px;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import LogoIMG from "../../public/header-logo-green.png";
+import LogoIMG from "../../public/header-logo-pink.png";
 
 export const Navbar = ({ toggle }) => {
   return (
@@ -93,7 +93,7 @@ const SLogoTitle = styled.h1`
   font-size: 2rem;
   display: flex;
   align-items: center;
-  color: #48bb78;
+  color: #f687b3;
   padding-left: 0.8rem;
 
   @media screen and (max-width: 768px) {

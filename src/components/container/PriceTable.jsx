@@ -7,7 +7,7 @@ export const PriceTable = () => {
     <SPriceTable>
       <PriceTableElement
         title="コース A"
-        titleColor="#008080"
+        titleColor="#33c9dc"
         price="7,000"
         min="/ 90min"
         menu="ボディリバランス"
@@ -16,7 +16,7 @@ export const PriceTable = () => {
       />
       <PriceTableElement
         title="コース B"
-        titleColor="#06c7ea"
+        titleColor="#00bcd4"
         price="9,000"
         min="/ 90min"
         menu="フェイシャルトリートメント ＋ ヘッドリラクゼーション"
@@ -29,7 +29,7 @@ export const PriceTable = () => {
       />
       <PriceTableElement
         title="コース C"
-        titleColor="#1E90FF"
+        titleColor="#35baf6"//
         price="10,000"
         min="/ 120min"
         menu="ボディリバランス ＋ ヘッドリラクゼーション"
@@ -40,7 +40,7 @@ export const PriceTable = () => {
       />
       <PriceTableElement
         title="コース D"
-        titleColor="#008080"
+        titleColor="#03a9f4"
         price="12,000"
         min="/ 120min"
         menu="ボディリバランス ＋ フェイシャルトリートメント"

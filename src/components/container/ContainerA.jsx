@@ -50,7 +50,6 @@ export const SContainerWrapper = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 100vw;
-    margin-top: 0;
     margin-bottom: 0;
   }
 `;
@@ -69,16 +68,16 @@ const STitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
+  font-weight: 900;
   font-family: "Yomogi";
-
+  font-size: 1.8rem;
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 `;
 
@@ -104,7 +103,7 @@ const SContentsWrapeer = styled.div`
 
 const SText = styled.div`
   text-align: left;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
   font-family: "Yomogi";
   overflow-wrap: break-word;
@@ -114,8 +113,7 @@ const SText = styled.div`
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {
-    /* font-size: 18px; */
-    font-size: 16px;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
     width: 100%;
     margin-bottom: 100px;

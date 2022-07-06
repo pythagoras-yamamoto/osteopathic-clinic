@@ -50,7 +50,6 @@ export const SContainerWrapper = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 100vw;
-    margin-top: 0;
     margin-bottom: 0;
   }
 `;
@@ -114,7 +113,6 @@ const SText = styled.div`
   width: ${(props) => (props.width ? 95 - props.width : 55)}%;
 
   @media screen and (max-width: 768px) {
-    /* font-size: 18px; */
     font-size: 16px;
     letter-spacing: 0.12em;
     width: 100%;

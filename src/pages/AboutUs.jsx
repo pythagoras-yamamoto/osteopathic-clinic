@@ -16,9 +16,9 @@ export const AboutUs = () => {
     <>
       <SEO title={"SALON MEME About Usページ"} />
       <Header />
-      <SImageWraper>
+      <SImageWrapper>
         <SImage src={HeroImage} alt="" />
-      </SImageWraper>
+      </SImageWrapper>
       <ContainerA
         title={"Message"}
         titleImage={GreetImage}

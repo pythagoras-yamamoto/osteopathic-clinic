@@ -74,31 +74,41 @@ const STitleOnImage = styled.h1`
   position: absolute;
   font-family: "Kaisei Opti";
   top: 70px;
-  font-size: 5rem;
-  color: white;
+  font-size: 6rem;
+  color: rgb(80, 80, 80);
   margin: 0 100px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   z-index: 10;
+  background: rgb(8255, 255, 255, 0.9);
 
   @media screen and (max-width: 768px) {
-  }
-
-  @media screen and (max-width: 600px) {
+    top: 110px;
+    font-size: 3rem;
+    margin: 0 60px;
   }
 `;
 
 const STextOnImage = styled.div`
   position: absolute;
-  top: 220px;
-  color: white;
+  top: 250px;
+  color: rgb(80, 80, 80);
+  background: rgb(8255, 255, 255, 0.8);
   z-index: 10;
-  margin: 0 80px;
+  margin: 0 100px;
   text-align: left;
   font-size: 1.1rem;
   font-family: "Yomogi";
-  font-weight: 500;
+  font-weight: 900;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   overflow-wrap: keep-all;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    top: 200px;
+    margin: 0 60px;
   }
 `;

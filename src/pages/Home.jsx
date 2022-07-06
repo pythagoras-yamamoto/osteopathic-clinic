@@ -18,7 +18,7 @@ export const Home = () => {
     <>
       <SEO title={"SALON MEME TOPページ"} />
       <Header />
-      <S>
+      <Hero>
         <SImageWrapper>
           <STitleOnImage>めめ</STitleOnImage>
           <STextOnImage>
@@ -30,7 +30,7 @@ export const Home = () => {
           <ImageSlider />
           <Notification />
         </SImageWrapper>
-      </S>
+      </Hero>
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -53,7 +53,7 @@ export const Home = () => {
   );
 };
 
-const S = styled.div`
+const Hero = styled.div`
   display: flex;
   justify-content: center;
   padding-bottom: 50px;

@@ -22,7 +22,8 @@ export const Footer = () => {
         </SColumn>
         <SColumn>
           <STitle>Information</STitle>
-          <SFooterItem>営業時間 : 10:00 - 21:00 </SFooterItem>
+          <SFooterItem>営業時間 : <br></br> 月・水・木<br></br>10:00 - 21:00（LO：19:00） <br></br>
+                       火・金<br></br>10:00 - 20:00（LO：18:00）</SFooterItem>
           <SFooterItem>
             住所 : 長野市上野2丁目1183-41　ハイツ若夢102号
           </SFooterItem>
@@ -69,7 +70,7 @@ const SColumn = styled.div`
 const SRow = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 40px;
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }

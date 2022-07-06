@@ -8,10 +8,10 @@ import { Footer } from "../components/footer/Footer";
 
 import Image from "../public/LINE_ALBUM_clinic_220301_7.jpg";
 
-export const Researvation = () => {
+export const Reservation = () => {
   return (
     <>
-      <SEO title={"SALON MEME Researvationページ"} />
+      <SEO title={"SALON MEME Reservationページ"} />
       <Header />
       <SImageWraper>
         <SImage src={Image} alt="" />
@@ -36,5 +36,9 @@ const SImageWraper = styled.div`
 const SImage = styled.img`
   object-fit: cover;
   width: 100vw;
-  height: 300px;
+  height: 200px;
+
+  @media screen and (max-width: 600px) {
+    height: 130px;
+  }
 `;

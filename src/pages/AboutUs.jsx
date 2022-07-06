@@ -39,12 +39,16 @@ export const AboutUs = () => {
   );
 };
 
-const SImageWraper = styled.div`
+const SImageWrapper = styled.div`
   position: relative;
 `;
 
 const SImage = styled.img`
   object-fit: cover;
   width: 100vw;
-  height: 300px;
+  height: 200px;
+
+  @media screen and (max-width: 600px) {
+    height: 130px;
+  }
 `;

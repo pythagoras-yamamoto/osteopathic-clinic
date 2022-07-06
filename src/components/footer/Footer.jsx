@@ -11,7 +11,7 @@ export const Footer = () => {
           <SLink to="/">ホーム</SLink>
           <SLink to="/AboutUs">当サロンについて</SLink>
           <SLink to="/MenuPrice">メニュー・料金</SLink>
-          <SLink to="/Researvation">予約状況</SLink>
+          <SLink to="/Reservation">予約状況</SLink>
           <SExternalLink
             target="blank"
             href="https://memesalon-blog.netlify.app/"

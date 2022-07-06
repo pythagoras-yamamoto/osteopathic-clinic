@@ -14,7 +14,7 @@ export const NavSidebar = ({ isOpen, toggle }) => {
           <SSidebarLinks to="/">Home</SSidebarLinks>
           <SSidebarLinks to="/AboutUs">About</SSidebarLinks>
           <SSidebarLinks to="/MenuPrice">Menu & Price</SSidebarLinks>
-          <SSidebarLinks to="/Researvation">Reservation</SSidebarLinks>
+          <SSidebarLinks to="/Reservation">Reservation</SSidebarLinks>
           <SSidebarExternalLink
             target="blank"
             href="https://memesalon-blog.netlify.app/"

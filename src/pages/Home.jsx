@@ -62,8 +62,8 @@ const Hero = styled.div`
 const SImageWrapper = styled.div`
   position: relative;
   top: 30px;
-  width: 80vw;
-  max-width: 1000px;
+  width: 90vw;
+  max-width: 1200px;
 
   @media screen and (max-width: 768px) {
     width: 95vw;

@@ -29,8 +29,11 @@ const Pricecard = styled.li`
   margin: 0 auto 3em;
   /* min-width: 300px; */
   max-width: 600px;
-  min-width: 300px;
-  min-height: 630px;
+  min-width: 280px;
+  min-height: 800px;
+  @media screen and (max-width: 768px) {
+    min-height: 0;
+  }
 `;
 
 const Title = styled.h3`

@@ -11,11 +11,13 @@ import Img3 from "../../public/LINE_ALBUM_clinic_220301_7.jpg";
 export const ImageSlider = () => {
   const settings = {
     dots: true,
+    fade: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    adaptiveHeight: false,
     autoplaySpeed: 5000,
   };
   return (
@@ -30,9 +32,9 @@ export const ImageSlider = () => {
 };
 
 const SImage = styled.img`
-  /* width: 90vw; */
-  height: auto;
-  max-height: 100vh;
+  height: 65vh;
+  width: 80vw;
+  object-fit: cover;
   box-shadow: 0px 6px 10px rgb(0 0 0 / 15%);
 
   @media screen and (max-width: 600px) {
@@ -41,5 +43,5 @@ const SImage = styled.img`
 `;
 
 const ImgWrapper = styled.div`
-  overflow: hidden;
+  padding-bottom: 3rem;
 `;

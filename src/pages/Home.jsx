@@ -7,6 +7,7 @@ import { ContainerA } from "../components/container/ContainerA";
 import { Access } from "../components/container/Access";
 import { ImageSlider } from "../components/container/ImageSlider";
 import { Footer } from "../components/footer/Footer";
+import { Notification } from "../components/container/Notification";
 
 import ImageConcept from "../public/LINE_ALBUM_clinic_220628.png";
 import ImageMenu from "../public/LINE_ALBUM_clinic_220301_1.jpg";
@@ -17,16 +18,19 @@ export const Home = () => {
     <>
       <SEO title={"SALON MEME TOPページ"} />
       <Header />
-      <SImageWraper>
-        <STitleOnImage>めめ</STitleOnImage>
-        <STextOnImage>
-          <p>女性施術者による女性専用サロンです。</p>
-          <p>
-            それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
-          </p>
-        </STextOnImage>
-        <ImageSlider />
-      </SImageWraper>
+      <Hero>
+        <SImageWrapper>
+          <STitleOnImage>めめ</STitleOnImage>
+          <STextOnImage>
+            <p>女性施術者による女性専用サロンです。</p>
+            <p>
+              それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
+            </p>
+          </STextOnImage>
+          <ImageSlider />
+          <Notification />
+        </SImageWrapper>
+      </Hero>
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -43,28 +47,39 @@ export const Home = () => {
         image={ImageMenu}
       />
       <Access title={"Access"} widthRatio={0} />
+
       <Footer />
     </>
   );
 };
 
-const SImageWraper = styled.div`
+const Hero = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+`;
+
+const SImageWrapper = styled.div`
   position: relative;
-  width: 100vw;
-  height: auto;
+  top: 30px;
+  width: 80vw;
+  max-width: 1000px;
+
+  @media screen and (max-width: 768px) {
+    width: 95vw;
+  }
 `;
 
 const STitleOnImage = styled.h1`
   position: absolute;
   font-family: "Kaisei Opti";
-  top: 20%;
-  font-size: 140px;
+  top: 70px;
+  font-size: 5rem;
   color: white;
-  margin-left: 20%;
+  margin: 0 100px;
   z-index: 10;
 
   @media screen and (max-width: 768px) {
-    font-size: 80px;
   }
 
   @media screen and (max-width: 600px) {
@@ -73,23 +88,17 @@ const STitleOnImage = styled.h1`
 
 const STextOnImage = styled.div`
   position: absolute;
-  top: 50%;
+  top: 220px;
   color: white;
   z-index: 10;
-  margin-left: 20%;
+  margin: 0 80px;
   text-align: left;
-  font-size: 30px;
+  font-size: 1.1rem;
   font-family: "Yomogi";
   font-weight: 500;
-  width: 70%;
   overflow-wrap: keep-all;
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-    /* font-weight: 500; */
-  }
-
-  @media screen and (max-width: 600px) {
-    display: none;
   }
 `;

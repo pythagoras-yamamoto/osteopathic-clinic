@@ -27,7 +27,7 @@ export const Navbar = ({ toggle }) => {
               <SNavLinks to="/MenuPrice">MENU・PRICE</SNavLinks>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/Researvation">RESERVATION</SNavLinks>
+              <SNavLinks to="/Reservation">RESERVATION</SNavLinks>
             </SNavItem>
             <SNavItem>
               <SNavExternalLink
@@ -58,7 +58,6 @@ const SNav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 100;
-  // opacity: 0.9;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 
   @media screen and (max-width: 960px) {

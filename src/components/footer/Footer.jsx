@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
+// import Link from "next/Link";
 
 export const Footer = () => {
   return (
@@ -8,17 +9,17 @@ export const Footer = () => {
       <SRow>
         <SColumn>
           <STitle>About Salon</STitle>
-          <SLink to="/">ホーム</SLink>
+          {/* <SLink to="/">ホーム</SLink>
           <SLink to="/AboutUs">当サロンについて</SLink>
           <SLink to="/MenuPrice">メニュー・料金</SLink>
-          <SLink to="/Reservation">予約状況</SLink>
+          <SLink to="/Reservation">予約状況</SLink> */}
           <SExternalLink
             target="blank"
             href="https://memesalon-blog.netlify.app/"
           >
             ブログ
           </SExternalLink>
-          <SLink to="/Contact">お問い合わせ</SLink>
+          {/* <SLink to="/Contact">お問い合わせ</SLink> */}
         </SColumn>
         <SColumn>
           <STitle>Information</STitle>
@@ -75,17 +76,17 @@ const SRow = styled.div`
   }
 `;
 
-const SLink = styled(LinkR)`
-  margin-bottom: 20px;
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
+// const SLink = styled(Link)`
+//   margin-bottom: 20px;
+//   font-size: 14px;
+//   text-decoration: none;
+//   color: black;
 
-  &:hover {
-    opacity: 0.8;
-    transition: 200ms ease-in;
-  }
-`;
+//   &:hover {
+//     opacity: 0.8;
+//     transition: 200ms ease-in;
+//   }
+// `;
 
 const SExternalLink = styled.a`
   margin-bottom: 20px;

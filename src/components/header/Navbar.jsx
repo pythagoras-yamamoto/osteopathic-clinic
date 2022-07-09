@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import LogoIMG from "../../public/header-logo-pink.png";
 
@@ -9,7 +9,7 @@ export const Navbar = ({ toggle }) => {
     <>
       <SNav>
         <SNavContainer>
-          <SSiteTitle>
+          {/* <SSiteTitle>
             <SLogoImage src={LogoIMG} alt="LogoImage" />
             <SLogoTitle>めめ</SLogoTitle>
           </SSiteTitle>
@@ -40,7 +40,7 @@ export const Navbar = ({ toggle }) => {
             <SNavItem>
               <SNavLinks to="/Contact">CONTACT</SNavLinks>
             </SNavItem>
-          </SNavMenu>
+          </SNavMenu> */}
         </SNavContainer>
       </SNav>
     </>
@@ -135,17 +135,17 @@ const SNavItem = styled.li`
   align-items: center;
 `;
 
-const SNavLinks = styled(LinkR)`
-  color: black;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 0 1rem;
-  cursor: pointer;
+// const SNavLinks = styled(LinkR)`
+//   color: black;
+//   font-weight: 700;
+//   text-decoration: none;
+//   padding: 0 1rem;
+//   cursor: pointer;
 
-  &:hover {
-    border-bottom: 2px solid #01bf71;
-  }
-`;
+//   &:hover {
+//     border-bottom: 2px solid #01bf71;
+//   }
+// `;
 
 const SNavExternalLink = styled.a`
   color: black;

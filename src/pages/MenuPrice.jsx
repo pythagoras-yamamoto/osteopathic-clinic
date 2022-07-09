@@ -1,31 +1,35 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { PriceTableContainer } from "../components/container/PriceTableContainer";
 import { Footer } from "../components/footer/Footer";
-import Image from "../public/Salon_scene.jpg";
 
-export const MenuPrice = () => {
+import Img from "../public/Salon_scene.jpg";
+
+export default function MenuPrice() {
   return (
     <>
       <SEO title={"SALON MEME Menu&Priceページ"} />
       <Header />
-      <SImageWraper>
-        <SImage src={Image} alt="" />
-      </SImageWraper>
-      <PriceTableContainer title={"Menu & Price"} titleImage={Image} />
+      <SImageWrapper>
+        <SImage>
+          <Image src={Img} height={250} objectFit="cover" alt="" />
+        </SImage>
+      </SImageWrapper>
+      <PriceTableContainer title={"Menu & Price"} titleImage={Img} />
       <Footer />
     </>
   );
-};
+}
 
-const SImageWraper = styled.div`
+const SImageWrapper = styled.div`
   position: relative;
 `;
 
-const SImage = styled.img`
+const SImage = styled.div`
   object-fit: cover;
   width: 100vw;
   height: 200px;

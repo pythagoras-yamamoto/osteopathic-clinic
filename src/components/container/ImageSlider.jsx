@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,18 +24,19 @@ export const ImageSlider = () => {
   return (
     <ImgWrapper>
       <Slider {...settings}>
-        <SImage src={Img1} alt="" />
-        <SImage src={Img2} alt="" />
-        <SImage src={Img3} alt="" />
+        <SImage>
+          <Image src={Img1} objectFit="cover" layout="fill" alt="" />
+          <Image src={Img2} objectFit="cover" layout="fill" alt="" />
+          <Image src={Img3} objectFit="cover" layout="fill" alt="" />
+        </SImage>
       </Slider>
     </ImgWrapper>
   );
 };
 
-const SImage = styled.img`
-  height: 65vh;
+const SImage = styled.div`
+  height: 60vh;
   width: 80vw;
-  object-fit: cover;
   box-shadow: 0px 6px 10px rgb(0 0 0 / 15%);
 
   @media screen and (max-width: 600px) {

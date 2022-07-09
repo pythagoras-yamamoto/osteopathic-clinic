@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const NavSidebar = ({ isOpen, toggle }) => {
   return (
@@ -11,7 +11,7 @@ export const NavSidebar = ({ isOpen, toggle }) => {
       </SIcon>
       <SSidebarWrapper>
         <SSidebarMenu>
-          <SSidebarLinks to="/">Home</SSidebarLinks>
+          {/* <SSidebarLinks to="/">Home</SSidebarLinks>
           <SSidebarLinks to="/AboutUs">About</SSidebarLinks>
           <SSidebarLinks to="/MenuPrice">Menu & Price</SSidebarLinks>
           <SSidebarLinks to="/Reservation">Reservation</SSidebarLinks>
@@ -21,7 +21,7 @@ export const NavSidebar = ({ isOpen, toggle }) => {
           >
             Blog
           </SSidebarExternalLink>
-          <SSidebarLinks to="/Contact">Contact</SSidebarLinks>
+          <SSidebarLinks to="/Contact">Contact</SSidebarLinks> */}
         </SSidebarMenu>
       </SSidebarWrapper>
     </SNavSidebarContainer>
@@ -70,23 +70,23 @@ const SSidebarMenu = styled.ul`
   }
 `;
 
-const SSidebarLinks = styled(Link)`
-  background: white;
-  white-space: nowrap;
-  padding: 30px 60px;
-  color: black;
-  font-size: 18px;
-  font-weight: 700;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
+// const SSidebarLinks = styled(Link)`
+//   background: white;
+//   white-space: nowrap;
+//   padding: 30px 60px;
+//   color: black;
+//   font-size: 18px;
+//   font-weight: 700;
+//   outline: none;
+//   cursor: pointer;
+//   text-decoration: none;
 
-  &:hover {
-    transition: all 0.1s ease-in-out;
-    font-size: 20px;
-    border-bottom: 1px solid #01bf71;
-  }
-`;
+//   &:hover {
+//     transition: all 0.1s ease-in-out;
+//     font-size: 20px;
+//     border-bottom: 1px solid #01bf71;
+//   }
+// `;
 
 const SSidebarExternalLink = styled.a`
   background: white;

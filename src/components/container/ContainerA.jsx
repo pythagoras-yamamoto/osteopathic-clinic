@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
+
 import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-import { LinkContactButton } from "./LinkContactButton";
+// import { LinkContactButton } from "./LinkContactButton";
 
 export const ContainerA = (props) => {
   const {
@@ -25,9 +27,11 @@ export const ContainerA = (props) => {
             src={image}
             width={widthRatio}
             alt="No Image"
-          ></SImage>
+          >
+            <Image src={image} alt="no post" />
+          </SImage>
         </SContentsWrapeer>
-        <LinkContactButton />
+        {/* <LinkContactButton /> */}
       </SContainerWrapper>
     </>
   );
@@ -120,7 +124,7 @@ const SText = styled.div`
   }
 `;
 
-const SImage = styled.img`
+const SImage = styled.div`
   width: ${(props) => (props.width ? props.width : 40)}%;
   box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#FFF0F5")};
   max-width: 350px;

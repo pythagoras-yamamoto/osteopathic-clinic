@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import { Link as LinkR } from "react-router-dom";
-// import Link from "next/Link";
+import Link from "next/Link";
 
 export const Footer = () => {
   return (
@@ -9,17 +8,27 @@ export const Footer = () => {
       <SRow>
         <SColumn>
           <STitle>About Salon</STitle>
-          {/* <SLink to="/">ホーム</SLink>
-          <SLink to="/AboutUs">当サロンについて</SLink>
-          <SLink to="/MenuPrice">メニュー・料金</SLink>
-          <SLink to="/Reservation">予約状況</SLink> */}
+          <Link href="/" target="blank">
+            <SExternalLink>ホーム</SExternalLink>
+          </Link>
+          <Link href="/AboutUs" target="blank">
+            <SExternalLink>当サロンについて</SExternalLink>
+          </Link>
+          <Link href="/MenuPrice" target="blank">
+            <SExternalLink>メニュー・料金</SExternalLink>
+          </Link>
+          <Link href="/Reservation" target="blank">
+            <SExternalLink>予約状況</SExternalLink>
+          </Link>
           <SExternalLink
             target="blank"
             href="https://memesalon-blog.netlify.app/"
           >
             ブログ
           </SExternalLink>
-          {/* <SLink to="/Contact">お問い合わせ</SLink> */}
+          <Link href="/Contact" target="blank">
+            <SExternalLink> お問い合わせ</SExternalLink>
+          </Link>
         </SColumn>
         <SColumn>
           <STitle>Information</STitle>
@@ -31,7 +40,6 @@ export const Footer = () => {
         <SColumn>
           <STitle>Contact</STitle>
           <SFooterItem>LINE : @939didbq</SFooterItem>
-          {/* <SFooterItem>電話番号 : </SFooterItem> */}
           <SFooterItem> メール : meme.hisa33@gmail.com</SFooterItem>
         </SColumn>
         <SColumn>
@@ -76,19 +84,7 @@ const SRow = styled.div`
   }
 `;
 
-// const SLink = styled(Link)`
-//   margin-bottom: 20px;
-//   font-size: 14px;
-//   text-decoration: none;
-//   color: black;
-
-//   &:hover {
-//     opacity: 0.8;
-//     transition: 200ms ease-in;
-//   }
-// `;
-
-const SExternalLink = styled.a`
+const SLink = styled.div`
   margin-bottom: 20px;
   font-size: 14px;
   text-decoration: none;
@@ -96,6 +92,19 @@ const SExternalLink = styled.a`
 
   &:hover {
     opacity: 0.8;
+    transition: 200ms ease-in;
+  }
+`;
+
+const SExternalLink = styled.a`
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
     transition: 200ms ease-in;
   }
 `;

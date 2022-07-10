@@ -14,22 +14,17 @@ export default function MenuPrice() {
     <>
       <SEO title={"SALON MEME Menu&Priceページ"} />
       <Header />
-      <SImageWrapper>
-        <SImage>
-          <Image src={Img} height={250} objectFit="cover" alt="" />
-        </SImage>
-      </SImageWrapper>
+      <SImage>
+        <Image src={Img} layout="fill" objectFit="cover" alt="" />
+      </SImage>
       <PriceTableContainer title={"Menu & Price"} titleImage={Img} />
       <Footer />
     </>
   );
 }
 
-const SImageWrapper = styled.div`
-  position: relative;
-`;
-
 const SImage = styled.div`
+  position: relative;
   object-fit: cover;
   width: 100vw;
   height: 200px;

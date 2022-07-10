@@ -6,7 +6,7 @@ import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
-import HeroImage from "../public/LINE_ALBUM_clinic_220301_6.jpg";
+import Img from "../public/LINE_ALBUM_clinic_220301_6.jpg";
 import GreetImage from "../public/Message-Image.jpg";
 import AchiveImage from "../public/Treatment2.jpg";
 
@@ -15,9 +15,9 @@ export default function AboutUs() {
     <>
       <SEO title={"SALON MEME About Usページ"} />
       <Header />
-      <SImageWrapper>
-        <Image src={HeroImage} height={250} objectFit="cover" alt="" />
-      </SImageWrapper>
+      <SImage>
+        <Image src={Img} layout="fill" objectFit="cover" alt="" />
+      </SImage>
       <ContainerA
         title={"Message"}
         titleImage={GreetImage}
@@ -38,11 +38,8 @@ export default function AboutUs() {
   );
 }
 
-const SImageWrapper = styled.div`
-  position: relative;
-`;
-
 const SImage = styled.div`
+  position: relative;
   object-fit: cover;
   width: 100vw;
   height: 200px;

@@ -14,11 +14,9 @@ export default function Reservation() {
     <>
       <SEO title={"SALON MEME Reservationページ"} />
       <Header />
-      <SImageWrapper>
-        <SImage>
-          <Image src={Img} alt="" />
-        </SImage>
-      </SImageWrapper>
+      <SImage>
+        <Image src={Img} layout="fill" objectFit="cover" alt="" />
+      </SImage>
       <ContainerC
         title={"Reserve"}
         text={"こんにちは\n根津です。こんにちはこんにちはこんにちはこんにちは"}
@@ -30,11 +28,8 @@ export default function Reservation() {
   );
 }
 
-const SImageWrapper = styled.div`
-  position: relative;
-`;
-
 const SImage = styled.div`
+  position: relative;
   object-fit: cover;
   width: 100vw;
   height: 200px;

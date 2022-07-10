@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class AppDocument extends Document {
   static async getInitialProps(ctx) {
@@ -8,8 +8,34 @@ class AppDocument extends Document {
 
   render() {
     return (
-      <Html lang="ja" >
-        <Head />
+      <Html lang="ja">
+        <Head>
+          <title>SALON MEME</title>
+          <link rel="icon" href="../public/favicon.ico" />
+          <meta
+            name="description"
+            content="女性施術者による女性専用のリラクゼーションサロンです。それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。"
+          ></meta>
+          <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+          ></meta>
+          {/* OGP ここから */}
+          <head prefix="og: http://ogp.me/ns#" />
+          <meta property="og:url" content="https://memesalon.vercel.app/" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="リラクゼーションサロン「めめ」" />
+          <meta
+            property="og:description"
+            content="女性施術者による女性専用のリラクゼーションサロンです。それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。"
+          />
+          <meta
+            property="og:site_name"
+            content="リラクゼーションサロン「めめ」"
+          />
+          <meta property="og:image" content="../../public/roader1.jpg" />
+          {/* OGP ここまで */}
+        </Head>
         <body>
           <Main />
           <NextScript />
@@ -20,34 +46,3 @@ class AppDocument extends Document {
 }
 
 export default AppDocument;
-
-// import Document, { DocumentContext } from 'next/document'
-// import { ServerStyleSheet } from 'styled-components'
-
-// export default class MyDocument extends Document {
-//   static async getInitialProps(ctx: DocumentContext) {
-//     const sheet = new ServerStyleSheet()
-//     const originalRenderPage = ctx.renderPage
-
-//     try {
-//       ctx.renderPage = () =>
-//         originalRenderPage({
-//           enhanceApp: (App) => (props) =>
-//             sheet.collectStyles(<App {...props} />),
-//         })
-
-//       const initialProps = await Document.getInitialProps(ctx)
-//       return {
-//         ...initialProps,
-//         styles: (
-//           <>
-//             {initialProps.styles}
-//             {sheet.getStyleElement()}
-//           </>
-//         ),
-//       }
-//     } finally {
-//       sheet.seal()
-//     }
-//   }
-// }

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-// import { Link as LinkR } from "react-router-dom";
+import Link from "next/Link";
+import Image from "next/image";
 import { FaBars } from "react-icons/fa";
 import LogoIMG from "../../public/header-logo-pink.png";
 
@@ -9,8 +10,10 @@ export const Navbar = ({ toggle }) => {
     <>
       <SNav>
         <SNavContainer>
-          {/* <SSiteTitle>
-            <SLogoImage src={LogoIMG} alt="LogoImage" />
+          <SSiteTitle>
+            <SLogoImage>
+              <Image src={LogoIMG} alt="no post" />
+            </SLogoImage>
             <SLogoTitle>めめ</SLogoTitle>
           </SSiteTitle>
           <SMobileIcon onClick={toggle}>
@@ -18,16 +21,24 @@ export const Navbar = ({ toggle }) => {
           </SMobileIcon>
           <SNavMenu>
             <SNavItem>
-              <SNavLinks to="/">HOME</SNavLinks>
+              <Link href="/">
+                <SNavExternalLink>HOME</SNavExternalLink>
+              </Link>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/AboutUs">ABOUT</SNavLinks>
+              <Link href="/AboutUs">
+                <SNavExternalLink>ABOUT</SNavExternalLink>
+              </Link>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/MenuPrice">MENU・PRICE</SNavLinks>
+              <Link href="/MenuPrice">
+                <SNavExternalLink>MENU & PRICE</SNavExternalLink>
+              </Link>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/Reservation">RESERVATION</SNavLinks>
+              <Link href="/Reservation">
+                <SNavExternalLink>RESERVATION</SNavExternalLink>
+              </Link>
             </SNavItem>
             <SNavItem>
               <SNavExternalLink
@@ -38,9 +49,11 @@ export const Navbar = ({ toggle }) => {
               </SNavExternalLink>
             </SNavItem>
             <SNavItem>
-              <SNavLinks to="/Contact">CONTACT</SNavLinks>
+              <Link href="/Contact">
+                <SNavExternalLink>CONTACT</SNavExternalLink>
+              </Link>
             </SNavItem>
-          </SNavMenu> */}
+          </SNavMenu>
         </SNavContainer>
       </SNav>
     </>
@@ -79,7 +92,7 @@ const SSiteTitle = styled.div`
   justify-self: flex-start;
 `;
 
-const SLogoImage = styled.img`
+const SLogoImage = styled.div`
   align-items: center;
   margin-left: 30px;
   padding-top: 15px;
@@ -135,17 +148,17 @@ const SNavItem = styled.li`
   align-items: center;
 `;
 
-// const SNavLinks = styled(LinkR)`
-//   color: black;
-//   font-weight: 700;
-//   text-decoration: none;
-//   padding: 0 1rem;
-//   cursor: pointer;
+const SNavLinks = styled.div`
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
 
-//   &:hover {
-//     border-bottom: 2px solid #01bf71;
-//   }
-// `;
+  &:hover {
+    border-bottom: 2px solid #01bf71;
+  }
+`;
 
 const SNavExternalLink = styled.a`
   color: black;

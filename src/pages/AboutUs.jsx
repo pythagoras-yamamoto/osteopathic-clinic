@@ -1,24 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Footer } from "../components/footer/Footer";
-import HeroImage from "../public/LINE_ALBUM_clinic_220301_6.jpg";
+import Img from "../public/LINE_ALBUM_clinic_220301_6.jpg";
 import GreetImage from "../public/Message-Image.jpg";
 import AchiveImage from "../public/Treatment2.jpg";
 
-// import { ScrollReveal } from "../components/container/ScrollReveal";
-
-export const AboutUs = () => {
+export default function AboutUs() {
   return (
     <>
       <SEO title={"SALON MEME About Usページ"} />
       <Header />
-      <SImageWrapper>
-        <SImage src={HeroImage} alt="" />
-      </SImageWrapper>
+      <SImage>
+        <Image src={Img} layout="fill" objectFit="cover" alt="" />
+      </SImage>
       <ContainerA
         title={"Message"}
         titleImage={GreetImage}
@@ -37,13 +36,10 @@ export const AboutUs = () => {
       <Footer />
     </>
   );
-};
+}
 
-const SImageWrapper = styled.div`
+const SImage = styled.div`
   position: relative;
-`;
-
-const SImage = styled.img`
   object-fit: cover;
   width: 100vw;
   height: 200px;

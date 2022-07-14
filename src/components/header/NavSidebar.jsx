@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/Link";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 export const NavSidebar = ({ isOpen, toggle }) => {
   return (
@@ -11,17 +12,27 @@ export const NavSidebar = ({ isOpen, toggle }) => {
       </SIcon>
       <SSidebarWrapper>
         <SSidebarMenu>
-          <SSidebarLinks to="/">Home</SSidebarLinks>
-          <SSidebarLinks to="/AboutUs">About</SSidebarLinks>
-          <SSidebarLinks to="/MenuPrice">Menu & Price</SSidebarLinks>
-          <SSidebarLinks to="/Reservation">Reservation</SSidebarLinks>
+          <Link href="/">
+            <SSidebarLinks>Home</SSidebarLinks>
+          </Link>
+          <Link href="/AboutUs">
+            <SSidebarLinks>About</SSidebarLinks>
+          </Link>         
+          <Link href="/MenuPrice">
+            <SSidebarLinks>Menu & Price</SSidebarLinks>
+          </Link>
+          <Link href="/Reservation">
+            <SSidebarLinks>Reservation</SSidebarLinks>
+          </Link>
           <SSidebarExternalLink
             target="blank"
             href="https://memesalon-blog.netlify.app/"
           >
             Blog
           </SSidebarExternalLink>
-          <SSidebarLinks to="/Contact">Contact</SSidebarLinks>
+          <Link href="/Contact">
+            <SSidebarLinks>Contact</SSidebarLinks>
+          </Link>
         </SSidebarMenu>
       </SSidebarWrapper>
     </SNavSidebarContainer>
@@ -70,7 +81,7 @@ const SSidebarMenu = styled.ul`
   }
 `;
 
-const SSidebarLinks = styled(Link)`
+const SSidebarLinks = styled.div`
   background: white;
   white-space: nowrap;
   padding: 30px 60px;

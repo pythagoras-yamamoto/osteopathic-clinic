@@ -5,7 +5,7 @@ import { SEO } from "../components/container/SEO";
 import { Header } from "../components/header/Header";
 import { Footer } from "../components/footer/Footer";
 
-export const NotFound = () => {
+export default function NotFound() {
   return (
     <>
       <SEO title={"SALON MEME"} />
@@ -16,15 +16,17 @@ export const NotFound = () => {
       <Footer />
     </>
   );
-};
+}
 
 const SWrapper = styled.div`
   display: table;
-  height: 80vh;
+  text-align: center;
   width: 100vw;
+  height: 80vh;
 
   h1 {
     display: table-cell;
     vertical-align: middle;
+    font-size: 1.5rem;
   }
 `;

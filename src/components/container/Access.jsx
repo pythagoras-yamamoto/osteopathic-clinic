@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
-import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
+import image from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
 import Map from "./Map";
 
 export const Access = (props) => {
@@ -19,17 +20,11 @@ export const Access = (props) => {
         <STitleWrapper titleImage={titleImage}>
           <STitle>{title}</STitle>
         </STitleWrapper>
-        <SContentsWrapeer>
+        <SContentsWrapper>
           <SMap width={widthRatio}>
             <Map />
           </SMap>
-          <SImage
-            shadowColor={shadowColor}
-            src={image}
-            width={widthRatio}
-            alt=""
-          ></SImage>
-        </SContentsWrapeer>
+        </SContentsWrapper>
       </SContainerWrapper>
     </>
   );
@@ -60,7 +55,7 @@ export const STitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(${IMG});
+  background-image: url(${image});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +77,7 @@ const STitle = styled.h2`
   }
 `;
 
-const SContentsWrapeer = styled.div`
+const SContentsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -101,7 +96,7 @@ const SMap = styled.div`
   }
 `;
 
-const SImage = styled.img`
+const SImage = styled.div`
   width: ${(props) => (props.width ? props.width : 40)}%;
 
   @media screen and (max-width: 768px) {

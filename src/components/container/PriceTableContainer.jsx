@@ -16,10 +16,10 @@ export const PriceTableContainer = (props) => {
         <STitleWrapper titleImage={titleImage}>
           <STitle>{title}</STitle>
         </STitleWrapper>
-        <SContentsWrapeer>
+        <SContentsWrapper>
           <PriceTable />
           <LinkContactButton />
-        </SContentsWrapeer>
+        </SContentsWrapper>
       </SContainerWrapper>
     </>
   );
@@ -74,7 +74,7 @@ const STitle = styled.h2`
   }
 `;
 
-const SContentsWrapeer = styled.div`
+const SContentsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

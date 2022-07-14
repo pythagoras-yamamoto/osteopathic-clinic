@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Grid, TextField, Button } from "@material-ui/core";
+import { Grid, TextField, Button, Box } from "@material-ui/core";
 import { init, send } from "emailjs-com";
 
 export const ContactForm = () => {
@@ -76,7 +76,6 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMail}
               value={mail}
-              // InputProps={{ disableUnderline: true }}
             />
             <TextField
               className="contact-message"
@@ -92,16 +91,16 @@ export const ContactForm = () => {
               // InputProps={{ disableUnderline: true }}
             />
             <SSpace />
-            <Button
-              className="contact-button"
-              type="submit"
-              color="primary"
-              variant="outlined"
-              size="large"
-              style={{ fontFamily: "Yomogi" }}
-            >
-              送信
-            </Button>
+              <Button
+                className="contact-button"
+                type="submit"
+                color="primary"
+                variant="outlined"
+                size="large"
+                style={{ fontFamily: "Yomogi" }}
+              >
+                送信
+              </Button>
           </form>
         </Grid>
       </Grid>

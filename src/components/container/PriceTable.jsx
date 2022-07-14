@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { PriceTableElement } from "./PriceTableElement";
-
+import { Ownercomment } from "./Ownercomment";
+ 
 export const PriceTable = () => {
-  return (
+  return ( 
     <SPriceTable>
+      <Ownercomment />
       <PriceTableElement
         title="コース A"
         titleColor="#33c9dc"
@@ -49,7 +51,9 @@ export const PriceTable = () => {
         心身に溜まった疲れをハーブの香りと優しいタッチで癒していきます。
         "
       />
+      
     </SPriceTable>
+    
   );
 };
 

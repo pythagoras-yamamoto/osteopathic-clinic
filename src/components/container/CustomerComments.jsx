@@ -21,7 +21,6 @@ export const CustomerComments = (props) => {
         <SContentsWrapeer>
           <SCustomerComment width={widthRatio}>
             <CustomerComment work={"職業：不詳"} age={"20代"} comment={ "身体のハリがとれ身体が軽くなりました。身体の状態を説明していただけて自分の身体の様子を知ることが出来ました。" }/>
-            {/* {/* <CustomerComment /> */}
             <CustomerComment work={"職業：不詳"} age={"20代"} comment={ "身体の内側からほぐれた感じがします。身体がぽかぽかしました。" }/>
             <CustomerComment work={"職業：不詳"} age={"40代"} comment={ "目のあたりがスッキリし、モヤが晴れました。" }/>
             <CustomerComment work={"職業：不詳"} age={"50代"} comment={ "施術中、身体の力が抜け、夜ぐっすり眠ることができました。" }/>

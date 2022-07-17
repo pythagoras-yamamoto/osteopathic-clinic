@@ -1,7 +1,6 @@
 import React from "react";
-import { Grid, TextField, Paper, Avatar, Button, Box } from "@material-ui/core";
+import { Grid, Paper, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import AImg from "../../public/icon-woman-3.png";
 import { IconContext } from "react-icons";
 import { FcBusinesswoman } from "react-icons/fc"
 
@@ -28,8 +27,6 @@ export const CustomerComment = (props) => {
             justifyContent="flex-start"
             bgcolor="#fff3e0"
           >
-            {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> */}
-            {/* <Avatar alt="Remy Sharp" src={ WomanIcon } /> */}
             <IconContext.Provider value={{ size: '3em' }}>
               <FcBusinesswoman />
             </IconContext.Provider>

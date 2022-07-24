@@ -20,12 +20,9 @@ export const CustomerComments = (props) => {
         </STitleWrapper>
         <SContentsWrapeer>
           <SCustomerComment width={widthRatio}>
-            <CustomerComment work={"職業：不詳"} age={"20代"} comment={ "身体のハリがとれ身体が軽くなりました。身体の状態を説明していただけて自分の身体の様子を知ることが出来ました。" }/>
-            <CustomerComment work={"職業：不詳"} age={"20代"} comment={ "身体の内側からほぐれた感じがします。身体がぽかぽかしました。" }/>
-            <CustomerComment work={"職業：不詳"} age={"40代"} comment={ "目のあたりがスッキリし、モヤが晴れました。" }/>
-            <CustomerComment work={"職業：不詳"} age={"50代"} comment={ "施術中、身体の力が抜け、夜ぐっすり眠ることができました。" }/>
-            <CustomerComment work={"職業：不詳"} age={"50代"} comment={ "身体の緊張感が抜けた感じがし、施術後は眠くなり夜はよく眠れました。次の日は目がスッキリし身体も軽くなりました。" }/>
-            <CustomerComment work={"職業：不詳"} age={"60代"} comment={ "身体の中から温かくなり、施術中、施術後も温かさが続きました。" }/>
+            <CustomerComment age={"20代"} comment={ "身体のハリがとれ身体が軽くなりました。身体の状態を説明していただけて自分の身体の様子を知ることが出来ました。" }/>
+            <CustomerComment age={"40代"} comment={ "目のあたりがスッキリし、モヤが晴れました。" }/>
+            <CustomerComment age={"50代"} comment={ "身体の緊張感が抜けた感じがし、施術後は眠くなり夜はよく眠れました。次の日は目がスッキリし身体も軽くなりました。" }/>
           </SCustomerComment>
         </SContentsWrapeer>
       </SContainerWrapper>

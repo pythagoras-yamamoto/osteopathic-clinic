@@ -3,13 +3,14 @@ import { Grid, Paper, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { IconContext } from "react-icons";
 import { FcBusinesswoman } from "react-icons/fc"
+// import { createTheme } from "@material-ui/styles";
 
 export const CustomerComment = (props) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
       "& > *": {
-        margin: theme.spacing(2),
+        margin: theme.spacing(1),
       },
     },
   }));
@@ -20,7 +21,7 @@ export const CustomerComment = (props) => {
   return (
     <>
       <Grid item xs={12}>
-        <Paper variant="outlined" style={{margin:30, borderRadius:5}}>
+        <Paper variant="outlined" style={{width:"100%", marginBottom:"40px"}}>
           <Box
             className={classes.root}
             display="flex"
@@ -30,15 +31,33 @@ export const CustomerComment = (props) => {
             <IconContext.Provider value={{ size: '3em' }}>
               <FcBusinesswoman />
             </IconContext.Provider>
-            <Box color="text.secondary" fontSize={16} pt={1}>{work}</Box> 
-            <Box color="text.secondary" fontSize={16} pt={1}>|</Box>
-            <Box color="text.secondary" fontSize={16} pt={1}>{age}</Box>
+            {/* <Box color="text.secondary" fontSize={16} pt="auto">{work}</Box>  */}
+            {/* <Box color="text.secondary" fontSize={16} pt={2}>|</Box> */}
+            <Box color="text.secondary"
+                //  fontSize={18} 
+                 py={1.5}
+                 sx={{
+                  fontSize:"20px",
+                  "@media screen and (max-width:600px)": {
+                      fontSize:"16px",
+                  },
+              }} 
+            >
+              {age}
+            </Box>
           </Box>
           <Box
             display="flex"
             justifyContent="flex-start"
+            textAlign="left"
             p={4} // 口コミを記載する部分の縦幅
-            fontSize={16}
+            // fontSize={16}
+            sx={{
+              fontSize:"20px",
+              "@media screen and (max-width:600px)": {
+                  fontSize:"16px",
+              },
+          }} 
           >
             {comment}
           </Box>

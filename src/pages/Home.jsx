@@ -43,8 +43,8 @@ export const Home = () => {
         }
         image={ImageMenu}
       />
-      <Access title={"Access"} widthRatio={0} />
       <CustomerComments title={"Comments"} widthRatio={0} />
+      <Access title={"Access"} widthRatio={0} />
       <Footer />
     </>
   );

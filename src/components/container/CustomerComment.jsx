@@ -3,7 +3,6 @@ import { Grid, Paper, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { IconContext } from "react-icons";
 import { FcBusinesswoman } from "react-icons/fc"
-// import { createTheme } from "@material-ui/styles";
 
 export const CustomerComment = (props) => {
   const useStyles = makeStyles((theme) => ({
@@ -31,10 +30,7 @@ export const CustomerComment = (props) => {
             <IconContext.Provider value={{ size: '3em' }}>
               <FcBusinesswoman />
             </IconContext.Provider>
-            {/* <Box color="text.secondary" fontSize={16} pt="auto">{work}</Box>  */}
-            {/* <Box color="text.secondary" fontSize={16} pt={2}>|</Box> */}
             <Box color="text.secondary"
-                //  fontSize={18} 
                  py={1.5}
                  sx={{
                   fontSize:"20px",
@@ -51,7 +47,6 @@ export const CustomerComment = (props) => {
             justifyContent="flex-start"
             textAlign="left"
             p={4} // 口コミを記載する部分の縦幅
-            // fontSize={16}
             sx={{
               fontSize:"20px",
               "@media screen and (max-width:600px)": {

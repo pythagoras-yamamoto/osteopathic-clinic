@@ -84,6 +84,7 @@ const SContentsWrapeer = styled.div`
   margin: auto;
   margin-top: 60px;
   width: 80vw;
+  font-family: Yomogi;
 `;
 
 const SCustomerComment = styled.div`

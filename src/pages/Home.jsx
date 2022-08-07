@@ -19,18 +19,6 @@ export const Home = () => {
     <>
       <SEO title={"SALON MEME TOPページ"} />
       <Header />
-<<<<<<< HEAD
-      <SImageWrapper>
-        <STitleOnImage>めめ</STitleOnImage>
-        <STextOnImage>
-          <p>女性施術者による女性専用サロンです。</p>
-          <p>
-            それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
-          </p>
-        </STextOnImage>
-        <ImageSlider />
-      </SImageWrapper>
-=======
       <Hero>
         <SImageWrapper>
           <STitleOnImage>めめ</STitleOnImage>
@@ -44,7 +32,6 @@ export const Home = () => {
           <Notification />
         </SImageWrapper>
       </Hero>
->>>>>>> main
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -68,15 +55,12 @@ export const Home = () => {
   );
 };
 
-<<<<<<< HEAD
-=======
 const Hero = styled.div`
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
 `;
 
->>>>>>> main
 const SImageWrapper = styled.div`
   position: relative;
   top: 30px;

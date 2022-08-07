@@ -6,6 +6,7 @@ import { Header } from "../components/header/Header";
 import { ContainerA } from "../components/container/ContainerA";
 import { Access } from "../components/container/Access";
 import { ImageSlider } from "../components/container/ImageSlider";
+import { CustomerComments } from "../components/container/CustomerComments";
 import { Footer } from "../components/footer/Footer";
 import { Notification } from "../components/container/Notification";
 
@@ -46,6 +47,7 @@ export const Home = () => {
         }
         image={ImageMenu}
       />
+      <CustomerComments title={"Comments"} widthRatio={0} />
       <Access title={"Access"} widthRatio={0} />
 
       <Footer />

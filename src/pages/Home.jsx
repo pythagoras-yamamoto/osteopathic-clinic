@@ -8,6 +8,7 @@ import { Access } from "../components/container/Access";
 import { ImageSlider } from "../components/container/ImageSlider";
 import { CustomerComments } from "../components/container/CustomerComments";
 import { Footer } from "../components/footer/Footer";
+import { Notification } from "../components/container/Notification";
 
 import ImageConcept from "../public/LINE_ALBUM_clinic_220628.png";
 import ImageMenu from "../public/LINE_ALBUM_clinic_220301_1.jpg";
@@ -18,6 +19,7 @@ export const Home = () => {
     <>
       <SEO title={"SALON MEME TOPページ"} />
       <Header />
+<<<<<<< HEAD
       <SImageWrapper>
         <STitleOnImage>めめ</STitleOnImage>
         <STextOnImage>
@@ -28,6 +30,21 @@ export const Home = () => {
         </STextOnImage>
         <ImageSlider />
       </SImageWrapper>
+=======
+      <Hero>
+        <SImageWrapper>
+          <STitleOnImage>めめ</STitleOnImage>
+          <STextOnImage>
+            <p>女性施術者による女性専用サロンです。</p>
+            <p>
+              それぞれのお身体、体調に合わせたオーダーメイドの施術を行います。
+            </p>
+          </STextOnImage>
+          <ImageSlider />
+          <Notification />
+        </SImageWrapper>
+      </Hero>
+>>>>>>> main
       <ContainerA
         titleImage={titleImage}
         title={"Concept"}
@@ -45,53 +62,71 @@ export const Home = () => {
       />
       <CustomerComments title={"Comments"} widthRatio={0} />
       <Access title={"Access"} widthRatio={0} />
+
       <Footer />
     </>
   );
 };
 
+<<<<<<< HEAD
+=======
+const Hero = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+`;
+
+>>>>>>> main
 const SImageWrapper = styled.div`
   position: relative;
-  width: 100vw;
-  height: auto;
+  top: 30px;
+  width: 90vw;
+  max-width: 1200px;
+
+  @media screen and (max-width: 768px) {
+    width: 95vw;
+  }
 `;
 
 const STitleOnImage = styled.h1`
   position: absolute;
   font-family: "Kaisei Opti";
-  top: 20%;
-  font-size: 140px;
-  color: white;
-  margin-left: 20%;
+  top: 70px;
+  font-size: 6rem;
+  color: rgb(80, 80, 80);
+  margin: 0 100px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   z-index: 10;
+  background: rgb(8255, 255, 255, 0.9);
 
   @media screen and (max-width: 768px) {
-    font-size: 80px;
-  }
-
-  @media screen and (max-width: 600px) {
+    top: 110px;
+    font-size: 3rem;
+    margin: 0 60px;
   }
 `;
 
 const STextOnImage = styled.div`
   position: absolute;
-  top: 50%;
-  color: white;
+  top: 250px;
+  color: rgb(80, 80, 80);
+  background: rgb(8255, 255, 255, 0.8);
   z-index: 10;
-  margin-left: 20%;
+  margin: 0 100px;
   text-align: left;
-  font-size: 30px;
+  font-size: 1.1rem;
   font-family: "Yomogi";
-  font-weight: 500;
-  width: 70%;
+  font-weight: 900;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   overflow-wrap: keep-all;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    /* font-weight: 500; */
-  }
-
-  @media screen and (max-width: 600px) {
-    display: none;
+    font-size: 0.7rem;
+    top: 200px;
+    margin: 0 60px;
   }
 `;

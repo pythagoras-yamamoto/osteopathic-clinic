@@ -54,8 +54,9 @@ const STitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-weight: 900;
   font-family: "Yomogi";
+  font-size: 1.8rem;
 
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);
@@ -63,6 +64,6 @@ const STitle = styled.h2`
   width: 300px;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 `;

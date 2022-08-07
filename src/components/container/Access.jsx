@@ -70,7 +70,8 @@ const STitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 900;
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);
   height: 100px;
@@ -78,7 +79,7 @@ const STitle = styled.h2`
   font-family: "Yomogi";
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 `;
 

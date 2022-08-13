@@ -22,10 +22,13 @@ export const Footer = () => {
         </SColumn>
         <SColumn>
           <STitle>Information</STitle>
-          <SFooterItem>営業時間 : <br></br> 月・水・木<br></br>10:00 - 21:00（LO：19:00） <br></br>
-                       火・金<br></br>10:00 - 20:00（LO：18:00）</SFooterItem>
+          <SFooterItem>【営業時間】<br></br> &emsp;月・水・木・土・日<br></br>&emsp;10:00 - 18:00 <br></br>&emsp;(LO：16:00) <br></br>
+          &emsp;火・金<br></br>&emsp;10:00 - 20:00 <br></br>&emsp;(LO：18:00)</SFooterItem>
           <SFooterItem>
-            住所 : 長野市上野2丁目1183-41　ハイツ若夢102号
+            【定休日】<br></br>&emsp;不定休
+          </SFooterItem>
+          <SFooterItem>
+            【住所】<br></br>&emsp;長野市上野<br></br>&emsp;2丁目1183-41 <br></br>&emsp;ハイツ若夢102号
           </SFooterItem>
         </SColumn>
         <SColumn>

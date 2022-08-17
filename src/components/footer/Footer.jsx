@@ -34,7 +34,6 @@ export const Footer = () => {
         <SColumn>
           <STitle>Contact</STitle>
           <SFooterItem>LINE : @939didbq</SFooterItem>
-          {/* <SFooterItem>電話番号 : </SFooterItem> */}
           <SFooterItem> メール : meme.hisa33@gmail.com</SFooterItem>
         </SColumn>
         <SColumn>

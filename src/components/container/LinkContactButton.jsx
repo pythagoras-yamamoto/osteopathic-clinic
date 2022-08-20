@@ -7,7 +7,8 @@ export const LinkContactButton = () => {
   return (
     <>
       <Wrapper>
-        <Link href="/Contact">
+        <Space/>
+        <Link href="/Contact" passHref>
           <Button
             style={{ fontFamily: "Yomogi" }}
             className="contact-button"
@@ -32,5 +33,5 @@ export const Wrapper = styled.div`
 `;
 
 export const Space = styled.div`
-  margin: 40px;
+  margin: 30px;
 `;

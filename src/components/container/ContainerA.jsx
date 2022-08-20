@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-
 import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-// import { LinkContactButton } from "./LinkContactButton";
+import { LinkContactButton } from "./LinkContactButton";
 
 export const ContainerA = (props) => {
   const {
@@ -30,8 +29,8 @@ export const ContainerA = (props) => {
           >
             <Image src={image} alt="no post" />
           </SImage>
+          <LinkContactButton />
         </SContentsWrapeer>
-        <LinkContactButton />
       </SContainerWrapper>
     </>
   );

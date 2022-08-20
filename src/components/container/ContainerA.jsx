@@ -31,7 +31,7 @@ export const ContainerA = (props) => {
             <Image src={image} alt="no post" />
           </SImage>
         </SContentsWrapeer>
-        {/* <LinkContactButton /> */}
+        <LinkContactButton />
       </SContainerWrapper>
     </>
   );

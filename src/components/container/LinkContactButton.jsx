@@ -1,23 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
+import Link from 'next/link'
 
 export const LinkContactButton = () => {
   return (
     <>
       <Wrapper>
-        <Button
-          style={{ fontFamily: "Yomogi" }}
-          className="contact-button"
-          type="submit"
-          color="primary"
-          variant="outlined"
-          size="large"
-          // component={Link}
-          to="/Contact"
-        >
-          ご予約はこちら
-        </Button>
+        <Link href="/Contact" passHref>
+          <Button
+            style={{ fontFamily: "Yomogi" }}
+            className="contact-button"
+            type="submit"
+            color="primary"
+            variant="outlined"
+            size="large"
+          >
+            ご予約はこちら
+          </Button>
+        </Link>
       </Wrapper>
     </>
   );

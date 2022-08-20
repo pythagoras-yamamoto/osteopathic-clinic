@@ -90,17 +90,17 @@ export const ContactForm = () => {
               style={{ fontFamily: "Zen Kaku Gothic Antique" }}
               // InputProps={{ disableUnderline: true }}
             />
-            <SSpace />
-              <Button
-                className="contact-button"
-                type="submit"
-                color="primary"
-                variant="outlined"
-                size="large"
-                style={{ fontFamily: "Yomogi" }}
-              >
+            {/* <SSpace /> */}
+            <Button
+              className="contact-button"
+              type="submit"
+              color="primary"
+              variant="outlined"
+              size="large"
+              style={{ fontFamily: "Yomogi" }}
+            >
                 送信
-              </Button>
+            </Button>
           </form>
         </Grid>
       </Grid>
@@ -108,6 +108,6 @@ export const ContactForm = () => {
   );
 };
 
-const SSpace = styled.div`
-  margin: 40px;
-`;
+// const SSpace = styled.div`
+//   margin: 40px;
+// `;

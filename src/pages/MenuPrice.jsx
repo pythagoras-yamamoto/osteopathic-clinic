@@ -1,21 +1,21 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { SEO } from "../components/container/SEO";
-import { Header } from "../components/header/Header";
-import { PriceTableContainer } from "../components/container/PriceTableContainer";
-import { Footer } from "../components/footer/Footer";
-import Image from "../public/Salon_scene.jpg";
+import { SEO } from '../components/container/SEO';
+import { Header } from '../components/header/Header';
+import { PriceTableContainer } from '../components/container/PriceTableContainer';
+import { Footer } from '../components/footer/Footer';
+import Image from '../public/Salon_scene.jpg';
 
 export const MenuPrice = () => {
   return (
     <>
-      <SEO title={"SALON MEME Menu&Priceページ"} />
+      <SEO title={'SALON MEME Menu&Priceページ'} />
       <Header />
       <SImageWraper>
         <SImage src={Image} alt="" />
       </SImageWraper>
-      <PriceTableContainer title={"Menu & Price"} titleImage={Image} />
+      <PriceTableContainer title={'Menu & Price'} titleImage={Image} />
       <Footer />
     </>
   );

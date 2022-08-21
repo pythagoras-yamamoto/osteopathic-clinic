@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import styled from 'styled-components';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import Img1 from "../../public/Salon_scene.jpg";
-import Img2 from "../../public/roader1.jpg";
-import Img3 from "../../public/LINE_ALBUM_clinic_220301_7.jpg";
+import Img1 from '../../public/Salon_scene.jpg';
+import Img2 from '../../public/roader1.jpg';
+import Img3 from '../../public/LINE_ALBUM_clinic_220301_7.jpg';
 
 export const ImageSlider = () => {
   const settings = {
@@ -18,7 +18,7 @@ export const ImageSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     adaptiveHeight: false,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 5000
   };
   return (
     <ImgWrapper>

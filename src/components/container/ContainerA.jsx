@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-import { LinkContactButton } from "./LinkContactButton";
+import React from 'react';
+import styled from 'styled-components';
+import IMG from '../../public/LINE_ALBUM_clinic_220301_0_1.jpg';
+import { LinkContactButton } from './LinkContactButton';
 
 export const ContainerA = (props) => {
   const {
@@ -9,7 +9,7 @@ export const ContainerA = (props) => {
     text, //contents : Text part of the item
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
-    shadowColor,
+    shadowColor
   } = props;
 
   return (
@@ -69,7 +69,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
   font-size: 1.8rem;
   color: rgb(0, 116, 127);
   background: rgba(255, 249, 238, 0.5);
@@ -105,7 +105,7 @@ const SText = styled.div`
   text-align: left;
   font-size: 1rem;
   font-weight: 700;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
   overflow-wrap: break-word;
   white-space: pre-wrap;
   letter-spacing: 0.2em;
@@ -122,7 +122,7 @@ const SText = styled.div`
 
 const SImage = styled.img`
   width: ${(props) => (props.width ? props.width : 40)}%;
-  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : "#FFF0F5")};
+  box-shadow: 15px -15px ${(props) => (props.shadowColor ? props.shadowColor : '#FFF0F5')};
   max-width: 350px;
   max-height: 400px;
   height: auto;

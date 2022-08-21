@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -22,13 +22,17 @@ export const Footer = () => {
         </SColumn>
         <SColumn>
           <STitle>Information</STitle>
-          <SFooterItem>【営業時間】<br></br> &emsp;月・水・木・土・日<br></br>&emsp;10:00 - 18:00 <br></br>&emsp;(LO：16:00) <br></br>
-          &emsp;火・金<br></br>&emsp;10:00 - 20:00 <br></br>&emsp;(LO：18:00)</SFooterItem>
+          <SFooterItem>
+            【営業時間】<br></br> &emsp;月・水・木・土・日<br></br>&emsp;10:00 -
+            18:00 <br></br>&emsp;(LO：16:00) <br></br>
+            &emsp;火・金<br></br>&emsp;10:00 - 20:00 <br></br>&emsp;(LO：18:00)
+          </SFooterItem>
           <SFooterItem>
             【定休日】<br></br>&emsp;不定休
           </SFooterItem>
           <SFooterItem>
-            【住所】<br></br>&emsp;長野市上野<br></br>&emsp;2丁目1183-41 <br></br>&emsp;ハイツ若夢102号
+            【住所】<br></br>&emsp;長野市上野<br></br>&emsp;2丁目1183-41{' '}
+            <br></br>&emsp;ハイツ若夢102号
           </SFooterItem>
         </SColumn>
         <SColumn>
@@ -54,7 +58,7 @@ export const Footer = () => {
 const SContainer = styled.div`
   padding: 80px 60px 10px 60px;
   background: #fff5f7;
-  font-family: "Lato";
+  font-family: 'Lato';
 
   @media (max-width: 1000px) {
     padding: 70px 20px 10px 20px;

@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
-import LogoIMG from "../../public/header-logo-pink.png";
+import React from 'react';
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import LogoIMG from '../../public/header-logo-pink.png';
 
 export const Navbar = ({ toggle }) => {
   return (
@@ -48,7 +48,7 @@ export const Navbar = ({ toggle }) => {
 };
 
 const SNav = styled.nav`
-  font-family: "Lato";
+  font-family: 'Lato';
   background: white;
   height: 80px;
   display: flex;
@@ -88,7 +88,7 @@ const SLogoImage = styled.img`
 `;
 
 const SLogoTitle = styled.h1`
-  font-family: "Kaisei Opti";
+  font-family: 'Kaisei Opti';
   font-size: 2rem;
   display: flex;
   align-items: center;

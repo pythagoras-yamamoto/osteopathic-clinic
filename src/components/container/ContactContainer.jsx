@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-import { ContactForm } from "./ContactForm";
+import React from 'react';
+import styled from 'styled-components';
+import IMG from '../../public/LINE_ALBUM_clinic_220301_0_1.jpg';
+import { ContactForm } from './ContactForm';
 
 export const ContactContainer = (props) => {
   const { title, titleImage } = props;
@@ -55,7 +55,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
   font-size: 1.8rem;
 
   color: rgb(0, 116, 127);

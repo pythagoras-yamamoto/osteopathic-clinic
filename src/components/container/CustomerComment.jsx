@@ -1,17 +1,17 @@
-import React from "react";
-import { Grid, Paper, Box } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import { IconContext } from "react-icons";
-import { FcBusinesswoman } from "react-icons/fc"
+import React from 'react';
+import { Grid, Paper, Box } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { IconContext } from 'react-icons';
+import { FcBusinesswoman } from 'react-icons/fc';
 
 export const CustomerComment = (props) => {
   const useStyles = makeStyles((theme) => ({
     root: {
-      display: "flex",
-      "& > *": {
-        margin: theme.spacing(1),
-      },
-    },
+      display: 'flex',
+      '& > *': {
+        margin: theme.spacing(1)
+      }
+    }
   }));
 
   const classes = useStyles();
@@ -20,7 +20,10 @@ export const CustomerComment = (props) => {
   return (
     <>
       <Grid item xs={12}>
-        <Paper variant="outlined" style={{width:"100%", marginBottom:"40px"}}>
+        <Paper
+          variant="outlined"
+          style={{ width: '100%', marginBottom: '40px' }}
+        >
           <Box
             className={classes.root}
             display="flex"
@@ -30,14 +33,15 @@ export const CustomerComment = (props) => {
             <IconContext.Provider value={{ size: '3em' }}>
               <FcBusinesswoman />
             </IconContext.Provider>
-            <Box color="text.secondary"
-                 py={1.5}
-                 sx={{
-                  fontSize:"20px",
-                  "@media screen and (max-width:600px)": {
-                      fontSize:"16px",
-                  },
-              }} 
+            <Box
+              color="text.secondary"
+              py={1.5}
+              sx={{
+                fontSize: '20px',
+                '@media screen and (max-width:600px)': {
+                  fontSize: '16px'
+                }
+              }}
             >
               {age}
             </Box>
@@ -48,11 +52,11 @@ export const CustomerComment = (props) => {
             textAlign="left"
             p={4} // 口コミを記載する部分の縦幅
             sx={{
-              fontSize:"20px",
-              "@media screen and (max-width:600px)": {
-                  fontSize:"16px",
-              },
-          }} 
+              fontSize: '20px',
+              '@media screen and (max-width:600px)': {
+                fontSize: '16px'
+              }
+            }}
           >
             {comment}
           </Box>

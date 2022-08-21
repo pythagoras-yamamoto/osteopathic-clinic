@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 export const PriceTableElement = (props) => {
-  const { title, price, min, menu, text, titleColor, tag="span" } = props;
+  const { title, price, min, menu, text, titleColor, tag = 'span' } = props;
   return (
     <Pricecard>
       <Title titleColor={titleColor}>{title}</Title>
@@ -37,7 +37,7 @@ const Pricecard = styled.li`
 `;
 
 const Title = styled.h3`
-  background: ${(props) => (props.titleColor ? props.titleColor : "#a2bc10")};
+  background: ${(props) => (props.titleColor ? props.titleColor : '#a2bc10')};
   color: #fff;
   padding: 10px;
 `;
@@ -56,7 +56,7 @@ const SubText = styled.p`
   font-weight: 600;
   padding: 10px 0;
   letter-spacing: 0.12em;
-  min-height:50px;
+  min-height: 50px;
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
@@ -67,7 +67,7 @@ const Text = styled.p`
   padding: 20px 0;
   text-align: left;
   letter-spacing: 0.12em;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
 
   @media screen and (max-width: 768px) {
     /* font-size: 18px; */

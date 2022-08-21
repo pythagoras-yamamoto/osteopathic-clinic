@@ -1,7 +1,7 @@
-import React from "react";
-import FullCalendar from "@fullcalendar/react"; // must go before plugins
-import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
-import googleCalendarPlugin from "@fullcalendar/google-calendar";
+import React from 'react';
+import FullCalendar from '@fullcalendar/react'; // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 export const Calendar = () => {
   return (
@@ -10,12 +10,12 @@ export const Calendar = () => {
       plugins={[dayGridPlugin, googleCalendarPlugin]}
       initialView="dayGridMonth"
       events={{
-        googleCalendarId: "meme.hisa33@gmail.com"
+        googleCalendarId: 'meme.hisa33@gmail.com'
       }}
       headerToolbar={{
-        left: "prev,next today",
-        center: "title",
-        right: "dayGridMonth"
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth'
       }}
       locale="ja"
       navLinks="false"

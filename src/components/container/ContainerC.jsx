@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-import { Calendar } from "./Calendar";
-import { LinkContactButton } from "./LinkContactButton";
+import IMG from '../../public/LINE_ALBUM_clinic_220301_0_1.jpg';
+import { Calendar } from './Calendar';
+import { LinkContactButton } from './LinkContactButton';
 
 export const ContainerC = (props) => {
   const {
     title, //title　: Item name
-    titleImage,
+    titleImage
   } = props;
 
   return (
@@ -71,7 +71,7 @@ const STitle = styled.h2`
   background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;

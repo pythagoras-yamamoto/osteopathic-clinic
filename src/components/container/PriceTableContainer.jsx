@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-import { PriceTable } from "./PriceTable";
-import { LinkContactButton } from "./LinkContactButton";
+import React from 'react';
+import styled from 'styled-components';
+import IMG from '../../public/LINE_ALBUM_clinic_220301_0_1.jpg';
+import { PriceTable } from './PriceTable';
+import { LinkContactButton } from './LinkContactButton';
 
 export const PriceTableContainer = (props) => {
   const {
     title, //title　: Item name
-    titleImage,
+    titleImage
   } = props;
 
   return (
@@ -33,7 +33,7 @@ export const SContainerWrapper = styled.div`
   padding-top: 50px;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
   border-radius: 50px;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
 
   @media screen and (max-width: 768px) {
     margin-top: 50px;
@@ -62,7 +62,7 @@ const STitle = styled.h2`
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
   font-size: 1.8rem;
 
   color: rgb(0, 116, 127);

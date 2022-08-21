@@ -1,5 +1,5 @@
-import SlideRoutes from "react-slide-routes";
-import { Route, useLocation } from "react-router-dom";
+import SlideRoutes from 'react-slide-routes';
+import { Route, useLocation } from 'react-router-dom';
 
 const App = () => {
   const location = useLocation();

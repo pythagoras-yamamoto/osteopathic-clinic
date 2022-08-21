@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import IMG from "../../public/LINE_ALBUM_clinic_220301_0_1.jpg";
-import Map from "./Map";
+import IMG from '../../public/LINE_ALBUM_clinic_220301_0_1.jpg';
+import Map from './Map';
 
 export const Access = (props) => {
   const {
@@ -10,7 +10,7 @@ export const Access = (props) => {
     titleImage,
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
-    shadowColor,
+    shadowColor
   } = props;
 
   return (
@@ -76,7 +76,7 @@ const STitle = styled.h2`
   background: rgba(255, 249, 238, 0.5);
   height: 100px;
   width: 300px;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;

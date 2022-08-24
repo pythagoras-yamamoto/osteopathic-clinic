@@ -17,5 +17,4 @@ jobs:
       run: yarn
     - name: TypeScript Compile
       run: yarn lint:ts
-    - name: Jest UnitTest
       run: yarn test

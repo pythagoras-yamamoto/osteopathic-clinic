@@ -1,6 +1,5 @@
 ## サイトイメージ
 #### 公開URL : https://memesalon.vercel.app/
- -->
 #### サンプル画像
 
 #### PC
@@ -16,30 +15,25 @@
 
 
 ##  概要
-2022年2月上旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。デザインから実装まで担当。
-[サロンのブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog)、お問い合わせ自動化を目的とした[LINEBot](https://github.com/pythagoras-yamamoto/clinic-bot)も作成。
+2022年2月上旬にプレオープン予定の女性専用サロン「めめ」のwebサイト。
+サロンの[ブログサイト](https://github.com/pythagoras-yamamoto/clinic-blog)はこちら。
 
 ## 機能
-#### 問い合わせフォーム
-Email.jsを利用することで、問い合わせ先とサロン運営者に対して確認メールを自動で送信。
+#### お問い合わせフォーム
+Email.jsを利用することで、お問い合わせ先とサロン運営者に対して確認メールを自動で送信。
 #### 予約状況確認ページ
 Google CalendarとFullCalendarを連携することで、運営者が店舗のGoogle Calendarに書き込むだけで予約状況がwebサイトに反映される。ノンプログラマーでも予約状況の更新が手軽に可能。
 #### ブログサイト
 Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動でデプロイされ、webサイトに反映される。ノンプログラマーでもブログ記事の更新が手軽に可能。
 
 ## 使用技術 
-全体をReactで構築。スタイルの当て方にはstyled-componentを採用。MaterialUIを導入したので新しくCSS書く際にはこちらも利用。アニメーション部分にはreact-slick,react-revealを導入。  
-使用技術 : React.js, styled-components,react-slick,react-reveal, Vercel, Material UI
-
-
-## ディレクトリ構成
+全体をReactで構築。スタイリングはCSSinJSでstyled-component, MaterialUIを利用。アニメーション部分にはreact-slick,react-revealを導入。  Github ActionでLinter, Lighthouseによる自動テストを実施。
+使用技術 : react,typescript,styled-components,material-ui,vercel
 
 
 ## 参考
 ### ディレクトリ構成・命名規則:
-
 https://zenn.dev/a_da_chi/articles/80879f4813ecac
-
 https://qiita.com/punkshiraishi/items/24ac8abbd661e8062f52?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
 
 

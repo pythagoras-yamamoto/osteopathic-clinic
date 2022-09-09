@@ -15,5 +15,3 @@ jobs:
     - uses: c-hive/gha-yarn-cache@v1
     - name: Package Install
       run: yarn
-    # - name: TypeScript Compile
-    #   run: yarn lint:ts

@@ -5,8 +5,8 @@ import { LinkContactButton } from './LinkContactButton';
 
 export const ContainerA = (props) => {
   const {
-    title, //title　: Item name
-    text, //contents : Text part of the item
+    title, //title : Item name
+    text,
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.
     shadowColor

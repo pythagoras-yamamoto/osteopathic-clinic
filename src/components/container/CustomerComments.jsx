@@ -7,7 +7,7 @@ import IMG from '../../public/LINE_ALBUM_clinic_220301_0_1.jpg';
 
 export const CustomerComments = (props) => {
   const {
-    title, //title　: Item name
+    title, //title : Item name
     titleImage,
     widthRatio //ImageWidth : Change the width of the image as you like, but Using %.
   } = props;

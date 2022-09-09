@@ -6,7 +6,7 @@ import Map from './Map';
 
 export const Access = (props) => {
   const {
-    title, //title　: Item name
+    title, 
     titleImage,
     image, //, image : Img part of the item
     widthRatio, //ImageWidth : Change the width of the image as you like, but Using %.

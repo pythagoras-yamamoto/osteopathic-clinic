@@ -7,7 +7,7 @@ import { LinkContactButton } from './LinkContactButton';
 
 export const ContainerC = (props) => {
   const {
-    title, //title　: Item name
+    title, //title : Item name
     titleImage
   } = props;
 

@@ -1,34 +1,34 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Grid, TextField, Button } from "@material-ui/core";
-import { init, send } from "emailjs-com";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Grid, TextField, Button } from '@material-ui/core';
+import { init, send } from 'emailjs-com';
 
 export const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [mail, setMail] = useState('');
+  const [message, setMessage] = useState('');
   //todo 電話番号
 
   const sendEmail = () => {
-    const user_id = "user_lJKxWcZEtj7qKiZ1wNgb8";
-    const service_id = "service_e4ptsmy";
-    const template_id = "template_7x0uyj6";
+    const user_id = 'user_lJKxWcZEtj7qKiZ1wNgb8';
+    const service_id = 'service_e4ptsmy';
+    const template_id = 'template_7x0uyj6';
 
     init(user_id);
 
     const template_param = {
       to_name: name,
       email: mail,
-      message: message,
+      message: message
     };
 
     send(service_id, template_id, template_param).then(() => {
-      console.log("success to send email");
-      alert("お問い合わせを受けつけました");
+      console.log('success to send email');
+      alert('お問い合わせを受けつけました');
 
-      setName("");
-      setMail("");
-      setMessage("");
+      setName('');
+      setMail('');
+      setMessage('');
     });
   };
 
@@ -43,7 +43,7 @@ export const ContactForm = () => {
   };
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log("push submit");
+    console.log('push submit');
     sendEmail();
   };
 
@@ -63,7 +63,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeName}
               value={name}
-              style={{ fontFamily: "Hannotate SC" }}
+              style={{ fontFamily: 'Hannotate SC' }}
               // InputProps={{ disableUnderline: true }}
             />
             <TextField
@@ -88,7 +88,7 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMessage}
               value={message}
-              style={{ fontFamily: "Zen Kaku Gothic Antique" }}
+              style={{ fontFamily: 'Zen Kaku Gothic Antique' }}
               // InputProps={{ disableUnderline: true }}
             />
             <SSpace />
@@ -98,7 +98,7 @@ export const ContactForm = () => {
               color="primary"
               variant="outlined"
               size="large"
-              style={{ fontFamily: "Yomogi" }}
+              style={{ fontFamily: 'Yomogi' }}
             >
               送信
             </Button>

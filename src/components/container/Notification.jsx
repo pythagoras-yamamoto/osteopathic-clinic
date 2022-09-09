@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Slider from "react-slick";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Slider from 'react-slick';
 
 export const Notification = () => {
   const settings = {
@@ -12,11 +12,11 @@ export const Notification = () => {
     verticalSwiping: true,
 
     beforeChange: function (currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
+      console.log('before change', currentSlide, nextSlide);
     },
     afterChange: function (currentSlide) {
-      console.log("after change", currentSlide);
-    },
+      console.log('after change', currentSlide);
+    }
   };
 
   return (
@@ -66,7 +66,7 @@ const NotificationList = styled.li`
   text-align: left;
   font-size: 0.8rem;
   border-bottom: 1px solid #cfd8dc;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
   line-height: 1.4rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;

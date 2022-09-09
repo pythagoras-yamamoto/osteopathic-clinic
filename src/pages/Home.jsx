@@ -1,23 +1,23 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { SEO } from "../components/container/SEO";
-import { Header } from "../components/header/Header";
-import { ContainerA } from "../components/container/ContainerA";
-import { Access } from "../components/container/Access";
-import { ImageSlider } from "../components/container/ImageSlider";
-import { CustomerComments } from "../components/container/CustomerComments";
-import { Footer } from "../components/footer/Footer";
-import { Notification } from "../components/container/Notification";
+import { SEO } from '../components/container/SEO';
+import { Header } from '../components/header/Header';
+import { ContainerA } from '../components/container/ContainerA';
+import { Access } from '../components/container/Access';
+import { ImageSlider } from '../components/container/ImageSlider';
+import { CustomerComments } from '../components/container/CustomerComments';
+import { Footer } from '../components/footer/Footer';
+import { Notification } from '../components/container/Notification';
 
-import ImageConcept from "../public/LINE_ALBUM_clinic_220628.png";
-import ImageMenu from "../public/LINE_ALBUM_clinic_220301_1.jpg";
-import titleImage from "../public/calendar.jpeg";
+import ImageConcept from '../public/LINE_ALBUM_clinic_220628.png';
+import ImageMenu from '../public/LINE_ALBUM_clinic_220301_1.jpg';
+import titleImage from '../public/calendar.jpeg';
 
 export const Home = () => {
   return (
     <>
-      <SEO title={"SALON MEME TOPページ"} />
+      <SEO title={'SALON MEME TOPページ'} />
       <Header />
       <Hero>
         <SImageWrapper>
@@ -34,21 +34,21 @@ export const Home = () => {
       </Hero>
       <ContainerA
         titleImage={titleImage}
-        title={"Concept"}
+        title={'Concept'}
         text={
-          "『温かく優しく、柔らかな本来の「私」を見つけるひとときを過ごせる場所』をコンセプトに優しいタッチにてトリートメント、リラクゼーションを行っていきます。\n\n身体の力、緊張を緩め、心身ともにリラックスすることで身体は軽くなり心には余裕が出来てきます。余裕をつくることで今まで出来なかった、できる状態ではなかった『本来の自分を見つける』ということが出来るきっかけを作れる場所でありたいと思います。"
+          '『温かく優しく、柔らかな本来の「私」を見つけるひとときを過ごせる場所』をコンセプトに優しいタッチにてトリートメント、リラクゼーションを行っていきます。\n\n身体の力、緊張を緩め、心身ともにリラックスすることで身体は軽くなり心には余裕が出来てきます。余裕をつくることで今まで出来なかった、できる状態ではなかった『本来の自分を見つける』ということが出来るきっかけを作れる場所でありたいと思います。'
         }
         image={ImageConcept}
       />
       <ContainerA
-        title={"Menu & Price"}
+        title={'Menu & Price'}
         text={
-          "当サロンでは3種類のコースを設けております。\n\n日々の疲れ、頭痛、肩こり、不眠など、お客様のお悩みにあったコースを選択できます。価格帯は7,000~12,000円に設定しています。\n\n詳しい内容は「MENU&PRICE」ページからご確認ください"
+          '当サロンでは3種類のコースを設けております。\n\n日々の疲れ、頭痛、肩こり、不眠など、お客様のお悩みにあったコースを選択できます。価格帯は7,000~12,000円に設定しています。\n\n詳しい内容は「MENU&PRICE」ページからご確認ください'
         }
         image={ImageMenu}
       />
-      <CustomerComments title={"Comments"} widthRatio={0} />
-      <Access title={"Access"} widthRatio={0} />
+      <CustomerComments title={'Comments'} widthRatio={0} />
+      <Access title={'Access'} widthRatio={0} />
 
       <Footer />
     </>
@@ -74,7 +74,7 @@ const SImageWrapper = styled.div`
 
 const STitleOnImage = styled.h1`
   position: absolute;
-  font-family: "Kaisei Opti";
+  font-family: 'Kaisei Opti';
   top: 70px;
   font-size: 6rem;
   color: rgb(80, 80, 80);
@@ -100,7 +100,7 @@ const STextOnImage = styled.div`
   margin: 0 100px;
   text-align: left;
   font-size: 1.1rem;
-  font-family: "Yomogi";
+  font-family: 'Yomogi';
   font-weight: 900;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;

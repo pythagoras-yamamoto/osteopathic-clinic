@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { Button } from "@material-ui/core";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { Button } from '@material-ui/core';
 
 export const LinkContactButton = () => {
   return (
     <>
       <Wrapper>
         <Button
-          style={{ fontFamily: "Yomogi" }}
+          style={{ fontFamily: 'Yomogi' }}
           className="contact-button"
           type="submit"
           color="primary"

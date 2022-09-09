@@ -1,8 +1,8 @@
-import { Router } from "./router/Router";
-import { BrowserRouter } from "react-router-dom";
-import React from "react";
+import { Router } from './router/Router';
+import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
 
-import "./styles.css";
+import './styles.css';
 
 export default function App() {
   return (

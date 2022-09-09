@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export const NavSidebar = ({ isOpen, toggle }) => {
   return (
@@ -36,8 +36,8 @@ const SNavSidebarContainer = styled.aside`
   display: grid;
   align-items: center;
   transition: 0.5s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-100")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  z-index: ${({ isOpen }) => (isOpen ? '1000' : '-100')};
   top: 0;
 `;
 

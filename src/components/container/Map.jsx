@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React, { Component } from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 class Map extends Component {
   googleGeocoder = null;
   constructor(props) {
     super(props);
     this.state = {
-      locationName: "",
+      locationName: '',
       center: {
         lat: 36.68609272398972,
-        lng: 138.23314952238516,
+        lng: 138.23314952238516
       },
-      isShowMarker: true,
+      isShowMarker: true
     };
   }
   changeLocationName(e) {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       this.geocode();
       return;
     }
     this.setState({
-      locationName: e.target.value,
+      locationName: e.target.value
     });
   }
   geocode() {
@@ -28,15 +28,15 @@ class Map extends Component {
     geocoder.geocode(
       { address: this.state.locationName },
       (results, status) => {
-        if (status === "OK") {
+        if (status === 'OK') {
           let center = Object.assign({}, this.state.center);
           center = {
             lat: results[0].geometry.location.lat(),
-            lng: results[0].geometry.location.lng(),
+            lng: results[0].geometry.location.lng()
           };
           this.setState({
             center,
-            isShowMarker: true,
+            isShowMarker: true
           });
         }
       }
@@ -48,8 +48,8 @@ class Map extends Component {
     //   display: "block"
     // };
     const containerStyle = {
-      width: "100%",
-      height: "50vh",
+      width: '100%',
+      height: '50vh'
       // margin: "auto"
     };
 

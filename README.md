@@ -30,6 +30,9 @@ Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動で�
 全体をReactで構築。スタイリングはCSSinJSでstyled-component, MaterialUIを利用。アニメーション部分にはreact-slick,react-revealを導入。  Github ActionでLinter, Lighthouseによる自動テストを実施。
 使用技術 : react,typescript,styled-components,material-ui,vercel
 
+## 開発フロー
+commit時にhuskyによるフックが起動し、prettierとeslintの静的テストが実行される
+
 
 ## 参考
 ### ディレクトリ構成・命名規則:

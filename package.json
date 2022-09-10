@@ -35,7 +35,7 @@
     "react-slide-routes": "0.4.1",
     "scrollreveal": "3.3.2",
     "slick-carousel": "1.8.1",
-    "styled-components": "5.3.3",
+    "styled-components": "5.3.5",
     "swiper": "7.0.0"
   },
   "devDependencies": {

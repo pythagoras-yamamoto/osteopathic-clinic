@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Grid, TextField, Button, FormControl, InputLabel, Select } from '@material-ui/core';
+import {
+  Grid,
+  TextField,
+  Button,
+  FormControl,
+  InputLabel,
+  Select
+} from '@material-ui/core';
 import { init, send } from 'emailjs-com';
 import DateFnsUtils from '@date-io/date-fns';
 import {
@@ -35,7 +42,7 @@ export const ContactForm = () => {
       alert('お問い合わせを受けつけました');
 
       setDate(new Date('2022-08-18T21:11:00'));
-      setCourse('')
+      setCourse('');
       setName('');
       setMail('');
       setMessage('');
@@ -101,7 +108,12 @@ export const ContactForm = () => {
               </Grid>
             </MuiPickersUtilsProvider>
             <FormControl fullWidth required>
-              <InputLabel htmlFor="age-native-simple">ご希望コース</InputLabel>
+              <InputLabel
+                style={{fontSize: 16}}
+                htmlFor="age-native-simple"
+              >
+                ご希望コース
+              </InputLabel>
               <Select
                 native
                 value={course}
@@ -113,14 +125,19 @@ export const ContactForm = () => {
               >
                 <option aria-label="None" value="" />
                 <option value={1}>コースA ボディリバランス</option>
-                <option value={2}>コースB フェイシャルトリートメント ＋ ヘッドリラクゼーション</option>
-                <option value={3}>コースC ボディリバランス ＋ ヘッドリラクゼーション</option>
-                <option value={4}>コースD ボディリバランス ＋ フェイシャルトリートメント</option>
+                <option value={2}>
+                  コースB フェイシャルトリートメント ＋ ヘッドリラクゼーション
+                </option>
+                <option value={3}>
+                  コースC ボディリバランス ＋ ヘッドリラクゼーション
+                </option>
+                <option value={4}>
+                  コースD ボディリバランス ＋ フェイシャルトリートメント
+                </option>
               </Select>
             </FormControl>
             <TextField
-              id="outlined-multiline-flexible"
-              className="contact-name"
+              InputLabelProps={{ style: { fontSize: 16 } }} // font size of input text
               variant="standard"
               type="text"
               required
@@ -129,10 +146,9 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeName}
               value={name}
-              style={{ fontFamily: 'Hannotate SC' }}
             />
             <TextField
-              className="contact-mail-phone"
+              InputLabelProps={{ style: { fontSize: 16 } }} // font size of input text
               variant="standard"
               type="text"
               required
@@ -143,7 +159,7 @@ export const ContactForm = () => {
               value={mail}
             />
             <TextField
-              className="contact-message"
+              InputLabelProps={{ style: { fontSize: 16 } }} // font size of input text
               variant="standard"
               type="text"
               label="その他"
@@ -151,11 +167,9 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMessage}
               value={message}
-              style={{ fontFamily: 'Zen Kaku Gothic Antique' }}
             />
             <SSpace />
             <Button
-              className="contact-button"
               type="submit"
               color="primary"
               variant="outlined"

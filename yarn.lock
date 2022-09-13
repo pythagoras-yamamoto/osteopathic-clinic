@@ -1114,11 +1114,11 @@
     "@fullcalendar/common" "~5.11.3"
     tslib "^2.1.0"
 
-"@fullcalendar/google-calendar@5.11.3":
-  version "5.11.3"
-  resolved "https://registry.yarnpkg.com/@fullcalendar/google-calendar/-/google-calendar-5.11.3.tgz#87e74a402e7b60d24649e1945b92d8faed5c4304"
+"@fullcalendar/google-calendar@5.10.1":
+  version "5.10.1"
+  resolved "https://registry.npmjs.org/@fullcalendar/google-calendar/-/google-calendar-5.10.1.tgz"
   dependencies:
-    "@fullcalendar/common" "~5.11.3"
+    "@fullcalendar/common" "~5.10.1"
     tslib "^2.1.0"
 
 "@fullcalendar/interaction@^5.10.1":

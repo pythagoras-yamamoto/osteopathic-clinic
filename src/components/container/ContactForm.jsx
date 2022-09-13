@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Grid, TextField, Button } from '@material-ui/core';
+import { Grid, TextField, Button, FormControl, InputLabel, Select } from '@material-ui/core';
 import { init, send } from 'emailjs-com';
-import { DatePicker } from './DatePicker';
+import DateFnsUtils from '@date-io/date-fns';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+  KeyboardTimePicker
+} from '@material-ui/pickers';
 
 export const ContactForm = () => {
+  const [date, setDate] = useState(new Date('2022-08-18T21:11:00'));
+  const [course, setCourse] = useState('');
   const [name, setName] = useState('');
   const [mail, setMail] = useState('');
-  // const [date, setDate] = useState('');
-  const [time, setTime] = useState('');
   const [message, setMessage] = useState('');
-
-  //todo 電話番号
 
   const sendEmail = () => {
     const user_id = 'user_lJKxWcZEtj7qKiZ1wNgb8';
@@ -21,34 +24,35 @@ export const ContactForm = () => {
     init(user_id);
 
     const template_param = {
+      reserved_date: date,
+      course: course,
       to_name: name,
       email: mail,
       message: message
     };
 
     send(service_id, template_id, template_param).then(() => {
-      console.log('success to send email');
       alert('お問い合わせを受けつけました');
 
+      setDate(new Date('2022-08-18T21:11:00'));
+      setCourse('')
       setName('');
       setMail('');
-      // setDate('');
-      setTime('');
       setMessage('');
     });
   };
 
+  const onChangeDate = (e) => {
+    setDate(e);
+  };
   const onChangeName = (e) => {
     setName(e.target.value);
   };
   const onChangeMail = (e) => {
     setMail(e.target.value);
   };
-  // const onChangeDate = (e) => {
-  //   setDate(e.target.value);
-  // };
-  const onChangeTime = (e) => {
-    setTime(e.target.value);
+  const onChangeCourse = (e) => {
+    setCourse(e.target.value);
   };
   const onChangeMessage = (e) => {
     setMessage(e.target.value);
@@ -64,14 +68,63 @@ export const ContactForm = () => {
       <Grid container alignItems="center" justifyContent="center">
         <Grid item xs={8}>
           <form onSubmit={onSubmit}>
-            <DatePicker />
+            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+              <Grid container justifyContent="space-between">
+                <KeyboardDatePicker
+                  style={{ width: 400 }}
+                  disableToolbar
+                  variant="inline"
+                  required
+                  format="MM/dd/yyyy"
+                  margin="normal"
+                  id="date-picker-inline"
+                  label="ご希望日"
+                  value={date}
+                  onChange={onChangeDate}
+                  KeyboardButtonProps={{
+                    'aria-label': 'change date'
+                  }}
+                />
+                <KeyboardTimePicker
+                  style={{ width: 400 }}
+                  variant="inline"
+                  required
+                  margin="normal"
+                  id="time-picker"
+                  label="ご希望時間"
+                  value={date}
+                  onChange={onChangeDate}
+                  KeyboardButtonProps={{
+                    'aria-label': 'change time'
+                  }}
+                />
+              </Grid>
+            </MuiPickersUtilsProvider>
+            <FormControl fullWidth required>
+              <InputLabel htmlFor="age-native-simple">ご希望コース</InputLabel>
+              <Select
+                native
+                value={course}
+                onChange={onChangeCourse}
+                inputProps={{
+                  name: 'age',
+                  id: 'age-native-simple'
+                }}
+              >
+                <option aria-label="None" value="" />
+                <option value={1}>コースA ボディリバランス</option>
+                <option value={2}>コースB フェイシャルトリートメント ＋ ヘッドリラクゼーション</option>
+                <option value={3}>コースC ボディリバランス ＋ ヘッドリラクゼーション</option>
+                <option value={4}>コースD ボディリバランス ＋ フェイシャルトリートメント</option>
+              </Select>
+            </FormControl>
             <TextField
               id="outlined-multiline-flexible"
               className="contact-name"
               variant="standard"
               type="text"
               required
-              label="ご氏名(必須)"
+              label="ご氏名"
               fullWidth
               margin="normal"
               onChange={onChangeName}
@@ -83,7 +136,7 @@ export const ContactForm = () => {
               variant="standard"
               type="text"
               required
-              label="メールアドレスまたは電話番号(必須)"
+              label="メールアドレスまたは電話番号"
               fullWidth
               margin="normal"
               onChange={onChangeMail}

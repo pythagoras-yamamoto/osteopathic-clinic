@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Grid, TextField, Button } from '@material-ui/core';
 import { init, send } from 'emailjs-com';
+import { DatePicker } from './DatePicker';
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
   const [mail, setMail] = useState('');
+  // const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
   const [message, setMessage] = useState('');
+
   //todo 電話番号
 
   const sendEmail = () => {
@@ -28,6 +32,8 @@ export const ContactForm = () => {
 
       setName('');
       setMail('');
+      // setDate('');
+      setTime('');
       setMessage('');
     });
   };
@@ -37,6 +43,12 @@ export const ContactForm = () => {
   };
   const onChangeMail = (e) => {
     setMail(e.target.value);
+  };
+  // const onChangeDate = (e) => {
+  //   setDate(e.target.value);
+  // };
+  const onChangeTime = (e) => {
+    setTime(e.target.value);
   };
   const onChangeMessage = (e) => {
     setMessage(e.target.value);
@@ -52,23 +64,23 @@ export const ContactForm = () => {
       <Grid container alignItems="center" justifyContent="center">
         <Grid item xs={8}>
           <form onSubmit={onSubmit}>
+            <DatePicker />
             <TextField
               id="outlined-multiline-flexible"
               className="contact-name"
-              variant="outlined"
+              variant="standard"
               type="text"
               required
-              label="氏名(必須)"
+              label="ご氏名(必須)"
               fullWidth
               margin="normal"
               onChange={onChangeName}
               value={name}
               style={{ fontFamily: 'Hannotate SC' }}
-              // InputProps={{ disableUnderline: true }}
             />
             <TextField
-              className="contact-mail"
-              variant="outlined"
+              className="contact-mail-phone"
+              variant="standard"
               type="text"
               required
               label="メールアドレスまたは電話番号(必須)"
@@ -76,20 +88,17 @@ export const ContactForm = () => {
               margin="normal"
               onChange={onChangeMail}
               value={mail}
-              // InputProps={{ disableUnderline: true }}
             />
             <TextField
               className="contact-message"
-              variant="outlined"
+              variant="standard"
               type="text"
-              required
-              label="お問い合わせ内容(必須)"
+              label="その他"
               fullWidth
               margin="normal"
               onChange={onChangeMessage}
               value={message}
               style={{ fontFamily: 'Zen Kaku Gothic Antique' }}
-              // InputProps={{ disableUnderline: true }}
             />
             <SSpace />
             <Button

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { createClient } from "contentful";
+import React, { useEffect, useState } from 'react';
+import { createClient } from 'contentful';
 import styled from 'styled-components';
 
 const client = createClient({
-  space: "18tfimm6dnj6",
-  accessToken: "MhNq7BnTfyuzinssfglIRkshvfeIhscTWW4weWbh0c4",
+  space: '18tfimm6dnj6',
+  accessToken: 'MhNq7BnTfyuzinssfglIRkshvfeIhscTWW4weWbh0c4'
 });
 
 export const RecentNotification = () => {
@@ -17,21 +17,21 @@ export const RecentNotification = () => {
   const fetchData = async () => {
     try {
       const { items } = await client.getEntries({
-        content_type: "notification"
+        content_type: 'notification'
       });
       setNotifications(items[0].fields.body.content[0].content[0].value);
     } catch (error) {
       console.log(error);
     }
   };
-  console.log(notifications)
+  console.log(notifications);
 
   return (
     // <NotificationWrapper>
     //   <SRecentItem>{notifications.fields.maintitle}</SRecentItem>
     // </NotificationWrapper>
     <NotificationWrapper>
-      <SRecentItem>{ notifications }</SRecentItem>
+      <SRecentItem>{notifications}</SRecentItem>
     </NotificationWrapper>
   );
 };
@@ -57,4 +57,4 @@ const SRecentItem = styled.div`
   :nth-child(1) {
     border-top: 1px solid #cfd8dc;
   }
-`
+`;

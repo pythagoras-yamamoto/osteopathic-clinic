@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import { RecentNotification } from '../container/RecentNotification'
+import { RecentNotification } from '../container/RecentNotification';
 
 export const Notification = () => {
   const settings = {

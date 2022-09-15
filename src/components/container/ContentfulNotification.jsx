@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { createClient } from "contentful";
+import React, { useEffect, useState } from 'react';
+import { createClient } from 'contentful';
 import styled from 'styled-components';
 
 const client = createClient({
-  space: "18tfimm6dnj6",
-  accessToken: "MhNq7BnTfyuzinssfglIRkshvfeIhscTWW4weWbh0c4",
+  space: '18tfimm6dnj6',
+  accessToken: 'MhNq7BnTfyuzinssfglIRkshvfeIhscTWW4weWbh0c4'
 });
 
 export const Notificationlist = () => {
@@ -17,7 +17,7 @@ export const Notificationlist = () => {
   const fetchData = async () => {
     try {
       const { items } = await client.getEntries({
-        content_type: "notification"
+        content_type: 'notification'
       });
       setNotifications(items);
     } catch (error) {
@@ -40,7 +40,6 @@ const NotificationWrapper = styled.ul`
   object-fit: cover;
 `;
 
-
 const SListitem = styled.div`
   display: flex;
   justify-content: left;
@@ -56,4 +55,4 @@ const SListitem = styled.div`
   :nth-child(1) {
     border-top: 1px solid #cfd8dc;
   }
-`
+`;

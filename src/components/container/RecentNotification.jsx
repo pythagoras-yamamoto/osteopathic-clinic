@@ -33,8 +33,6 @@ export const RecentNotification = () => {
   );
 };
 
-export default RecentNotification;
-
 const NotificationWrapper = styled.div`
   object-fit: cover;
 `;

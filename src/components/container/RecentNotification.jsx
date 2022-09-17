@@ -53,3 +53,5 @@ const SRecentItem = styled.div`
     border-top: 1px solid #cfd8dc;
   }
 `;
+
+export default RecentNotification;

@@ -27,9 +27,6 @@ export const RecentNotification = () => {
   console.log(notifications);
 
   return (
-    // <NotificationWrapper>
-    //   <SRecentItem>{notifications.fields.maintitle}</SRecentItem>
-    // </NotificationWrapper>
     <NotificationWrapper>
       <SRecentItem>{notifications}</SRecentItem>
     </NotificationWrapper>

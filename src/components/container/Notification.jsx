@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { RecentNotification } from '../container/RecentNotification';
+import { Notificationlist } from '../container/ContentfulNotification'
 
 export const Notification = () => {
   const settings = {
@@ -27,7 +28,7 @@ export const Notification = () => {
       </NotificationTitleWrapper>
       <SliderWrapper>
         <Slider {...settings}>
-          <RecentNotification />
+          <Notificationlist quantity={1} />
         </Slider>
       </SliderWrapper>
     </>
@@ -48,7 +49,10 @@ const NotificationTitleWrapper = styled.div`
   font-size: .8rem;
 `;
 
-const SliderWrapper = styled.div``;
+const SliderWrapper = styled.div`
+    height:auto;
+`;
+
 
 // const NotificationWrapper = styled.ul`
 //   object-fit: cover;

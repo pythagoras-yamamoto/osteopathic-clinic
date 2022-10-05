@@ -7,7 +7,7 @@ const client = createClient({
   accessToken: 'MhNq7BnTfyuzinssfglIRkshvfeIhscTWW4weWbh0c4'
 });
 
-export const Notificationlist = (quantity) => {
+export const NotificationList = ({ displayNumber }) => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
@@ -27,14 +27,12 @@ export const Notificationlist = (quantity) => {
 
   return (
     <NotificationWrapper>
-        {notifications.slice(0, {quantity}).map((notification, i) => (
-          <SListitem key={i}>{notification.fields.maintitle}</SListitem>
-        ))}
+      {notifications.slice(0, displayNumber).map((notification, i) => (
+        <SListitem key={i}>{notification.fields.maintitle}</SListitem>
+      ))}
     </NotificationWrapper>
   );
 };
-
-export default Notificationlist;
 
 const NotificationWrapper = styled.ul`
   object-fit: cover;

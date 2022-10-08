@@ -27,7 +27,7 @@ export const Notification = () => {
       </NotificationTitleWrapper>
       <SliderWrapper>
         {/* <Slider {...settings}> */}
-          <NotificationList displayNumber={1} />
+        <NotificationList displayNumber={1} />
         {/* </Slider> */}
       </SliderWrapper>
     </>

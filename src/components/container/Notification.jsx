@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
+import { NotificationList } from './NotificationList';
 
 export const Notification = () => {
   const settings = {
@@ -25,15 +26,9 @@ export const Notification = () => {
         <NotificationTitle>News</NotificationTitle>
       </NotificationTitleWrapper>
       <SliderWrapper>
-        <Slider {...settings}>
-          <NotificationWrapper>
-            <NotificationList>
-              8月いっぱいまで初めてご来店して下さった方限定！50％OFFとさせていただいております。
-              <br />
-              (8月末までにご来店が難しい方は期限までに予約していただければ50％OFF致します)
-            </NotificationList>
-          </NotificationWrapper>
-        </Slider>
+        {/* <Slider {...settings}> */}
+        <NotificationList displayNumber={1} />
+        {/* </Slider> */}
       </SliderWrapper>
     </>
   );
@@ -53,25 +48,27 @@ const NotificationTitleWrapper = styled.div`
   font-size: .8rem;
 `;
 
-const SliderWrapper = styled.div``;
-
-const NotificationWrapper = styled.ul`
-  object-fit: cover;
+const SliderWrapper = styled.div`
+  height: auto;
 `;
 
-const NotificationList = styled.li`
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  text-align: left;
-  font-size: 0.8rem;
-  border-bottom: 1px solid #cfd8dc;
-  font-family: 'Yomogi';
-  line-height: 1.4rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+// const NotificationWrapper = styled.ul`
+//   object-fit: cover;
+// `;
 
-  :nth-child(1) {
-    border-top: 1px solid #cfd8dc;
-  }
-`;
+// const NotificationList = styled.li`
+//   display: flex;
+//   justify-content: left;
+//   align-items: center;
+//   text-align: left;
+//   font-size: 0.8rem;
+//   border-bottom: 1px solid #cfd8dc;
+//   font-family: 'Yomogi';
+//   line-height: 1.4rem;
+//   padding-top: 0.8rem;
+//   padding-bottom: 0.8rem;
+
+//   :nth-child(1) {
+//     border-top: 1px solid #cfd8dc;
+//   }
+// `;

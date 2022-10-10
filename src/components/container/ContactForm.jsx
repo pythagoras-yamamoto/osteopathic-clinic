@@ -108,10 +108,7 @@ export const ContactForm = () => {
               </Grid>
             </MuiPickersUtilsProvider>
             <FormControl fullWidth required>
-              <InputLabel
-                style={{fontSize: 16}}
-                htmlFor="age-native-simple"
-              >
+              <InputLabel style={{ fontSize: 16 }} htmlFor="age-native-simple">
                 ご希望コース
               </InputLabel>
               <Select

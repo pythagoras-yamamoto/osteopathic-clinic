@@ -32,6 +32,7 @@ Gatsby,Contentful,Netlifyを利用し、ブログが投稿されると自動で�
 
 ## 開発フロー
 commit時にhuskyによるフックが起動し、prettierとeslintの静的テストが実行される
+nodeバージョン 16.17.0
 
 
 ## 参考

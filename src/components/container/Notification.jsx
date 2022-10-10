@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import { NotificationList } from '../container/ContentfulNotification';
+import { NotificationList } from './NotificationList';
 
 export const Notification = () => {
   const settings = {

@@ -35,7 +35,10 @@ export const SEO = (props) => {
       />
       {/* Google Font ここまで */}
       {/* google serch console ここから */}
-      <meta name="google-site-verification" content="5w-U8hzioKaKm2qcZJJ458qdu88KuWYHsua7itPBAaQ" />
+      <meta
+        name="google-site-verification"
+        content="5w-U8hzioKaKm2qcZJJ458qdu88KuWYHsua7itPBAaQ"
+      />
       {/* google serch console ここまで */}
     </Helmet>
   );

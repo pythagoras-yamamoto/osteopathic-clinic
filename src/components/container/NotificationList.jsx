@@ -43,12 +43,18 @@ const SListitem = styled.div`
   justify-content: left;
   align-items: center;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-bottom: 1px solid #cfd8dc;
   font-family: 'Yomogi';
   line-height: 1.4rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
+  letter-spacing: 0.2em;
+
+  @media screen and (max-width:768px) {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+  }
 
   :nth-child(1) {
     border-top: 1px solid #cfd8dc;

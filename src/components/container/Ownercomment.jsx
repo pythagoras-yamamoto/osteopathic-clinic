@@ -15,10 +15,9 @@ export const Ownercomment = () => {
       textAlign="left"
     >
       <p>
-        30種類以上の植物から植物オイルやエキスを丁寧に抽出し、調合したナチュラルな化粧品を使用しています。
-        <br></br>クリアな植物の香りを楽しんでいただけます。<br></br>
+        がんばる女性の体と心をゆるふわに解放し「自分を愛し一生大切にできる様になれる」<br></br>
         <Star>
-          ☆フェイシャルトリートメントを受けてくださった方に初回限定でトリートメントのセルフケアチケットをプレゼントさせていただいております。
+          Healing Body Balance Salon
         </Star>
       </p>
     </Box>
@@ -27,4 +26,5 @@ export const Ownercomment = () => {
 
 const Star = styled.span`
   color: red;
+  font-size:24px;
 `;

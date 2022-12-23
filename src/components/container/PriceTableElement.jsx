@@ -53,11 +53,12 @@ const Price = styled.h4`
 `;
 
 const SubText = styled.p`
-  font-weight: 600;
+  font-weight: 800;
   padding: 10px 0;
   letter-spacing: 0.12em;
   min-height: 50px;
-
+  border-bottom: solid 3px #F05F8D;
+  font-size:20px;
   @media screen and (max-width: 768px) {
     font-size: 18px;
   }

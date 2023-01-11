@@ -32,7 +32,7 @@ export const Navbar = ({ toggle }) => {
             <SNavItem>
               <SNavExternalLink
                 target="blank"
-                href="https://memesalon-blog.netlify.app/"
+                href="https://memesalon-blog.studio.site"
               >
                 BLOG
               </SNavExternalLink>
